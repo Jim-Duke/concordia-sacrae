@@ -9,7 +9,6 @@
 sopranoSoloMusic = \relative c'' {
   \key bes \minor
   \time 4/2
-  \tempo 4=100
   bes\breve~( |
   bes4 a4 bes4 c4 a4 bes4 c4 bes4 |
   c4 des4 bes4 c4 des4 c4 des4 ees4 |
@@ -70,12 +69,51 @@ sopranoSoloMusic = \relative c'' {
   f\breve |
   f1~ f4 ees2 des4 |
   c1) r1 |
+  ees4 ees'4 ees1.~( |
+  ees4 d4 ees4 f4 d4 ees4 f4 ees4 |
+  f4 ges4 ees4 f4 ges4 f4 ges4 aes4 |
+  f\breve |
+
+  \time 3/2
+  f2.) r4 r2 |
+  
+  \time 4/2
+  ges,1~ ges4 ges4( f4 ges4 |
+  f1.) bes2( |
+  aes1.) des2( |
+  c2 f2 des2.) ees4~( |
+  ees4 des4 ees4 f4 des4 ees4 f4 ees4 |
+  f4 ges4 ees4 f4 ges4 f4 ges4 aes4 |
+  bes\breve~ |
+  bes\breve |
+  aes\breve~ |
+  aes1)\fermata r2\fermata bes,2( |
+  aes1. gis2 |
+  fis1. b2 |
+  e,1 f1) |
+  r1 bes1~( |
+  bes4 a4 bes4 c4 a4 bes4 c4 bes4 |
+  c4 des4 bes4 c4 des4 c4 des4 ees4 |
+  
+  \time 5/2
+  c1.) c1( |
+  
+  \time 4/2
+  bes1~ bes4 des4 c4 bes4 |
+  c4 des4 ees4 f4 ges4 f4 ees4 des4 |
+  c4 bes4 aes4 ges4 bes4 aes4 f4 ges4 |
+  f1) bes1~( |
+  bes4 a4 bes4 c4 a1~ |
+  a2.) r4 r2 ges4.( ges8 |
+  f\breve~ |
+  f\breve |
+  f\breve)\fermata \bar "|."
 }
 
 sopranoOneMusic = \relative c'' {
   \key bes \minor
   \time 4/2
-  \tempo 4=100
+  \tempo 4=74
   bes\breve~( |
   bes4 a4 bes4 c4 a4 bes4 c4 bes4 |
   c4 des4 bes4 c4 des4 c4 des4 ees4 |
@@ -148,13 +186,32 @@ sopranoOneMusic = \relative c'' {
   bes\breve~ |
   bes\breve |
   aes\breve~ |
-  aes1)\fermata r2\fermata bes,2 |
+  aes1)\fermata r2\fermata bes,2( |
+  aes1. gis2 |
+  fis1. b2 |
+  e,1 f1) |
+  r1 bes1~( |
+  bes4 a4 bes4 c4 a4 bes4 c4 bes4 |
+  c4 des4 bes4 c4 des4 c4 des4 ees4 |
+  
+  \time 5/2
+  c1.) c1( |
+  
+  \time 4/2
+  bes1~ bes4 des4 c4 bes4 |
+  c4 des4 ees4 f4 ges4 f4 ees4 des4 |
+  c4 bes4 aes4 ges4 bes4 aes4 f4 ges4 |
+  f1) bes1~( |
+  bes4 a4 bes4 c4 a1~ |
+  a2.) r4 r2 ges4.( ges8 |
+  f\breve~ |
+  f\breve |
+  f\breve)\fermata \bar "|."
 }
 
 sopranoTwoMusic = \relative c'' {
   \key bes \minor
   \time 4/2
-  \tempo 4=100
   bes\breve~( |
   bes4 a4 bes4 c4 a4 bes4 c4 bes4 |
   c4 des4 bes4 c4 des4 c4 des4 ees4 |
@@ -227,7 +284,27 @@ sopranoTwoMusic = \relative c'' {
   f1 ges1~ |
   ges1 ges1 |
   fes\breve~ |
-  fes1)\fermata r2\fermata ees,2 |
+  fes1)\fermata r2\fermata ees,2( |
+  aes1. cis,2 |
+  fis1. b2 |
+  e,1 f1) |
+  r1 bes1~( |
+  bes4 a4 bes4 c4 a4 bes4 c4 bes4 |
+  c4 des4 bes4 c4 des4 c4 des4 ees4 |
+  
+  \time 5/2
+  c1.) c1( |
+  
+  \time 4/2
+  bes1~ bes4 des4 c4 bes4 |
+  c4 des4 ees4 f4 ges4 f4 ees4 des4 |
+  c4 bes4 aes4 ges4 bes4 aes4 f4 ges4 |
+  f1) bes1~( |
+  bes4 a4 bes4 c4 a1~ |
+  a2.) r4 r2 ges4.( ges8 |
+  f\breve~ |
+  f\breve |
+  f\breve)\fermata \bar "|."
 }
 
 altoOneMusic = \relative c'' {
@@ -285,7 +362,7 @@ altoOneMusic = \relative c'' {
   a1) r2 des2( |
   c\breve~ |
   c2 des2 bes1 |
-  c1) c4 c'4 c2~ |
+  ees1) c4 c'4 c2~ |
   c1 ces1( |
   bes1~ bes4) bes4( des4 c4 |
   aes2. aes4 bes2 c2 |
@@ -304,7 +381,25 @@ altoOneMusic = \relative c'' {
   f1 des'1~ |
   des1 bes1( |
   ces\breve~ |
-  ces1)\fermata r2\fermata ges2 |
+  ces1)\fermata r2\fermata ges2( |
+  fes1. e2 |
+  d1. fis2 |
+  e1 c1) |
+  r1 r2 ges'2( |
+  f\breve |
+  f1~ f4 ees2 des4 |
+  
+  \time 5/2
+  ees1.) r2 aes2( |
+  ges\breve |
+  ges\breve |
+  ges\breve |
+  f1) r2 ges4.( ges8 |
+  f\breve |
+  f1) bes,1~( |
+  bes2 a2 bes2 c2 |
+  a\breve |
+  a\breve)\fermata \bar "|."
 }
 
 altoTwoMusic = \relative c' {
@@ -362,7 +457,44 @@ altoTwoMusic = \relative c' {
   a1) r2 des2( |
   c\breve~ |
   c2 des2 bes1 |
-  c1) r1 |
+  ees\breve~ |
+  ees4) r4 r2 r1 |
+  r\breve |
+  r\breve |
+  r\breve |
+  
+  \time 3/2
+  r2. r2. |
+  
+  \time 4/2
+  r1 ees1~( |
+  ees4 des4 ees4 f4 des4 ees4 f4 ees4 |
+  f4 ges4 ees4 f4 ges4 f4 ges4 aes4 |
+  f1) des2( des2 |
+  ees1 f1) |
+  aes2 bes2 ges2 bes2 |
+  f1 des'1~ |
+  des1 bes1( |
+  aes\breve~ |
+  aes1)\fermata r2\fermata bes,2( |
+  aes1. gis2 |
+  a1. d2 |
+  c1 c1) |
+  r1 r2 des( |
+  c\breve |
+  c2 bes1. |
+  
+  \time 5/2
+  c1.) r2 des2~( |
+  des\breve |
+  c\breve |
+  c1. bes2 |
+  a1) r2 des4.( des8 |
+  c\breve |
+  c1) bes1~( |
+  bes2 a2 bes2 c2 |
+  a\breve |
+  a\breve)\fermata \bar "|."
 }
 
 tenorOneMusic = \relative c' {
@@ -422,7 +554,44 @@ tenorOneMusic = \relative c' {
   c4 des4 bes4 c4 des4 c4 des4 ees4 |
   c4 ges'4 ges1. |
   f1 f1~ |
-  f1) r1 |
+  f1) bes,1( |
+  c1 des2 ees2 |
+  f\breve~ |
+  
+  \time 3/2
+  f2) f1( |
+  
+  \time 4/2
+  ees1~ ees4 ees2 ees4 |
+  c1 f1~ |
+  f1) bes,1~( |
+  bes4 a4 bes4 c4 a4 bes4 c4 bes4 |
+  c4 des4 bes4 c4 des4 c4 des4 ees4 |
+  c2 f2) des2( ees2 |
+  bes1 ges'1~ |
+  ges1) ges1( |
+  <aes fes>\breve~ |
+  <aes fes>1)\fermata r2\fermata ces,2~( |
+  ces1. a2 |
+  a1. b2 |
+  g1 a1) |
+  r1 bes1~( |
+  bes4 a4 bes4 c4 a4 bes4 c4 bes4 |
+  c4 des4 bes4 c4 des4 c4 des4 ees4 |
+  
+  \time 5/2
+  c1.) c1( |
+  
+  \time 4/2
+  bes1~ bes4 des4 c4 bes4 |
+  c4 des4 ees4 f4 ges4 f4 ees4 des4 |
+  c4 bes4 aes4 ges4 bes4 aes4 f4 ges4 |
+  f1) bes1~( |
+  bes4 a4 bes4 c4 a1~ |
+  a1) r2 des4.( des8 |
+  c\breve~ |
+  c\breve |
+  c\breve)\fermata \bar "|."
 }
 
 tenorTwoMusic = \relative c' {
@@ -482,7 +651,44 @@ tenorTwoMusic = \relative c' {
   c4 des4 bes4 c4 des4 c4 des4 ees4 |
   c4 ges'4 ges1. |
   f1 f1~ |
-  f1) r1 |
+  f1) bes,1( |
+  c1 des2 ees2 |
+  f\breve~ |
+  
+  \time 3/2
+  f2) f1( |
+  
+  \time 4/2
+  ees1~ ees4 ees2 ees4 |
+  c1 f1~ |
+  f1) bes,1~( |
+  bes4 a4 bes4 c4 a4 bes4 c4 bes4 |
+  c4 des4 bes4 c4 des4 c4 des4 ees4 |
+  c2 f2) des2( ees2 |
+  bes1 ges'1~ |
+  ges1) ces,1( |
+  ces\breve~ |
+  ces1)\fermata r2\fermata ges2( |
+  fes1. e2 |
+  fis1. fis2 |
+  e1 f1) |
+  r1 bes1~( |
+  bes4 a4 bes4 c4 a4 bes4 c4 bes4 |
+  c4 des4 bes4 c4 des4 c4 des4 ees4 |
+  
+  \time 5/2
+  c1.) c1( |
+  
+  \time 4/2
+  bes1~ bes4 des4 c4 bes4 |
+  c4 des4 ees4 f4 ges4 f4 ees4 des4 |
+  c4 bes4 aes4 ges4 bes4 aes4 f4 ges4 |
+  f1) bes1~( |
+  bes4 a4 bes4 c4 a1~ |
+  a1) r2 des4.( des8 |
+  c\breve~ |
+  c\breve |
+  c\breve)\fermata \bar "|."
 }
 
 bassOneMusic = \relative c {
@@ -544,7 +750,42 @@ bassOneMusic = \relative c {
   ges\breve |
   aes\breve~ |
   aes\breve |
-  aes1) r1 |
+  aes1) ges1( |
+  f1 ees1 |
+  aes\breve |
+  
+  \time 3/2
+  des1.)
+  
+  \time 4/2
+  ces1( ees1 |
+  a,1 bes1 |
+  c1 des1 |
+  f,1 ges1 |
+  ges1 aes1 |
+  bes1. c2 |
+  des\breve~ |
+  des1) ees1( |
+  fes\breve~ |
+  fes1)\fermata r2\fermata ces,2~( |
+  ces1. cis2 |
+  d1. d2 |
+  c1 c1) |
+  r1 r2 bes2( |
+  c\breve |
+  c2 des1. |
+  
+  \time 5/2
+  ees1.) r2 <f des>2( |
+  <ges des>\breve |
+  <ees bes>\breve |
+  <ees bes>\breve |
+  c1) r2 bes4.( bes8 |
+  c\breve |
+  c1) r2 ees4.( ees8 |
+  f\breve~ |
+  f\breve |
+  f\breve)\fermata \bar "|."
 }
 
 bassTwoMusic = \relative c, {
@@ -606,7 +847,44 @@ bassTwoMusic = \relative c, {
   ges\breve |
   aes\breve~ |
   aes\breve |
-  aes1) r1 |
+  aes1) ges1( |
+  f1 ees1 |
+  aes\breve |
+  
+  \time 3/2
+  des1.)
+  
+  \time 4/2
+  ces1( ees1 |
+  a,1 bes1 |
+  c1 des1 |
+  f,1 ges1 |
+  ges,1 aes1 |
+  bes1. c2 |
+  des1 ges1~ |
+  ges1) ees1( |
+  fes\breve~ |
+  fes1)\fermata r2\fermata ees,2( |
+  fes1. cis'2 |
+  d1. b2 |
+  c1 f,1) |
+  r1 r2 ees2( |
+  f\breve |
+  f2 ges1. |
+  
+  \time 5/2
+  aes1.) r2 f2( |
+  
+  \time 4/2
+  ges\breve |
+  ees\breve |
+  ees\breve |
+  f1) r2 ees4.( ees8 |
+  f\breve |
+  f1) r2 ees4.( ees8 |
+  f\breve~ |
+  f\breve |
+  f\breve)\fermata \bar "|."
 }
 
 #(set-global-staff-size 18)
