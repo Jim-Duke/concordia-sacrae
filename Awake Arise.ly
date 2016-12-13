@@ -223,6 +223,115 @@ tenorOneMusic = \relative c' {
   % Main music starts here
   %
 
+  r2 r4 r8. aes16\f |
+  ees'8. aes,16 ees'4~ ees8 ees8 \tuplet 3/2 { des8 ees8 f8 } |
+  ees8. aes,16 ees'2 r8. aes,16 |
+  
+  ees'8. aes,16 ees'4~ ees8 ees8 \tuplet 3/2 { des8 ees8 f8 } |
+  ees8. ees16 \tuplet 3/2 { des8 ees8 f8 } ees8. ees16 \tuplet 3/2 { ges8( f8) des8 } |
+  
+  ees8. ees16 ees2 ees4 |
+  ees8. ees16 ees2 ees4 |
+  des2 des2 |
+  
+  c1~ |
+  c2. r4 |
+  r1 |
+  
+  \tuplet 3/2 4 { c8\mf c8 c8 c4 c8 ees4 des8 } c4~ |
+  c1 |
+  
+  \tuplet 3/2 4 { c8 c8 c8 c4 c8 ees4 f8 } c4~ |
+  c4 ees4 f4( ees4~ |
+  
+  ees4) \tuplet 3/2 { ees4 ees8 } f4( ees4) |
+  c4 \tuplet 3/2 { bes4 bes8 } aes4( g4) |
+  
+  c4 \tuplet 3/2 { bes4 bes8 } aes4( g4) |
+  aes1 |
+  \tuplet 3/2 { aes4 aes8 aes8 aes8 aes8 ces4 bes8 } aes4~ |
+  
+  aes2.~ \tuplet 3/2 { aes4 aes8 } |
+  \tuplet 3/2 4 { aes4 aes8 aes8 aes8 aes8 ces4 bes8 } aes4 |
+  
+  bes4~ \tuplet 3/2 4 { bes4 bes8 bes8 bes8 bes8 } bes4~ |
+  bes4~ \tuplet 3/2 4 { bes4 bes8 bes8 bes8 bes8 } bes4~ |
+  
+  bes4~ \tuplet 3/2 4 { bes4 bes8 bes4 bes8 } bes4~ |
+  bes4 \tuplet 3/2 4 { bes4 bes8 bes8 bes8 bes8 } bes4~ |
+  
+  bes2 \tuplet 3/2 4 { bes4\f bes8 ees8( bes8) aes8 } |
+  bes2 \tuplet 3/2 4 { bes4 bes8 ees8( bes8) aes8 } |
+  
+  \tuplet 3/2 4 { bes4 bes8 ees8( bes8) aes8 bes4 bes8 ees8( bes8) aes8 } |
+  \time 2/4
+  \tuplet 3/2 4 { bes8 bes8 bes8 ees8 ees8 des8 }
+  \time 4/4
+  bes2. bes4 |
+  
+  bes2. bes8 bes8 |
+  bes4 bes4 bes4 bes4 |
+  bes2. bes4 |
+  bes2. r8. aes16\f |
+  
+  ees'8. aes,16 ees'4~ ees8 ees8 \tuplet 3/2 { des8 ees8 f8 } |
+  ees8. aes,16 ees'2 r8. aes,16 |
+  
+  ees'8. aes,16 ees'4~ ees8 ees8 \tuplet 3/2 { des8 ees8 f8 } |
+  ees8. ees16 \tuplet 3/2 4 { des8 ees8 f8 ees4 ees8 ges8( f8) des8 } |
+  
+  ees8. ees16 ees2 ees4 |
+  ees8. ees16 ees2 ees4 |
+  des2 des2 |
+  
+  c1~ |
+  c2. r4 |
+  r1 |
+  r1 |
+  
+  r1 |
+  r1 |
+  aes4 aes8 aes8 ces4( bes8) aes8 |
+  
+  aes4 aes8 aes8 ces4( bes8) aes8 |
+  aes4 aes8 aes8 ces4( bes8) aes8 |
+  bes1 |
+  
+  ees2\mf fes2 |
+  ees2 fes2 |
+  
+  ees2 fes2 |
+  ees1 |
+  aes,4\f aes8 aes8 ces4 bes8 aes8 |
+  
+  aes4 aes8 aes8 ces4 bes8 aes8 |
+  aes4 aes8 aes8 ces4 bes8 aes8 |
+  
+  bes4 bes8 bes8 ees2 |
+  ees2 aes8 ees8 ees8 des8 |
+  
+  ees2 aes8 ees8 ees8 des8 |
+  ees2 aes8 ees8 ees8 des8 |
+  
+  ees2. des8 des8 |
+  ees2. des8 des8 |
+  ees8 ees8 des8 des8 ees8 ees8 des8 des8 |
+  
+  ees2. r8. aes,16\f |
+  ees'8. aes,16 ees'4~ ees8 ees8 \tuplet 3/2 { des8 ees8 f8 } |
+  ees8. aes,16 ees'2 r8. aes,16 |
+  
+  ees'8. aes,16 ees'4~ ees8 ees8 \tuplet 3/2 { des8 ees8 f8 } |
+  ees8. ees16 \tuplet 3/2 { des8 ees8 f8 } ees8. ees16 \tuplet 3/2 { ges8( f8) des8 } |
+  
+  ees8. ees16 ees8 ees8~ ees4 ees4 |
+  des8. des16 des8 des8~ des4 des4 |
+  des8. des16 des8 des8~ des4 des4 |
+  
+  c2. des4 |
+  c2. des4 |
+  c4 des4 c4 des4 |
+  ees1\f\fermata \bar "|."
 }
 
 tenorTwoMusic = \relative c' {
@@ -239,9 +348,15 @@ tenorTwoMusic = \relative c' {
   % Main music starts here
   %
 
+  r2 r4 r8. aes16\f |
+  ees'8. aes,16 ees'4~ ees8 ees8 \tuplet 3/2 { des8 ees8 f8 } |
+  ees8. aes,16 ees'2 r8. aes,16 |
+
+  ees'8. aes,16 ees'4~ ees8 ees8 \tuplet 3/2 { des8 ees8 f8 } |
+  ees8. ees16 \tuplet 3/2 { des8 ees8 f8 } ees8. ees16 \tuplet 3/2 { ges8( f8) des8 } |
 }
 
-bassOneMusic = \relative c {
+bassOneMusic = \relative c' {
   \keyAndTimeSignature
   \clef bass
   
@@ -255,9 +370,15 @@ bassOneMusic = \relative c {
   % Main music starts here
   %
 
+  r2 r4 r8. aes16\f |
+  c8. aes16 c4~ c8 c8 \tuplet 3/2 { bes8 c8 des8 } |
+  c8. aes16 c2 r8. aes16 |
+  
+  c8. aes16 c4~ c8 c8 \tuplet 3/2 { bes8 c8 des8 } |
+  c8. c16 \tuplet 3/2 { bes8 c8 des8 } c8. c16 \tuplet 3/2 { ees8( des8) bes8 } |
 }
 
-bassTwoMusic = \relative c {
+bassTwoMusic = \relative c' {
   \keyAndTimeSignature
   \clef bass
   
@@ -271,6 +392,12 @@ bassTwoMusic = \relative c {
   % Main music starts here
   %
 
+  r2 r4 r8. aes16\f |
+  aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
+  aes8. aes16 aes2 r8. aes16 |
+
+  aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
+  aes8. aes16 \tuplet 3/2 { aes8 aes8 aes8 } aes8. aes16 \tuplet 3/2 { ces8( bes8) ges8 } |
 }
 
 %
@@ -318,7 +445,7 @@ metronomeMusic = \drummode {
   cl4 cl4 cl4 cl4 |
   cl4 cl4 cl4 cl4 |
   cl4 cl4 cl4 cl4 |
-  cl4 cl4 cl4 cl4 |
+  cl4 cl4 |
   cl4 cl4 cl4 cl4 |
   cl4 cl4 cl4 cl4 |
   cl4 cl4 cl4 cl4 |
