@@ -7,12 +7,12 @@
   tagline = ##f
 }
 
-dominantMinVolume = #0.6
+dominantMinVolume = #0.7
 dominantMaxVolume = #1.0
 dominantPanPosition = #0.8
 
-diminishedMinVolume = #0.3
-diminishedMaxVolume = #0.6
+diminishedMinVolume = #0.1
+diminishedMaxVolume = #0.45
 diminishedPanPosition = #-0.8
 
 allMinVolume = #0.4
@@ -733,7 +733,7 @@ metronomeMusic = \drummode {
 #(set-global-staff-size 18)
 
 \book {
-  \bookOutputName "Jerico"
+  \bookOutputName "Joshua"
   \paper {
     #(set-paper-size "letter")
     
@@ -844,7 +844,7 @@ metronomeMusic = \drummode {
 % All Midi
 %
 \book {
-  \bookOutputName "Jerico - All"
+  \bookOutputName "Joshua - All"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -944,7 +944,7 @@ metronomeMusic = \drummode {
 % Soprano I Midi
 %
 \book {
-  \bookOutputName "Jerico - Soprano I"
+  \bookOutputName "Joshua - Soprano I"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -1044,7 +1044,7 @@ metronomeMusic = \drummode {
 % Soprano II Midi
 %
 \book {
-  \bookOutputName "Jerico - Soprano II"
+  \bookOutputName "Joshua - Soprano II"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -1144,7 +1144,7 @@ metronomeMusic = \drummode {
 % Alto I Midi
 %
 \book {
-  \bookOutputName "Jerico - Alto I"
+  \bookOutputName "Joshua - Alto I"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -1244,7 +1244,7 @@ metronomeMusic = \drummode {
 % Alto II Midi
 %
 \book {
-  \bookOutputName "Jerico - Alto II"
+  \bookOutputName "Joshua - Alto II"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -1344,7 +1344,7 @@ metronomeMusic = \drummode {
 % Tenor I Midi
 %
 \book {
-  \bookOutputName "Jerico - Tenor I"
+  \bookOutputName "Joshua - Tenor I"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -1444,7 +1444,7 @@ metronomeMusic = \drummode {
 % Tenor II Midi
 %
 \book {
-  \bookOutputName "Jerico - Tenor II"
+  \bookOutputName "Joshua - Tenor II"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -1544,7 +1544,7 @@ metronomeMusic = \drummode {
 % Bass I Midi
 %
 \book {
-  \bookOutputName "Jerico - Bass I"
+  \bookOutputName "Joshua - Bass I"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -1644,7 +1644,7 @@ metronomeMusic = \drummode {
 % Bass II Midi
 %
 \book {
-  \bookOutputName "Jerico - Bass II"
+  \bookOutputName "Joshua - Bass II"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
