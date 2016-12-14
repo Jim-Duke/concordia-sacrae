@@ -321,6 +321,84 @@ altoOneMusic = \relative c'' {
   
   ces1~ |
   ces2~ ces8 r8 \tuplet 3/2 { ces4 ces8 } |
+  
+  \tuplet 3/2 { ees8 ees8 ees8 } ees2~ \tuplet 3/2 { ees4 ees8 } |
+  \tuplet 3/2 { fes8 fes8 fes8 } fes2~ \tuplet 3/2 { fes4 fes8 } |
+  
+  \tuplet 3/2 { ees4 ees8 } ees2 \tuplet 3/2 { ees4 ees8 } |
+  \tuplet 3/2 { fes8 fes8 fes8 } fes2. |
+  
+  \tuplet 3/2 4 { ees4\f ees8 ees4 ees8 } ees2 |
+  \tuplet 3/2 4 { fes4 fes8 fes4 fes8 fes4 fes8~ } fes4 |
+  
+  \tuplet 3/2 4 { ees4 ees8 ees4 ees8 fes4 fes8 fes4 fes8 } |
+  \time 2/4
+  \tuplet 3/2 4 { fes8 fes8 fes8 fes8 fes8 fes8 } |
+  g2. aes4 |
+  
+  g2. aes8 aes8 |
+  g4 aes4 g4 aes4 |
+  g2. g4 |
+  g2. r8. aes16\f |
+  
+  aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
+  aes8. aes16 aes2 aes8. aes16 |
+  
+  aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
+  aes8. aes16 \tuplet 3/2 4 { aes8 aes8 aes8 aes4 aes8 ces8( bes8) ges8 } |
+  
+  aes8. aes16 aes2 aes4 |
+  bes8. bes16 bes2 bes4 |
+  aes2 aes2 |
+  
+  aes1~ |
+  aes2. r4 |
+  aes1\mp |
+  ges1 |
+  
+  fes2 ees2 |
+  des1 |
+  ces1~ |
+  
+  ces1~ |
+  ces1 |
+  ees1 |
+  
+  aes4\mf aes8 aes8 ces4 bes8 aes8 |
+  aes4 aes8 aes8 ces4 bes8 aes8 |
+  
+  aes4 aes8 aes8 ces4 bes8 aes8 |
+  bes2. bes8\f bes8 |
+  aes8 aes8 aes4 aes4. bes8 |
+  
+  aes8 aes8 aes4 aes4. bes8 |
+  aes8 aes8 aes4 aes4 aes8 aes8 |
+  
+  aes4( f4 g4) r8 g8 |
+  aes8 aes8 aes8 aes8 aes2 |
+  
+  aes8 aes8 aes8 aes8 aes2 |
+  aes8 aes8 aes8 aes8 aes8 aes8 aes8 aes8 |
+  
+  g2. aes8 aes8 |
+  g2. aes8 aes8 |
+  g8 g8 aes8 aes8 g8 g8 aes8 aes8 |
+  
+  g2. r8. aes16\f |
+  aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
+  aes8. aes16 aes2 r8. aes16 |
+  
+  aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
+  aes8. aes16 \tuplet 3/2 { aes8 aes8 aes8 } aes8. aes16 \tuplet 3/2 { ces8( bes8) ges8 } |
+  
+  aes8. aes16 aes8 aes8~ aes4 aes4 |
+  ges8. ges16 ges8 ges8~ ges4 ges4 |
+  aes8. aes16 aes8 aes8~ aes4 aes4 |
+  
+  aes2. aes4 |
+  aes2. aes4 |
+  aes4 aes4 aes4 bes4 |
+  c1\ff\fermata \bar "|."
 }
 
 altoTwoMusic = \relative c'' {
@@ -366,6 +444,84 @@ altoTwoMusic = \relative c'' {
   
   ces1~ |
   ces2~ ces8 r8 \tuplet 3/2 { ces4 ces8 } |
+  
+  \tuplet 3/2 { ees8 ees8 ees8 } ees2~ \tuplet 3/2 { ees4 ees8 } |
+  \tuplet 3/2 { fes8 fes8 fes8 } fes2~ \tuplet 3/2 { fes4 fes8 } |
+  
+  \tuplet 3/2 { ees4 ees8 } ees2 \tuplet 3/2 { ees4 ees8 } |
+  \tuplet 3/2 { fes8 fes8 fes8 } fes2. |
+  
+  \tuplet 3/2 4 { ees4\f ees8 ees4 ees8 } ees2 |
+  \tuplet 3/2 4 { fes4 fes8 fes4 fes8 fes4 fes8~ } fes4 |
+  
+  \tuplet 3/2 4 { ees4 ees8 ees4 ees8 fes4 fes8 fes4 fes8 } |
+  \time 2/4
+  \tuplet 3/2 4 { fes8 fes8 fes8 fes8 fes8 fes8 } |
+  ees2. fes4 |
+  
+  ees2. fes8 fes8 |
+  ees4 fes4 ees4 fes4 |
+  ees2. ees4 |
+  ees2. r8. aes16\f |
+  
+  aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
+  aes8. aes16 aes2 aes8. aes16 |
+  
+  aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
+  aes8. aes16 \tuplet 3/2 4 { aes8 aes8 aes8 aes4 aes8 ces8( bes8) ges8 } |
+  
+  aes8. aes16 aes2 aes4 |
+  ges8. ges16 ges2 ges4 |
+  fes2 fes2 |
+  
+  ees1~ |
+  ees2. r4 |
+  aes1\mp |
+  ges1 |
+  
+  fes2 ees2 |
+  des1 |
+  ces1~ |
+  
+  ces1~ |
+  ces1 |
+  ees1 |
+  
+  aes4\mf aes8 aes8 ces4 bes8 aes8 |
+  aes4 aes8 aes8 ces4 bes8 aes8 |
+  
+  aes4 aes8 aes8 ces4 bes8 aes8 |
+  bes2. bes8\f bes8 |
+  aes8 aes8 aes4 aes4. bes8 |
+  
+  aes8 aes8 aes4 aes4. bes8 |
+  aes8 aes8 aes4 aes4 aes8 aes8 |
+  
+  aes4( f4 g4) r8 g8 |
+  aes8 aes8 aes8 aes8 aes2 |
+  
+  aes8 aes8 aes8 aes8 aes2 |
+  aes8 aes8 aes8 aes8 aes8 aes8 aes8 aes8 |
+  
+  ees2. fes8 fes8 |
+  ees2. fes8 fes8 |
+  ees8 ees8 fes8 fes8 ees8 ees8 fes8 fes8 |
+  
+  ees2. r8. aes16\f |
+  aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
+  aes8. aes16 aes2 r8. aes16 |
+  
+  aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
+  aes8. aes16 \tuplet 3/2 { aes8 aes8 aes8 } aes8. aes16 \tuplet 3/2 { ces8( bes8) ges8 } |
+  
+  aes8. aes16 aes8 aes8~ aes4 aes4 |
+  ees8. ees16 ees8 ees8~ ees4 ees4 |
+  fes8. fes16 fes8 fes8~ fes4 fes4 |
+  
+  ees2. fes4 |
+  ees2. fes4 |
+  ees4 fes4 ees4 fes4 |
+  aes1\ff\fermata \bar "|."
 }
 
 tenorOneMusic = \relative c' {
@@ -827,7 +983,7 @@ bassTwoMusic = \relative c' {
   r1 |
   aes1 |
   
-  ges1 |
+  ges1\mf |
   fes2 des2 |
   ees4 f4 g2 |
   
