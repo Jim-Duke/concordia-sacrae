@@ -104,7 +104,7 @@ sopranoOneMusic = \relative c'' {
   ees1~ |
   ees2. r4 |
   \tempo 4=88
-  aes,4 aes8 aes8 ces4 bes8 aes8 |
+  aes,4\mp aes8 aes8 ces4 bes8 aes8 |
   aes4 aes8 aes8 ces4 bes8 aes8 \break |
   
   aes4 aes8 aes8 ces4 bes8 aes8 |
@@ -230,7 +230,7 @@ sopranoTwoMusic = \relative c'' {
   
   c1~ |
   c2. r4 |
-  aes1 |
+  aes1\mp |
   ges1 |
   
   fes1 |
@@ -342,7 +342,7 @@ altoOneMusic = \relative c'' {
   g2. r8. aes16\f |
   
   aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
-  aes8. aes16 aes2 aes8. aes16 |
+  aes8. aes16 aes2 r8. aes16 |
   
   aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
   aes8. aes16 \tuplet 3/2 4 { aes8 aes8 aes8 aes4 aes8 ces8( bes8) ges8 } |
@@ -465,7 +465,7 @@ altoTwoMusic = \relative c'' {
   ees2. r8. aes16\f |
   
   aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
-  aes8. aes16 aes2 aes8. aes16 |
+  aes8. aes16 aes2 r8. aes16 |
   
   aes8. aes16 aes4~ aes8 aes8 \tuplet 3/2 { aes8 aes8 aes8 } |
   aes8. aes16 \tuplet 3/2 4 { aes8 aes8 aes8 aes4 aes8 ces8( bes8) ges8 } |
@@ -606,7 +606,7 @@ tenorOneMusic = \relative c' {
   
   r1 |
   r1 |
-  aes4 aes8 aes8 ces4( bes8) aes8 |
+  aes4\mp aes8 aes8 ces4( bes8) aes8 |
   
   aes4 aes8 aes8 ces4( bes8) aes8 |
   aes4 aes8 aes8 ces4( bes8) aes8 |
@@ -731,7 +731,7 @@ tenorTwoMusic = \relative c' {
   
   r1 |
   r1 |
-  aes4 aes8 aes8 ces4( bes8) aes8 |
+  aes4\mp aes8 aes8 ces4( bes8) aes8 |
   
   aes4 aes8 aes8 ces4( bes8) aes8 |
   aes4 aes8 aes8 ces4( bes8) aes8 |
@@ -856,7 +856,7 @@ bassOneMusic = \relative c' {
   
   r1 |
   r1 |
-  aes1 |
+  aes1\mp |
   
   ges1 |
   fes2 des2 |
@@ -981,13 +981,13 @@ bassTwoMusic = \relative c' {
   
   r1 |
   r1 |
-  aes1 |
+  aes1\mp |
   
-  ges1\mf |
+  ges1 |
   fes2 des2 |
   ees4 f4 g2 |
   
-  aes4 aes8 aes8 ces4 bes8 aes8 |
+  aes4\mf aes8 aes8 ces4 bes8 aes8 |
   aes4 aes8 aes8 ces4 bes8 aes8 |
   
   aes4 aes8 aes8 ces4 bes8 aes8 |
