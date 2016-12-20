@@ -256,7 +256,7 @@ bassMusic = \relative c' {
   %
 
   d4\mp cis4 b4 a4 |
-  a4 b4 a4 e4 |
+  a4 b4 a4 g4 |
   fis2 a4 g4 |
   e4 fis4 g4 a4 |
   b4( a4 g4) \breathe fis4 |
