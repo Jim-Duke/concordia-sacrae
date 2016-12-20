@@ -27,6 +27,10 @@ metronomeMinVolume = #0.4
 metronomeMaxVolume = #0.6
 metronomePanPosition = #0.0
 
+accompanyMinVolume = #0.2
+accompanyMaxVolume = #0.6
+accompanyPanPosition = #0.0
+
 keyAndTimeSignature = {
   \key des \major
   \time 3/4
@@ -207,13 +211,13 @@ altoMusic = \relative c' {
   des4 aes'4 ges4 |
   
   f2\mp\fermata f8\p aes8 |
-  bes4 c4. des8 |
+  bes,4 c4. des8 |
   des2.( |
   c4 aes4) r4 |
   r4 des4( f4 |
   
   c4 aes2) |
-  aes4( ges4 des4~ |
+  aes'4( ges4 des4~ |
   des2. |
   f4 aes4 aes,4 |
   bes2.) |
@@ -225,10 +229,10 @@ altoMusic = \relative c' {
   
   f2(\mp des4 |
   c2 f8 aes8 |
-  bes4 aes4 des8 c8 |
+  bes,4 aes4 des8 c8 |
   bes2.) |
   
-  aes4(\p ges4 f8 bes8) |
+  aes'4(\p ges4 f8 bes,8) |
   aes2\fermata r4 |
   bes4(\pp c2 |
   aes2.~ |
@@ -422,22 +426,40 @@ bassOneMusic = \relative c {
   bes2. |
   r4 des4 des4 |
   
-  <c f>2\mp\fermata r4 |
+  c2\mp\fermata r4 |
   r2. |
   r2. |
   r2. |
-  <des aes>2.( |
+  des2.( |
   
-  <c f>2.) |
-  <des ges>2.( |
-  <f bes>2. |
-  <f aes>2. |
-  <des ges>2.) |
+  c2.) |
+  des2.( |
+  f2. |
+  f2. |
+  des2.) |
   
-  r4 ees4( bes4 |
+  r4 ees4( bes'4 |
   aes4 ees4) r4 |
-  ees2( bes4 |
+  ees2( bes'4 |
   aes4 ees4) r4 |
+  
+  bes'2(\mp f4 |
+  f2. |
+  des4 c2 |
+  bes2.) |
+  
+  des2.(\p |
+  c2)\fermata r4 |
+  des4(\pp ees2 |
+  des2. |
+  c2.) |
+  f2.~\p |
+  f2. |
+  des2.~\pp |
+  des2.~ |
+  des2.~ |
+  des2. \bar "|."
+  
 }
 
 bassTwoMusic = \relative c {
@@ -511,22 +533,40 @@ bassTwoMusic = \relative c {
   bes2. |
   r4 ges4 ges4 |
   
-  <c f>2\mp\fermata r4 |
+  f2\mp\fermata r4 |
   r2. |
   r2. |
   r2. |
-  <des aes>2.( |
+  aes2.( |
   
-  <c f>2.) |
-  <des ges>2.( |
-  <f bes>2. |
-  <f aes>2. |
-  <des ges>2.) |
+  f2.) |
+  ges2.( |
+  bes2. |
+  aes2. |
+  ges2.) |
   
-  r4 ees4( bes4 |
+  r4 ees'4( bes'4 |
   aes4 ees4) r4 |
-  ees2( bes4 |
+  ees2( bes'4 |
   aes4 ees4) r4 |
+  
+  bes'2(\mp f4 |
+  c2. |
+  ges4 f4 c'4 |
+  bes2.) |
+  
+  ges2.(\p |
+  f2)\fermata r4 |
+  ges4(\pp aes2 |
+  des2. |
+  c2.) |
+  
+  f2.~\p |
+  f2. |
+  des2.~\pp |
+  des2.~ |
+  des2.~ |
+  des2. \bar "|."
 }
 
 rhMusic = \relative c'' {
@@ -624,6 +664,89 @@ rhMusic = \relative c'' {
   f'8 ees8 \grace aes'8 aes'4 \grace des,,8 des'4 |
   aes'2. |
   bes,4.\mf des,8 c'8 des8 |
+  
+  <c des,>4 aes4 des4 |
+  <c des,>4 aes4 ees'16 f8. |
+  <c des aes'>4 <des aes bes des,>4. ees,,,8 |
+  ges8 aes8 bes4 ees4 \break |
+  
+  \grace des8 c4 aes'4. c8 |
+  <<
+    { ees2 }
+    \\
+    { ges,8 aes8 bes4 }
+  >>
+  <bes ges'>4 |
+  \grace des8 c4 ees4. aes8 |
+  <des, f des'>4 ees8 f8 c'8 des8 \break |
+  
+  \grace { f,16 g16 } f8 ees8 c8 bes8 c4 |
+  <bes des,>4 <aes des, c>4 aes,8 bes8 |
+  bes8 c8 des8 f8 bes8 c8 |
+  <des c aes>4 <aes' des,>8 c,8
+  <<
+    { ees16 f8. }
+    \\
+    { ges,4 }
+  >> |
+  
+  <aes f>2\fermata r4 |
+  <<
+    { des,2. }
+    \\
+    { bes4 c2 }
+  >> |
+  f'4 f4. aes8 |
+  aes4 f4. aes,8 |
+  f'4. ees8 bes'8 c8 |
+  
+  aes4 f4. des8 |
+  bes'4. des,8 c'8 des8 |
+  <<
+    { c4 aes4 des4 | c4 aes4 ees'16 f8. | <bes, des,>2 \hide r4 | }
+    \\
+    { des,2 f8 ges8 | des2 aes'4 | aes4 ges4. ees8 | }
+  >>
+  
+  <ges bes,>2 <aes c,>8 <bes ees,>8 |
+  <aes c,>4 <ees' bes>4. c8 |
+  \grace { bes16 c16 } bes8 aes8 <ges bes,>4
+  <<
+    { aes16 bes8. | }
+    \\
+    { ees,4 | }
+  >>
+  <aes c,>4 ees4. aes8 |
+  
+  <des des,>4\mf <f, bes,>4
+  <<
+    { c'8 des8 | <aes c,>4 }
+    \\
+    { des,4 | g8 f8 }
+  >>
+  c,4 f8 aes8 |
+  <bes aes>8 des8 aes,8 aes'8 des,8 c8 |
+  bes8 c8 des8 <f' bes, f>8 <bes des, bes>8 <c aes c,>8 \break |
+  
+  \grace des,8 des'4. c8 ees16 f8. |
+  <<
+    { aes,4 f4\fermata }
+    \\
+    { c2\fermata }
+  >>
+  f,8 aes8 |
+  bes,8 des8~ <des c>4. aes8 |
+  f'4. aes,8 des4 |
+  c2 aes'4\mp |
+  
+  f'4 \grace aes8 aes'4 des,4 |
+  c4 aes2 |
+  \ottava #1
+  \grace aes'8 aes'2. |
+  \ottava #0
+  r4 r8 aes,,8 f'8 ees8 |
+  aes2.~\pp |
+  aes2. \bar "|."
 }
 
 lhMusic = \relative c' {
@@ -713,6 +836,65 @@ lhMusic = \relative c' {
   aes,,8 f'8 des'8 aes8 aes'4 |
   ges,,8 des'8 bes'8 ges8 bes'4\mp |
   ees,,,8 bes'8 ges'8 ees8 aes8 bes8 |
+  
+  aes,8 ees'8 c'8 aes8 ees'4 |
+  ees,,8 bes'8 ges'8 ees8 bes'8 ges'8 |
+  aes,,8 ees'8 c'8 bes8 aes'4 |
+  bes,,8 f'8 des'8 bes8 f'4 |
+  
+  f,,8 c'8 aes'8 f8 c'8 aes'8 |
+  ges,,8 des'8 f,8 c'8 f4 |
+  bes,,8 bes'8 bes8 f'8 des'4 |
+  ges,,8 des'8 bes'2 |
+  
+  f,8 c'8 aes'4\fermata r4 |
+  ges,8 des'8 aes8 ees'8 aes4 |
+  des,8 aes'8
+  \clef treble
+  f'8 ees8 aes4 |
+  f,8 c'8 aes'8 f8 c'4 |
+  \clef bass
+  des,,8 aes'8
+  \clef treble
+  f'8 aes8 des4 |
+  
+  f,,8 c'8 aes'8 f8 c'4 |
+  ges,8 des'8 bes'8 des,8 ges8 bes8 |
+  bes,8 f'8 c'8 bes8 des4 |
+  aes,8  f'8 c'8 aes8 f'4 |
+  ges,,8 des'8 bes'8 ges8 des'4 |
+  
+  ees,,8 bes'8 ges'8 ees8 aes8 bes8 |
+  aes,8 ees'8 c'8 bes8 ees4 |
+  ees,,8 bes'8 ges'8 ees8 bes'16 c8. |
+  aes,8 ees'8 bes'8 aes8 c4 |
+  
+  \clef bass
+  bes,,8 f'8 des'8 bes8 f'4 |
+  f,,8 c'8 aes'8 f8 c'4 |
+  <des, ges,>8 bes'8 f,8 c'8 f4 |
+  bes,,8 bes'8 bes8 f'8 des'4 |
+  
+  ges,,8 des'8 bes'8 ges8 des'8 bes'8 |
+  f,,8 c'8 aes'4\fermata r4 |
+  ges,8 des'8 aes8 ees'8 c'4 |
+  des,,8 aes'8 f'8 ees8 f8 aes8 |
+  f,8 c'8 aes'8 f8 c'4 |
+  
+  des,8\mp aes'8
+  \clef treble
+  f'8 ees8 f8 aes8 |
+  f,8 c'8 aes'8 f8 c'4 |
+  \clef bass
+  des,,,8 aes'8 f'8 aes8 des8 f8 |
+  \clef treble
+  <<
+    { aes2.~ | aes2.~ |aes2. }
+    \\
+    { \hide r8 des8~ des2~ | des2.~ | des2. }
+    \\
+    { \hide r4 f2~ | f2.~ | f2. }
+  >> \bar "|."
 }
 
 %
@@ -731,6 +913,79 @@ metronomeMusic = \drummode {
   % Main music starts here
   %
 
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
+  cl4 cl4 cl4 |
   cl4 cl4 cl4 |
   cl4 cl4 cl4 |
   cl4 cl4 cl4 |
@@ -915,19 +1170,17 @@ metronomeMusic = \drummode {
           \lhMusic
         }
       >>
-
     >>
       
     \midi {}
   }
 }
 
-%{
 %
-% Soprano I Midi
+% Soprano Midi
 %
 \book {
-  \bookOutputName "Awake Arise - Soprano I"
+  \bookOutputName "The Seal Lullaby - Soprano"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -943,8 +1196,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \dominantMaxVolume
         midiPanPosition = \dominantPanPosition
       } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
+        \new Voice = "soprano" {
+          \sopranoMusic
         }
       >>
       \new Staff \with {
@@ -953,8 +1206,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
+        \new Voice = "alto" {
+          \altoMusic
         }
       >>
       \new Staff \with {
@@ -963,38 +1216,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
+        \new Voice = "tenor" {
+          \tenorMusic
         }
       >>
       \new Staff \with {
@@ -1017,6 +1240,20 @@ metronomeMusic = \drummode {
           \bassTwoMusic
         }
       >>
+      \new PianoStaff \with {
+        midiInstrument = "acoustic grand"
+        midiMinimumVolume = \accompanyMinVolume
+        midiMaximumVolume = \accompanyMaxVolume
+        midiPanPosition = \accompanyPanPosition
+      } <<
+        \set PianoStaff.connectArpeggios = ##t
+        \new Staff {
+          \rhMusic
+        }
+        \new Staff {
+          \lhMusic
+        }
+      >>
     >>
       
     \midi {}
@@ -1024,10 +1261,10 @@ metronomeMusic = \drummode {
 }
 
 %
-% Soprano II Midi
+% Alto Midi
 %
 \book {
-  \bookOutputName "Awake Arise - Soprano II"
+  \bookOutputName "The Seal Lullaby - Alto"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -1043,8 +1280,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
+        \new Voice = "soprano" {
+          \sopranoMusic
         }
       >>
       \new Staff \with {
@@ -1053,8 +1290,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \dominantMaxVolume
         midiPanPosition = \dominantPanPosition
       } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
+        \new Voice = "alto" {
+          \altoMusic
         }
       >>
       \new Staff \with {
@@ -1063,38 +1300,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
+        \new Voice = "tenor" {
+          \tenorMusic
         }
       >>
       \new Staff \with {
@@ -1117,6 +1324,20 @@ metronomeMusic = \drummode {
           \bassTwoMusic
         }
       >>
+      \new PianoStaff \with {
+        midiInstrument = "acoustic grand"
+        midiMinimumVolume = \accompanyMinVolume
+        midiMaximumVolume = \accompanyMaxVolume
+        midiPanPosition = \accompanyPanPosition
+      } <<
+        \set PianoStaff.connectArpeggios = ##t
+        \new Staff {
+          \rhMusic
+        }
+        \new Staff {
+          \lhMusic
+        }
+      >>
     >>
       
     \midi {}
@@ -1124,10 +1345,10 @@ metronomeMusic = \drummode {
 }
 
 %
-% Alto I Midi
+% Tenor Midi
 %
 \book {
-  \bookOutputName "Awake Arise - Alto I"
+  \bookOutputName "The Seal Lullaby - Tenor"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -1143,8 +1364,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
+        \new Voice = "soprano" {
+          \sopranoMusic
         }
       >>
       \new Staff \with {
@@ -1153,8 +1374,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
+        \new Voice = "alto" {
+          \altoMusic
         }
       >>
       \new Staff \with {
@@ -1163,38 +1384,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \dominantMaxVolume
         midiPanPosition = \dominantPanPosition
       } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
+        \new Voice = "tenor" {
+          \tenorMusic
         }
       >>
       \new Staff \with {
@@ -1217,304 +1408,18 @@ metronomeMusic = \drummode {
           \bassTwoMusic
         }
       >>
-    >>
-      
-    \midi {}
-  }
-}
-
-%
-% Alto II Midi
-%
-\book {
-  \bookOutputName "Awake Arise - Alto II"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMinimumVolume = \metronomeMinVolume
-        midiMaximumVolume = \metronomeMaxVolume
-        midiPanPosition = \metronomePanPosition
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
+      \new PianoStaff \with {
+        midiInstrument = "acoustic grand"
+        midiMinimumVolume = \accompanyMinVolume
+        midiMaximumVolume = \accompanyMaxVolume
+        midiPanPosition = \accompanyPanPosition
       } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
+        \set PianoStaff.connectArpeggios = ##t
+        \new Staff {
+          \rhMusic
         }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \dominantMinVolume
-        midiMaximumVolume = \dominantMaxVolume
-        midiPanPosition = \dominantPanPosition
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \midi {}
-  }
-}
-
-%
-% Tenor I Midi
-%
-\book {
-  \bookOutputName "Awake Arise - Tenor I"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMinimumVolume = \metronomeMinVolume
-        midiMaximumVolume = \metronomeMaxVolume
-        midiPanPosition = \metronomePanPosition
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \dominantMinVolume
-        midiMaximumVolume = \dominantMaxVolume
-        midiPanPosition = \dominantPanPosition
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \midi {}
-  }
-}
-
-%
-% Tenor II Midi
-%
-\book {
-  \bookOutputName "Awake Arise - Tenor II"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMinimumVolume = \metronomeMinVolume
-        midiMaximumVolume = \metronomeMaxVolume
-        midiPanPosition = \metronomePanPosition
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \dominantMinVolume
-        midiMaximumVolume = \dominantMaxVolume
-        midiPanPosition = \dominantPanPosition
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
+        \new Staff {
+          \lhMusic
         }
       >>
     >>
@@ -1527,7 +1432,7 @@ metronomeMusic = \drummode {
 % Bass I Midi
 %
 \book {
-  \bookOutputName "Awake Arise - Bass I"
+  \bookOutputName "The Seal Lullaby - Bass I"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -1543,8 +1448,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
+        \new Voice = "soprano" {
+          \sopranoMusic
         }
       >>
       \new Staff \with {
@@ -1553,8 +1458,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
+        \new Voice = "alto" {
+          \altoMusic
         }
       >>
       \new Staff \with {
@@ -1563,38 +1468,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
+        \new Voice = "tenor" {
+          \tenorMusic
         }
       >>
       \new Staff \with {
@@ -1615,6 +1490,20 @@ metronomeMusic = \drummode {
       } <<
         \new Voice = "bassTwo" {
           \bassTwoMusic
+        }
+      >>
+      \new PianoStaff \with {
+        midiInstrument = "acoustic grand"
+        midiMinimumVolume = \accompanyMinVolume
+        midiMaximumVolume = \accompanyMaxVolume
+        midiPanPosition = \accompanyPanPosition
+      } <<
+        \set PianoStaff.connectArpeggios = ##t
+        \new Staff {
+          \rhMusic
+        }
+        \new Staff {
+          \lhMusic
         }
       >>
     >>
@@ -1627,7 +1516,7 @@ metronomeMusic = \drummode {
 % Bass II Midi
 %
 \book {
-  \bookOutputName "Awake Arise - Bass II"
+  \bookOutputName "The Seal Lullaby - Bass II"
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -1643,8 +1532,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
+        \new Voice = "soprano" {
+          \sopranoMusic
         }
       >>
       \new Staff \with {
@@ -1653,8 +1542,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
+        \new Voice = "alto" {
+          \altoMusic
         }
       >>
       \new Staff \with {
@@ -1663,38 +1552,8 @@ metronomeMusic = \drummode {
         midiMaximumVolume = \diminishedMaxVolume
         midiPanPosition = \diminishedPanPosition
       } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = "voice oohs"
-        midiMinimumVolume = \diminishedMinVolume
-        midiMaximumVolume = \diminishedMaxVolume
-        midiPanPosition = \diminishedPanPosition
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
+        \new Voice = "tenor" {
+          \tenorMusic
         }
       >>
       \new Staff \with {
@@ -1717,9 +1576,22 @@ metronomeMusic = \drummode {
           \bassTwoMusic
         }
       >>
+      \new PianoStaff \with {
+        midiInstrument = "acoustic grand"
+        midiMinimumVolume = \accompanyMinVolume
+        midiMaximumVolume = \accompanyMaxVolume
+        midiPanPosition = \accompanyPanPosition
+      } <<
+        \set PianoStaff.connectArpeggios = ##t
+        \new Staff {
+          \rhMusic
+        }
+        \new Staff {
+          \lhMusic
+        }
+      >>
     >>
       
     \midi {}
   }
 }
-%}
