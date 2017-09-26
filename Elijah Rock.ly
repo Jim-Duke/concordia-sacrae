@@ -309,7 +309,7 @@ altoTwoMusic = \relative c' {
   
   r8 a16\mf a16 a8 a8 a8 a8 a4 \breathe |
   a16 a8 a16 a8 \breathe a8 a8 a8 a4 |
-  a8\ff a'8 ees8 d8 c8 b8 c4 |
+  a8\ff a'8 ees8 d8 c8 b8 a4 |
   a16 g8 g16 fis8\sfz\fermata f8 e4\fermata e4\fermata |
   a1~->\mf |
   a1 |
