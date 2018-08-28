@@ -2,8 +2,10 @@
 
 \include "../../LilypondTemplates/midi.ly"
 
+Title = "Vespers Number 1"
+
 \header {
-  title = "Vespers Number 1"
+  title = \Title
   composer = "Sergei Rachmaninoff"
   tagline = ##f
 }
@@ -11,7 +13,7 @@
 sopranoOneMusic = \relative c'' {
   \key c \major
   \time 4/4
-  \tempo 4=74
+  \tempo 4=85
   \set Score.markFormatter = #format-mark-circle-numbers
   %
   % Lead in.  Give first note for a whole note; then a 4 count rest
@@ -46,12 +48,43 @@ sopranoOneMusic = \relative c'' {
   d4) c8( b8 a4) b4 |
   \time 7/4
   c2( bes) a2. |
+  
+  \time 1/4
+  d8^\f d8 |
+  \time 4/4
+  e2 e8( d8 cis8 d8) |
+  e4 d8( e8) f4( g4) |
+  e2 e4( fis4) |
+  g2(^\ff f4) e4 |
+  \time 6/4
+  f4( e4 d4 c4 d2) |
+  d8(^\p c8) b8( c8) d4 d4 d4 c4 |
+  \time 4/4
+  d8( c8 b8 c8) d4 c8( b8) |
+  c2( d2 |
+  c4 b4) a4( b4) |
+  \time 7/4
+  c2 bes2 a2. |
+  
+  \time 1/4
+  d8^\f d8 |
+  \time 4/4
+  e2 e8( d8 cis8 d8) |
+  \time 2/4
+  e4 d8( e8) |
+  \time 4/4
+  f2( g2)^\ff |
+  f4.( e8 d4) c4 |
+  d2^\mf d4( e4) |
+  d4( c4) d4( e4) |
+  d2( c2~ |
+  c4 d4 c2 |
+  b1)^\pp |
 }
 
 sopranoTwoMusic = \relative c'' {
   \key c \major
   \time 4/4
-  \tempo 4=74
   \set Score.markFormatter = #format-mark-circle-numbers
   %
   % Lead in.  Give first note for a whole note; then a 4 count rest
@@ -86,12 +119,43 @@ sopranoTwoMusic = \relative c'' {
   d4) c8( b8 a4) b4 |
   \time 7/4
   c2( bes) a2. |
+  
+  \time 1/4
+  d8^\f d8 |
+  \time 4/4
+  cis2 cis8( b8 a8 b8) |
+  cis4 b8( cis8) d4( e4) |
+  cis2 e4( fis4) |
+  g2(^\ff f4) e4 |
+  \time 6/4
+  f4( e4 d4 c4 d2) |
+  d8(^\p c8) b8( c8) d4 d4 d4 c4 |
+  \time 4/4
+  d8( c8 b8 c8) d4 c8( b8) |
+  c2( d2 |
+  c4 b4) a4( b4) |
+  \time 7/4
+  c2 bes2 a2. |
+  
+  \time 1/4
+  d8^\f d8 |
+  \time 4/4
+  cis2 cis8( b8 a8 b8) |
+  \time 2/4
+  cis4 d8( e8) |
+  \time 4/4
+  f2( g2)^\ff |
+  f4.( e8 d4) c4 |
+  b2^\mf b4( c4) |
+  b4( a4) b4( c4) |
+  b2( c2~ |
+  c4 d4 c2 |
+  b1)^\pp |
 }
 
 altoOneMusic = \relative c'' {
   \key c \major
   \time 4/4
-  \tempo 4=74
   \set Score.markFormatter = #format-mark-circle-numbers
   %
   % Lead in.  Give first note for a whole note; then a 4 count rest
@@ -126,12 +190,43 @@ altoOneMusic = \relative c'' {
   a4 g2 f4 |
   \time 7/4
   e1 e2. |
+  
+  \time 1/4
+  a8^\f a8 |
+  \time 4/4
+  a2 a4( e4) |
+  a4 a4 a2 |
+  a2 a4( d4) |
+  d2.^\ff des4 |
+  \time 6/4
+  c2( a2~ a2) |
+  a4^\p a4 a4 a4 a4 a4 |
+  \time 4/4
+  a2 a4 g4 |
+  g1~ |
+  g2 g2 |
+  \time 7/4
+  g2 e2 e2. |
+  
+  \time 1/4
+  a8^\f a8 |
+  \time 4/4
+  a2 a4( e4) |
+  \time 2/4
+  a4 b8( cis8) |
+  \time 4/4
+  d2( e2)^\ff |
+  c2. a4 |
+  f2^\mf f2 |
+  f2 f2 |
+  f2( g2~ |
+  g1~ |
+  g1) |
 }
 
 altoTwoMusic = \relative c' {
   \key c \major
   \time 4/4
-  \tempo 4=74
   \set Score.markFormatter = #format-mark-circle-numbers
   %
   % Lead in.  Give first note for a whole note; then a 4 count rest
@@ -166,13 +261,44 @@ altoTwoMusic = \relative c' {
   f4) c8( d8 e4) d4 |
   \time 7/4
   e2( d2) cis2. |
+  
+  \time 1/4
+  a'8^\f a8 |
+  \time 4/4
+  a2 a4( e4) |
+  a4 a4 a2 |
+  a2 a4( c4) |
+  bes2(^\ff a4) g4 |
+  \time 6/4
+  c4( bes4 a4 g4 f2) |
+  f8(^\p e8) d8( e8) f4 f4 f4 e4 |
+  \time 4/4
+  f8( e8 d8 e8) f4 e8( d8) |
+  e2( f2 |
+  e4 d4) c4( d4) |
+  \time 7/4
+  e2 d2 cis2. |
+  
+  \time 1/4
+  a'8^\f a8 |
+  \time 4/4
+  a2 a4( e4) |
+  \time 2/4
+  a4 a4 |
+  \time 4/4
+  a2( c2)^\ff |
+  a4.( g8 f4) e4 |
+  f2^\mf f2 |
+  f2 f2 |
+  f2( e2~ |
+  e4 f4 e2 |
+  d1) |
 }
 
 tenorOneMusic = \relative c' {
   \clef "treble_8"
   \key c \major
   \time 4/4
-  \tempo 4=74
   \set Score.markFormatter = #format-mark-circle-numbers
   %
   % Lead in.  Give first note for a whole note; then a 4 count rest
@@ -207,13 +333,45 @@ tenorOneMusic = \relative c' {
   d4) c8( b8 a4) b4 |
   \time 7/4
   c2( bes) a2. |
+  
+  \time 1/4
+  d8^\f d8 |
+  \time 4/4
+  e2 e8( d8 cis8 d8) |
+  e4 d8( e8) f4( g4) |
+  e2 e4( fis4) |
+  g2(^\ff f4) e4 |
+  \time 6/4
+  f4( e4 d4 c4 d2) |
+  d8(^\p c8) b8( c8) d4 d4 d4 c4 |
+  \time 4/4
+  d8( c8 b8 c8) d4 c8( b8) |
+  \time 4/4
+  c2( d2 |
+  c4 b4) a4( b4) |
+  \time 7/4
+  c2 bes2 a2. |
+  
+  \time 1/4
+  d8^\f d8 |
+  \time 4/4
+  e2 e8( d8 cis8 d8) |
+  \time 2/4
+  e4 d8( e8) |
+  \time 4/4
+  f2( g2)^\ff |
+  f4.( e8 d4) c4 |
+  d2^\mf d4( e4) |
+  d4( c4) d4( e4) |
+  d2( c2~ |
+  c4 d4 c2 |
+  b1)^\pp |
 }
 
 tenorTwoMusic = \relative c' {
   \clef "treble_8"
   \key c \major
   \time 4/4
-  \tempo 4=74
   \set Score.markFormatter = #format-mark-circle-numbers
   %
   % Lead in.  Give first note for a whole note; then a 4 count rest
@@ -248,13 +406,44 @@ tenorTwoMusic = \relative c' {
   a4 g2 g4 |
   \time 7/4
   g2( bes) a2. |
+  
+  \time 1/4
+  d8^\f d8 |
+  \time 4/4
+  cis2 cis8( b8 a8 b8) |
+  cis4 b8( cis8) d4( e4) |
+  cis2 cis4( d4) |
+  d2.^\ff des4 |
+  \time 6/4
+  c4( bes4 a2~a2)
+  a4^\p a4 a4 a4 a4 a4 |
+  \time 4/4
+  a2 a4 g4 |
+  g1~ |
+  g2 g2 |
+  \time 7/4
+  g2 bes2 a2. |
+  
+  \time 1/4
+  d8^\f d8 |
+  \time 4/4
+  cis2 cis8( b8 a8 b8) |
+  \time 2/4
+  cis4 b8( cis8) |
+  \time 4/4
+  d2( e2)^\ff |
+  c2. a4 |
+  b2^\mf b4( c4) |
+  b4( a4) b4( c4) |
+  b2( g2~ |
+  g2. a4 |
+  b1)^\pp |
 }
 
 bassOneMusic = \relative c {
   \clef "bass"
   \key c \major
   \time 4/4
-  \tempo 4=74
   \set Score.markFormatter = #format-mark-circle-numbers
   %
   % Lead in.  Give first note for a whole note; then a 4 count rest
@@ -289,13 +478,44 @@ bassOneMusic = \relative c {
   d4) e2 d4 |
   \time 7/4
   e1 e2. |
+  
+  \time 1/4
+  f8^\f f8 |
+  \time 4/4
+  a2 a4( e4) |
+  g4 f8( e8) d4( f4) |
+  a2 a4( d4) |
+  g,2(^\ff a4) bes4 |
+  \time 6/4
+  a4( g4 f4 e4 d2) |
+  d8(^\p a8) f8( a8) d4 d4 d4 e4 |
+  \time 4/4
+  d8( a8 f8 a8) d4 g,4 |
+  e'2( f2 |
+  e4 d4) e4( d4) |
+  \time 7/4
+  e2 e2 e2. |
+  
+  \time 1/4
+  f8^\f f8 |
+  \time 4/4
+  a2 a4( e4) |
+  \time 2/4
+  a4 a4 |
+  \time 4/4
+  d2( c2)^\ff |
+  f,4.( g8 a4) g4 |
+  f4.(^\mf e8) d4( a'8 g8) |
+  f4.( e8) d4( a'8 g8) |
+  f2( e2~ |
+  e4 f4 e2 |
+  d1)^\pp |
 }
 
 bassTwoMusic = \relative c {
   \clef "bass"
   \key c \major
   \time 4/4
-  \tempo 4=74
   \set Score.markFormatter = #format-mark-circle-numbers
   %
   % Lead in.  Give first note for a whole note; then a 4 count rest
@@ -317,7 +537,6 @@ bassTwoMusic = \relative c {
   \time 7/4
   c2( g2) a2. |
 
-
   \time 1/4
   f'8^\f f8 |
   \time 4/4
@@ -331,6 +550,38 @@ bassTwoMusic = \relative c {
   d4) e8( d8 c4) g4 |
   \time 7/4
   c2( g2) a2. |
+  
+  \time 1/4
+  f'8^\f f8 |
+  \time 4/4
+  a2 a4( e4) |
+  g4 f8( e8) d4( f4) |
+  a2 a4( d4) |
+  g,2(^\ff a4) bes4 |
+  \time 6/4
+  a4( g4 f4 a,4 d2) |
+  d8(^\p a8) f8( a8) d4 d4 d4 a4 |
+  \time 4/4
+  d8( a8 f8 a8) d4 g,4 |
+  c2( b2 |
+  c4 d4) e4( d4) |
+  \time 7/4
+  c2 g2 a2. |
+  
+  \time 1/4
+  f'8^\f f8 |
+  \time 4/4
+  a2 a4( e4) |
+  \time 2/4
+  a4 a4 |
+  \time 4/4
+  d2( c2)^\ff |
+  f,4.( g8 a4) g4 |
+  g,2^\mf g2 |
+  g2 g2 |
+  g2( c2~ |
+  c4 b4 c2 |
+  g1)^\pp |
 }
 
 %
@@ -339,7 +590,6 @@ bassTwoMusic = \relative c {
 
 metronomeMusic = \drummode {
   \time 4/4
-  \tempo 4=74
   %
   % Lead in.  Give first note for a whole note; then a 4 count rest
   %
@@ -373,1014 +623,39 @@ metronomeMusic = \drummode {
   cl4 cl4 cl4 cl4 |
   \time 7/4
   cl4 cl4 cl4 cl4 cl4 cl4 cl4 |
+  
+  \time 1/4
+  cl4 |
+  \time 4/4
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  \time 6/4
+  cl4 cl4 cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 cl4 cl4 |
+  \time 4/4
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  \time 7/4
+  cl4 cl4 cl4 cl4 cl4 cl4 cl4 |
+  
+  \time 1/4
+  cl4 |
+  \time 4/4
+  cl4 cl4 cl4 cl4 |
+  \time 2/4
+  cl4 cl4 |
+  \time 4/4
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
 }
 
-#(set-global-staff-size 18)
-
-\book {
-  \bookOutputName "Vespers Number 1"
-  \paper {
-    #(set-paper-size "letter")
-    
-    %
-    % Turn on to see spacing details while you tweek the layout
-    %
-    % annotate-spacing = ##t
-    
-    %
-    % Various variables that can be used to tweak vertical spacing
-    %
-    system-system-spacing.basic-distance = #14
-    system-system-spacing.minimum-distance = #14
-    score-markup-spacing.basic-distance = #0
-    markup-system-spacing.basic-distance = #0
-    
-    indent = 0.5\in
-    short-indent = 0.25\in
-    left-margin = 0.5\in
-    right-margin = 0.5\in
-    top-margin = 1\in
-    bottom-margin = 1\in
-    print-page-number = ##f
-    ragged-bottom = ##t
-  }
-
-  \score {
-    \new StaffGroup <<
-      \override Score.BarNumber.break-visibility = ##(#t #t #t)
-      %\override Score.BarNumber.break-visibility = ##(#t #t #t)
-      %\set Score.barNumberVisibility = #all-bar-numbers-visible
-      \new Staff \with {
-        instrumentName = "Soprano I"
-        shortInstrumentName = "Sop I"
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        instrumentName = "Soprano II"
-        shortInstrumentName = "Sop II"
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        instrumentName = "Alto I"
-        shortInstrumentName = "Alt I"
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        instrumentName = "Alto II"
-        shortInstrumentName = "Alt II"
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        instrumentName = "Tenor I"
-        shortInstrumentName = "Ten I"
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        instrumentName = "Tenor II"
-        shortInstrumentName = "Ten II"
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        instrumentName = "Bass I"
-        shortInstrumentName = "Bas I"
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        instrumentName = "Bass II"
-        shortInstrumentName = "Bas II"
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \layout {
-      \context {
-        \Voice
-        \consists "Ambitus_engraver"
-      }
-    }
-  }
-}
-
-%
-% All Midi
-%
-\book {
-  \bookOutputName "Vespers Number 1 - All"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMaximumVolume = \metronomeMaxVolume
-        midiMinimumVolume = \metronomeMinVolume
-        midiPanPosition = \metronomePan
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = \allInstrument
-        midiMaximumVolume = \allMaxVolume
-        midiMinimumVolume = \allMinVolume
-        midiPanPosition = \allPan
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \allInstrument
-        midiMaximumVolume = \allMaxVolume
-        midiMinimumVolume = \allMinVolume
-        midiPanPosition = \allPan
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \allInstrument
-        midiMaximumVolume = \allMaxVolume
-        midiMinimumVolume = \allMinVolume
-        midiPanPosition = \allPan
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \allInstrument
-        midiMaximumVolume = \allMaxVolume
-        midiMinimumVolume = \allMinVolume
-        midiPanPosition = \allPan
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \allInstrument
-        midiMaximumVolume = \allMaxVolume
-        midiMinimumVolume = \allMinVolume
-        midiPanPosition = \allPan
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \allInstrument
-        midiMaximumVolume = \allMaxVolume
-        midiMinimumVolume = \allMinVolume
-        midiPanPosition = \allPan
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \allInstrument
-        midiMaximumVolume = \allMaxVolume
-        midiMinimumVolume = \allMinVolume
-        midiPanPosition = \allPan
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \allInstrument
-        midiMaximumVolume = \allMaxVolume
-        midiMinimumVolume = \allMinVolume
-        midiPanPosition = \allPan
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \midi {}
-  }
-}
-
-%
-% Soprano I Midi
-%
-\book {
-  \bookOutputName "Vespers Number 1 - Soprano I"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMaximumVolume = \metronomeMaxVolume
-        midiMinimumVolume = \metronomeMinVolume
-        midiPanPosition = \metronomePan
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = \dominantInstrument
-        midiMaximumVolume = \dominantMaxVolume
-        midiMinimumVolume = \dominantMinVolume
-        midiPanPosition = \dominantPan
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \midi {}
-  }
-}
-
-%
-% Soprano I Midi
-%
-\book {
-  \bookOutputName "Vespers Number 1 - Soprano II"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMaximumVolume = \metronomeMaxVolume
-        midiMinimumVolume = \metronomeMinVolume
-        midiPanPosition = \metronomePan
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \dominantInstrument
-        midiMaximumVolume = \dominantMaxVolume
-        midiMinimumVolume = \dominantMinVolume
-        midiPanPosition = \dominantPan
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \midi {}
-  }
-}
-
-%
-% Soprano I Midi
-%
-\book {
-  \bookOutputName "Vespers Number 1 - Alto I"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMaximumVolume = \metronomeMaxVolume
-        midiMinimumVolume = \metronomeMinVolume
-        midiPanPosition = \metronomePan
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \dominantInstrument
-        midiMaximumVolume = \dominantMaxVolume
-        midiMinimumVolume = \dominantMinVolume
-        midiPanPosition = \dominantPan
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \midi {}
-  }
-}
-
-%
-% Soprano I Midi
-%
-\book {
-  \bookOutputName "Vespers Number 1 - Alto II"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMaximumVolume = \metronomeMaxVolume
-        midiMinimumVolume = \metronomeMinVolume
-        midiPanPosition = \metronomePan
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \dominantInstrument
-        midiMaximumVolume = \dominantMaxVolume
-        midiMinimumVolume = \dominantMinVolume
-        midiPanPosition = \dominantPan
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \midi {}
-  }
-}
-
-%
-% Soprano I Midi
-%
-\book {
-  \bookOutputName "Vespers Number 1 - Tenor I"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMaximumVolume = \metronomeMaxVolume
-        midiMinimumVolume = \metronomeMinVolume
-        midiPanPosition = \metronomePan
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \dominantInstrument
-        midiMaximumVolume = \dominantMaxVolume
-        midiMinimumVolume = \dominantMinVolume
-        midiPanPosition = \dominantPan
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \midi {}
-  }
-}
-
-%
-% Soprano I Midi
-%
-\book {
-  \bookOutputName "Vespers Number 1 - Tenor II"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMaximumVolume = \metronomeMaxVolume
-        midiMinimumVolume = \metronomeMinVolume
-        midiPanPosition = \metronomePan
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \dominantInstrument
-        midiMaximumVolume = \dominantMaxVolume
-        midiMinimumVolume = \dominantMinVolume
-        midiPanPosition = \dominantPan
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \midi {}
-  }
-}
-
-%
-% Soprano I Midi
-%
-\book {
-  \bookOutputName "Vespers Number 1 - Bass I"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMaximumVolume = \metronomeMaxVolume
-        midiMinimumVolume = \metronomeMinVolume
-        midiPanPosition = \metronomePan
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \dominantInstrument
-        midiMaximumVolume = \dominantMaxVolume
-        midiMinimumVolume = \dominantMinVolume
-        midiPanPosition = \dominantPan
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \midi {}
-  }
-}
-
-%
-% Soprano I Midi
-%
-\book {
-  \bookOutputName "Vespers Number 1 - Bass II"
-  \score {
-    \new StaffGroup <<
-      \new DrumStaff \with {
-        midiMaximumVolume = \metronomeMaxVolume
-        midiMinimumVolume = \metronomeMinVolume
-        midiPanPosition = \metronomePan
-      } {
-        \metronomeMusic
-      }
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoOne" {
-          \sopranoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "sopranoTwo" {
-          \sopranoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoOne" {
-          \altoOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "altoTwo" {
-          \altoTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorOne" {
-          \tenorOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "tenorTwo" {
-          \tenorTwoMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \diminishedInstrument
-        midiMaximumVolume = \diminishedMaxVolume
-        midiMinimumVolume = \diminishedMinVolume
-        midiPanPosition = \diminishedPan
-      } <<
-        \new Voice = "bassOne" {
-          \bassOneMusic
-        }
-      >>
-      \new Staff \with {
-        midiInstrument = \dominantInstrument
-        midiMaximumVolume = \dominantMaxVolume
-        midiMinimumVolume = \dominantMinVolume
-        midiPanPosition = \dominantPan
-      } <<
-        \new Voice = "bassTwo" {
-          \bassTwoMusic
-        }
-      >>
-    >>
-      
-    \midi {}
-  }
-}
+\include "../../LilypondTemplates/ssaattbb-score.ly"
+\include "../../LilypondTemplates/ssaattbb-midi.ly"
