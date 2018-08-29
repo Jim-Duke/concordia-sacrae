@@ -89,6 +89,23 @@ sopranoOneMusic = \relative c' {
   \tuplet 3/2 { g4^\f fis4 e4 } \tuplet 3/2 { fis4 e4 d4 } |
   \time 6/4
   e4( d4) e2. fis4 |
+  
+  \tuplet 3/2 { a4^\ff g fis4 } \tuplet 3/2 { g4 fis4 e4 } \tuplet 3/2 { fis4 e4 d4 } |
+  e4( d4) e2. fis4 |
+  \time 4/4
+  \tuplet 3/2 { e4 d4 c4 } \tuplet 3/2 { d4 c4 b4 } |
+  \tuplet 3/2 { c4 d4 b4( } \tuplet 3/2 { a4) g4( b4) } |
+  
+  a4( g4) a2~ | a2. r4^\pp |
+  \time 3/4
+  b2^\mp c4 |
+  \time 2/4
+  d2 |
+  \time 3/4
+  d2. |
+  \time 4/4
+  r4 fis2.^\pp |
+  b,1\fermata \bar "|."
 }
 
 sopranoTwoMusic = \sopranoOneMusic
@@ -165,6 +182,24 @@ altoOneMusic = \relative c' {
   \tuplet 3/2 { e4^\f d4 c4 } \tuplet 3/2 { d4 c4 b4 } |
   \time 6/4
   a4( c4 b4) a4 b8( c8 d8 e8) |
+  
+  \tuplet 3/2 { fis4^\ff e4 d4 } \tuplet 3/2 { e4 d4 c4 } \tuplet 3/2 { d4 c4 b4 } |
+  a4( c4 b4) a4 b2 |
+  \time 4/4
+  \tuplet 3/2 {c4 b4 a4 } \tuplet 3/2 { b4 a4 g4 } |
+  \tuplet 3/2 { a4( b4) g4( } \tuplet 3/2 { f4) ees2~ } |
+                                            
+  ees4 c4 g'2^> |
+  fis2. r4^\pp |
+  \time 3/4
+  fis2 g4 |
+  \time 2/4
+  bes4( c4) |
+  \time 3/4
+  d2( c4) |
+  \time 4/4
+  r4^\pp c2. |
+  g1\fermata \bar "|."
 }
 
 altoTwoMusic = \altoOneMusic
@@ -240,6 +275,24 @@ tenorOneMusic = \relative c' {
   e2^\f \tuplet 3/2 { d2 c4 } |
   \time 6/4
   \tuplet 3/2 { e4 d4 c4 } \tuplet 3/2 { d4 c4 b4 } \tuplet 3/2 { c4 b4 a4 } |
+  
+  g4(^\ff b4) a2. b4 |
+  \tuplet 3/2 { e4 d4 c4 } \tuplet 3/2 { d4 c4 b4 } \tuplet 3/2 { c4 b4 a4 } |
+  \time 4/4
+  b4( a4) \tuplet 3/2 { b2 a4 } |
+  \tuplet 3/2 { c2 c4~ } \tuplet 3/2 { c4 bes2~ } |
+  
+  bes2 a2~ |
+  a2. r4^\pp |
+  \time 3/4
+  d2 ees8( f8) |
+  \time 2/4
+  g2 |
+  \time 3/4
+  g2. |
+  \time 4/4
+  r4^\pp e2. |
+  d1\fermata \bar "|."
 }
 
 tenorTwoMusic = \tenorOneMusic
@@ -315,6 +368,24 @@ bassOneMusic = \relative c' {
   c'2.^\p b4 |
   a2^\f \tuplet 3/2 { g2 fis4 } |
   \tuplet 3/2 { c'4 b4 a4 } \tuplet 3/2 { b4 a4 g4 } \tuplet 3/2 { a4 g4 fis4 } |
+  
+  e4(^\ff c4) d2. g4 |
+  \tuplet 3/2 { c4 b4 a4 } \tuplet 3/2 { b4 a4 g4 } \tuplet 3/2 { a4 g4 fis4 } |
+  \time 4/4
+  d4( g4) \tuplet 3/2 { fis2 e4 } |
+  \tuplet 3/2 { d2 f4~ } \tuplet 3/2 { f4 c2~ } |
+  
+  c2 d2~ |
+  d2. r4^\pp |
+  \time 3/4
+  g2 aes4 |
+  \time 2/4
+  bes2 |
+  \time 3/4
+  c2. |
+  \time 4/4
+  r4^\pp d,2. |
+  g,1\fermata \bar "|."
 }
 
 bassTwoMusic = \bassOneMusic
@@ -388,6 +459,24 @@ soloMusic = \relative c'' {
   r1 |
   \time 6/4
   r1. |
+  
+  r2 r4 d4^\ff a2 |
+  b2~ b2~ b8 r8 r4 |
+  \time 4/4
+  r1 |
+  r1 |
+  
+  r1 |
+  r1 |
+  \time 3/4
+  r2. |
+  \time 2/4
+  r2 |
+  \time 3/4
+  r2. |
+  \time 4/4
+  r4 r4 r4 b'4^\mp |
+  a2( g2)^\fermata \bar "|."
 }
 
 %
@@ -463,6 +552,24 @@ metronomeMusic = \drummode {
   cl4 cl4 cl4 cl4 |
   \time 6/4
   cl4 cl4 cl4 cl4 cl4 cl4|
+  
+  cl4 cl4 cl4 cl4 cl4 cl4|
+  cl4 cl4 cl4 cl4 cl4 cl4|
+  \time 4/4
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 |
+  \time 3/4
+  cl4 cl4 cl4 |
+  \time 2/4
+  cl4 cl4 |
+  \time 3/4
+  cl4 cl4 cl4 |
+  \time 4/4
+  cl4 cl4 cl4 cl4 |
+  cl4 cl4 cl4 cl4 \bar "|."
 }
 
 \include "../../LilypondTemplates/ssaattbb-score-solo.ly"
