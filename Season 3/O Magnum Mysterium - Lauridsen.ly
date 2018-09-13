@@ -337,7 +337,7 @@ altoTwoMusic = \relative c' {
   
   \time 3/2
   a4 e4 fis4 \breathe a2 a4 |
-  a2 d,4 \breathe a'4 a4 a4 |
+  g2 d4 \breathe a'4 a4 a4 |
   \time 4/4
   g4( fis4 e4 g4 |
   a2.) a4 |

@@ -828,7 +828,7 @@ bassTwoMusic = \relative c {
   cis8 cis8 cis4 cis2 |
   fis8 fis8 fis4 fis8 fis8 fis4 |
   
-  a8 a8 a4 a4. a8^\f |
+  a,8 a8 a4 a4. a'8^\f |
   b4 cis4 b8( a8) fis8( e8) |
   fis4 r4 r2 |
   fis1 |
@@ -993,6 +993,72 @@ metronomeMusic = \drummode {
   r1 |
   cl2 cl2 |
   
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
+  cl2 cl2 |
   cl2 cl2 |
 }
 
