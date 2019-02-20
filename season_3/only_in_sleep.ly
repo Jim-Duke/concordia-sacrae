@@ -3,6 +3,7 @@
 \include "../../LilypondTemplates/midi.ly"
 
 Title = "Only in Sleep"
+Basename = "only_in_sleep"
 
 \header {
   title = \Title
@@ -15,11 +16,13 @@ common = {
   \time 3/4
 }
 
-soloMusic = \relative c'' {
+soloCommon = {
   \common
   \dynamicUp
   \tempo "Espressivo con anima" 4=80
-  
+}
+
+soloFront = \relative c'' {
   % 1-7
   ges4\mp ges4 des'4 |
   des2 bes4 |
@@ -86,38 +89,41 @@ soloMusic = \relative c'' {
   % 50 - 56
   r2. |
   r2. |
-  \repeat volta 2 {
-    r2. |
-    r2. |
-    r2. |
-    r2. |
-    r2. |
-    
-    % 57 - 62
-    r2. |
-    r2. |
-    r2. |
-    r2. |
-    r2. |
-    r2. |
-    
-    % 63 - 66
-    r2. |
-    r2. |
-    r2. |
-    r2. |
-  }
-  \alternative {
-    {
-      r2. |
-      r2. |
-    }
-    {
-      r2. |
-      r2 ges4\mp |
-    }
-  }
+}
+
+soloBody = \relative c'' {
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
   
+  % 57 - 62
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+  
+  % 63 - 66
+  r2. |
+  r2. |
+  r2. |
+  r2. |
+}
+
+soloFirstEnding = \relative c'' {
+  r2. |
+  r2. |
+}
+
+soloSecondEnding = \relative c'' {
+  r2. |
+  r2 ges4\mp |
+}
+
+soloEnd = \relative c'' {
   % 71 - 76
   ges4 ges4 des'4 |
   des4 bes4. bes8 |
@@ -165,7 +171,34 @@ soloMusic = \relative c'' {
   r2. \bar "|."
 }
 
-soloMidiMusic = { \unfoldRepeats \soloMusic }
+soloWithRepeatMusic = \relative c'' {
+  \soloCommon
+  \soloFront
+  
+  \repeat volta 2 {
+    \soloBody
+  }
+  \alternative {
+    {
+      \soloFirstEnding
+    }
+    {
+      \soloSecondEnding
+    }
+  }
+
+  \soloEnd
+}
+
+soloFullRepeatMidiMusic = { \unfoldRepeats \soloMusic }
+
+soloNoRepeatMidiMusic = {
+  \soloCommon
+  \soloFront
+  \soloBody
+  \soloSecondEnding
+  \soloEnd
+}
 
 soloLyrics = \lyricmode {
   On -- ly in sleep I see their fac -- es,
@@ -539,7 +572,7 @@ afsFront = \relative c'' {
   r2. |
 }
 
-afsRepeatBody = \relative c''' {
+afsBody = \relative c''' {
   \tag #'firstTime {
     r2. |
     r2. |
@@ -632,7 +665,7 @@ aFewSMusic = \relative c'' {
   \dynamicUp
   \afsFront
   \repeat volta 2 {
-    \keepWithTag #'secondTime \afsRepeatBody
+    \keepWithTag #'secondTime \afsBody
   }
   \alternative {
     {
@@ -645,12 +678,21 @@ aFewSMusic = \relative c'' {
   \afsEnd
 }
 
-aFewSMidiMusic = {
+aFewSFullRepeatMidiMusic = {
   \common
   \dynamicUp
   \afsFront
   \keepWithTag #'firstTime \afsRepeatBody
   \afsFirstEnding
+  \keepWithTag #'secondTime \afsRepeatBody
+  \afsSecondEnding
+  \afsEnd
+}
+
+aFewSNoRepeatMidiMusic = {
+  \common
+  \dynamicUp
+  \afsFront
   \keepWithTag #'secondTime \afsRepeatBody
   \afsSecondEnding
   \afsEnd
@@ -839,9 +881,7 @@ aFewSLyrics = \lyricmode {
   Ah __
 }
 
-sopranoOneMusic = \relative c'' {
-  \common
-  
+sopranoOneFront = \relative c'' {
   % 1 - 7
   ges2.( |
   des'2.~ |
@@ -908,34 +948,37 @@ sopranoOneMusic = \relative c'' {
   
   % 51
   des4( ges2) |
-  \repeat volta 2 {
-    ges4\f f4 des4 |
-    des8( ees8~ ees2) |
-    ees4 des4 aes4 |
-    aes8( bes8) bes2 |
-    ges'4 aes4 f4 |
-    ges4. f8 ees4 |
-    ees4 des4( bes4) |
-    aes2. |
-    ces4. ces8 des8 ges,8 |
-    ges2 ges8( f8) |
-    ees4( ges4) bes8.( ces32 bes32) |
-    aes2 ges8 f8 |
-    ges2 ges8( aes8) |
-    ges2 f8 ges8 |
-    des'4 ces4 bes8.( ces32 bes32) |
-  }
-  \alternative {
-    {
-      aes4 des2( |
-      ees4 ges4 aes4) |
-    }
-    {
-      aes,2.~ |
-      aes2. |
-    }
-  }
-  
+}
+
+sopranoOneBody = \relative c'' {
+  ges4\f f4 des4 |
+  des8( ees8~ ees2) |
+  ees4 des4 aes4 |
+  aes8( bes8) bes2 |
+  ges'4 aes4 f4 |
+  ges4. f8 ees4 |
+  ees4 des4( bes4) |
+  aes2. |
+  ces4. ces8 des8 ges,8 |
+  ges2 ges8( f8) |
+  ees4( ges4) bes8.( ces32 bes32) |
+  aes2 ges8 f8 |
+  ges2 ges8( aes8) |
+  ges2 f8 ges8 |
+  des'4 ces4 bes8.( ces32 bes32) |
+}
+
+sopranoOneFirstEnding = \relative c'' {
+  aes4 des2( |
+  ees4 ges4 aes4) |
+}
+
+sopranoOneSecondEnding = \relative c'' {
+  aes,2.~ |
+  aes2. |
+}
+
+sopranoOneEnd = \relative c'' {
   ges2.(\p |
   des'2.~ |
   des2.~ |
@@ -978,8 +1021,35 @@ sopranoOneMusic = \relative c'' {
   ges2. \bar "|."
 }
 
-sopranoOneMidiMusic = {
+sopranoOneMusic = \relative c'' {
+  \common
+  \sopranoOneFront
+  
+  \repeat volta 2 {
+    \sopranoOneBody
+  }
+  \alternative {
+    {
+      \sopranoOneFirstEnding
+    }
+    {
+      \sopranoOneSecondEnding
+    }
+  }
+
+  \sopranoOneEnd
+}
+
+sopranoOneFullRepeatMidiMusic = {
   \unfoldRepeats \sopranoOneMusic
+}
+
+sopranoOneNoRepeatMidiMusic = {
+  \common
+  \sopranoOneFront
+  \sopranoOneBody
+  \sopranoOneSecondEnding
+  \sopranoOneEnd
 }
 
 sopranoTwoMusic = \relative c'' {
@@ -2647,7 +2717,7 @@ metronomeMusic = \drummode {
 #(set-global-staff-size 18)
 
 \book {
-  \bookOutputName \Title
+  \bookOutputName \Basename
   \paper {
     #(set-paper-size "letter")
     
@@ -2798,7 +2868,7 @@ metronomeMusic = \drummode {
 % All Midi
 %
 \book {
-  \bookOutputName #(string-append Title " - All")
+  \bookOutputName #(string-append Basename "_all")
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -2918,7 +2988,7 @@ metronomeMusic = \drummode {
 % Just Solos Midi
 %
 \book {
-  \bookOutputName #(string-append Title " - Just Solos")
+  \bookOutputName #(string-append Basename "_just_solos")
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -2958,7 +3028,7 @@ metronomeMusic = \drummode {
 % Solo Midi
 %
 \book {
-  \bookOutputName #(string-append Title " - Solo")
+  \bookOutputName #(string-append Basename "_solo")
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
@@ -3078,7 +3148,7 @@ metronomeMusic = \drummode {
 % A few S Midi
 %
 \book {
-  \bookOutputName #(string-append Title " - A few S")
+  \bookOutputName #(string-append Basename "_a_few_s")
   \score {
     \new StaffGroup <<
       \new DrumStaff \with {
