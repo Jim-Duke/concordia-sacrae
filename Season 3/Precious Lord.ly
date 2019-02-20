@@ -42,12 +42,12 @@ sopranoOneMusic = \relative c' {
   des2. |
   c2.) \breathe |
   d4. ees4. |
-  d2. |
-  des4. des4. |
+  f2. |
+  f4. f4. |
   
-  ees2. \breathe |
-  ees4. d4. |
-  d2. |
+  f2. \breathe |
+  f4. f4. |
+  f2. |
   ees4. ees4. |
   ees2.~
   
@@ -134,12 +134,12 @@ sopranoTwoMusic = \relative c' {
   des2. |
   c2.) \breathe |
   d4. ees4. |
-  f2. |
-  f4. f4. |
+  d2. |
+  des4. des4. |
   
-  f2. \breathe |
-  f4. f4. |
-  f2. |
+  ees2. \breathe |
+  ees4. d4. |
+  d2. |
   ees4. ees4. |
   bes2.~
   
@@ -262,7 +262,7 @@ altoOneMusic = \relative c' {
   
   f4. g4. |
   \time 4/4
-  d4 f4) g4 a4 |
+  ees4 f4) g4 a4 |
   bes8^\f bes8~ bes2. |
   a2. a4 \breathe |
   
@@ -352,7 +352,7 @@ altoTwoMusic = \relative c' {
   
   f4. g4. |
   \time 4/4
-  d4 f4) g4 a4 |
+  ees4 f4) g4 a4 |
   bes8^\f bes8~ bes2. |
   a2. a4 \breathe |
   
@@ -481,7 +481,7 @@ tenorTwoMusic = \relative c' {
   a4. a4. |
   aes2. \breathe |
   
-  bes4. c4. |
+  aes4. c4. |
   d2. |
   c4. c4. |
   bes2. \breathe |

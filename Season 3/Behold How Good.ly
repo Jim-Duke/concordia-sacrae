@@ -152,7 +152,7 @@ altoOneMusic = \relative c' {
   \time 6/4
   e4(^\tenuto fis4) fis4^\p r4 e2^\tenuto |
   \time 4/4
-  b4^\tenuto a4^\mf d2 |
+  b'4^\tenuto a4^\mf d,2 |
   \time 6/4
   g8( d4.)~ d4 c4 d4. e8 |
   \time 4/4
