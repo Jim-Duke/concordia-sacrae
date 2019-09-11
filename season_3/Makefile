@@ -14,9 +14,36 @@ ROOT_DIR = ..
 
 ONLY_IN_SLEEP_TRACKS := \
   only_in_sleep_all.mp3 \
-  only_in_sleep_a_few_s.mp3 \
   only_in_sleep_solo.mp3 \
   only_in_sleep_soprano_1.mp3 \
+  only_in_sleep_soprano_2.mp3 \
+  only_in_sleep_alto_1.mp3 \
+  only_in_sleep_alto_2.mp3 \
+  only_in_sleep_tenor_1.mp3 \
+  only_in_sleep_tenor_2.mp3 \
+  only_in_sleep_bass_1.mp3 \
+  only_in_sleep_bass_2.mp3
+
+TUNDRA_TRACKS := \
+  tundra_all.mp3 \
+  tundra_piano.mp3 \
+  tundra_solo.mp3 \
+  tundra_soprano_1.mp3 \
+  tundra_soprano_2.mp3 \
+  tundra_alto_1.mp3 \
+  tundra_alto_2.mp3
+
+BEHOLD_HOW_GOOD_TRACKS := \
+  behold_how_good_all.mp3 \
+  behold_how_good_solo.mp3 \
+  behold_how_good_soprano_1.mp3 \
+  behold_how_good_soprano_2.mp3 \
+  behold_how_good_alto_1.mp3 \
+  behold_how_good_alto_2.mp3 \
+  behold_how_good_tenor_1.mp3 \
+  behold_how_good_tenor_2.mp3 \
+  behold_how_good_bass_1.mp3 \
+  behold_how_good_bass_2.mp3
 
 # Shouldn't need to edit the following macros
 
@@ -26,40 +53,11 @@ LILYPOND = lilypond.exe
 LILYPOND_PROD_OPTIONS = -dno-point-and-click -ddelete-intermediate-files
 SOUNDFONT = /usr/share/sounds/sf2/FluidR3_GM.sf2
 
-include ../common.mk
+include common.mk
 
 .PHONY: local prod clean prodclean
 
-prod:	$(PROD_SHEET_MUSIC) \
-	$(PROD_SHEET_MUSIC_THUMBNAIL) \
-	$(PROD_SLIDES_MUSIC) \
-	$(PROD_SLIDES_MUSIC_THUMBNAIL) \
-	$(PROD_ALL_MUSIC) \
-	$(PROD_SOPRANO_MUSIC) \
-	$(PROD_ALTO_MUSIC) \
-	$(PROD_TENOR_MUSIC) \
-	$(PROD_BASS_MUSIC)
-
-local: Sheet-Music.pdf Slides.pdf $(MIDI_FILES)
-
-slides: $(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ TITLE.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 1.1.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 1.2.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 1.3.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 1.4.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 2.1.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 2.2.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 2.3.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 2.4.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 3.1.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 3.2.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 3.3.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 3.4.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 4.1.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 4.2.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 4.3.png \
-	$(SLIDE_DIR)/$(HYMN_NUMBER)\ -\ $(SLIDE_NAME)\ -\ 4.4.png \
-	$(SLIDE_DIR)/hymn_info.hixml
+local: $(ONLY_IN_SLEEP_TRACKS) $(TUNDRA_TRACKS) $(BEHOLD_HOW_GOOD_TRACKS)
 
 clean:
 	-rm *.pdf
@@ -67,16 +65,167 @@ clean:
 	-rm *.mp3
 	-rm *.wav
 
-prodclean:
-	-rm $(PROD_SHEET_MUSIC)
-	-rm $(PROD_SHEET_MUSIC_THUMBNAIL)
-	-rm $(PROD_SLIDES_MUSIC)
-	-rm $(PROD_SLIDES_MUSIC_THUMBNAIL)
-	-rm $(PROD_ALL_MUSIC)
-	-rm $(PROD_SOPRANO_MUSIC)
-	-rm $(PROD_ALTO_MUSIC)
-	-rm $(PROD_TENOR_MUSIC)
-	-rm $(PROD_BASS_MUSIC)
+only_in_sleep_all.mp3: only_in_sleep_all.wav
+	lame -V2 $< $@
+
+only_in_sleep_all.wav: only_in_sleep_all.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+only_in_sleep_solo.mp3: only_in_sleep_solo.wav
+	lame -V2 $< $@
+
+only_in_sleep_solo.wav: only_in_sleep_solo.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+only_in_sleep_soprano_1.mp3: only_in_sleep_soprano_1.wav
+	lame -V2 $< $@
+
+only_in_sleep_soprano_1.wav: only_in_sleep_soprano_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+only_in_sleep_soprano_2.mp3: only_in_sleep_soprano_2.wav
+	lame -V2 $< $@
+
+only_in_sleep_soprano_2.wav: only_in_sleep_soprano_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+only_in_sleep_alto_1.mp3: only_in_sleep_alto_1.wav
+	lame -V2 $< $@
+
+only_in_sleep_alto_1.wav: only_in_sleep_alto_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+only_in_sleep_alto_2.mp3: only_in_sleep_alto_2.wav
+	lame -V2 $< $@
+
+only_in_sleep_alto_2.wav: only_in_sleep_alto_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+only_in_sleep_tenor_1.mp3: only_in_sleep_tenor_1.wav
+	lame -V2 $< $@
+
+only_in_sleep_tenor_1.wav: only_in_sleep_tenor_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+only_in_sleep_tenor_2.mp3: only_in_sleep_tenor_2.wav
+	lame -V2 $< $@
+
+only_in_sleep_tenor_2.wav: only_in_sleep_tenor_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+only_in_sleep_bass_1.mp3: only_in_sleep_bass_1.wav
+	lame -V2 $< $@
+
+only_in_sleep_bass_1.wav: only_in_sleep_bass_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+only_in_sleep_bass_2.mp3: only_in_sleep_bass_2.wav
+	lame -V2 $< $@
+
+only_in_sleep_bass_2.wav: only_in_sleep_bass_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+tundra_all.mp3: tundra_all.wav
+	lame -V2 $< $@
+
+tundra_all.wav: tundra_all.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+tundra_piano.mp3: tundra_piano.wav
+	lame -V2 $< $@
+
+tundra_piano.wav: tundra_piano.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+tundra_solo.mp3: tundra_solo.wav
+	lame -V2 $< $@
+
+tundra_solo.wav: tundra_solo.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+tundra_soprano_1.mp3: tundra_soprano_1.wav
+	lame -V2 $< $@
+
+tundra_soprano_1.wav: tundra_soprano_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+tundra_soprano_2.mp3: tundra_soprano_2.wav
+	lame -V2 $< $@
+
+tundra_soprano_2.wav: tundra_soprano_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+tundra_alto_1.mp3: tundra_alto_1.wav
+	lame -V2 $< $@
+
+tundra_alto_1.wav: tundra_alto_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+tundra_alto_2.mp3: tundra_alto_2.wav
+	lame -V2 $< $@
+
+tundra_alto_2.wav: tundra_alto_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+behold_how_good_all.mp3: behold_how_good_all.wav
+	lame -V2 $< $@
+
+behold_how_good_all.wav: behold_how_good_all.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+behold_how_good_solo.mp3: behold_how_good_solo.wav
+	lame -V2 $< $@
+
+behold_how_good_solo.wav: behold_how_good_solo.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+behold_how_good_soprano_1.mp3: behold_how_good_soprano_1.wav
+	lame -V2 $< $@
+
+behold_how_good_soprano_1.wav: behold_how_good_soprano_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+behold_how_good_soprano_2.mp3: behold_how_good_soprano_2.wav
+	lame -V2 $< $@
+
+behold_how_good_soprano_2.wav: behold_how_good_soprano_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+behold_how_good_alto_1.mp3: behold_how_good_alto_1.wav
+	lame -V2 $< $@
+
+behold_how_good_alto_1.wav: behold_how_good_alto_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+behold_how_good_alto_2.mp3: behold_how_good_alto_2.wav
+	lame -V2 $< $@
+
+behold_how_good_alto_2.wav: behold_how_good_alto_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+behold_how_good_tenor_1.mp3: behold_how_good_tenor_1.wav
+	lame -V2 $< $@
+
+behold_how_good_tenor_1.wav: behold_how_good_tenor_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+behold_how_good_tenor_2.mp3: behold_how_good_tenor_2.wav
+	lame -V2 $< $@
+
+behold_how_good_tenor_2.wav: behold_how_good_tenor_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+behold_how_good_bass_1.mp3: behold_how_good_bass_1.wav
+	lame -V2 $< $@
+
+behold_how_good_bass_1.wav: behold_how_good_bass_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+behold_how_good_bass_2.mp3: behold_how_good_bass_2.wav
+	lame -V2 $< $@
+
+behold_how_good_bass_2.wav: behold_how_good_bass_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
 
 Sheet-Music.pdf: Sheet-Music.ly $(COMMON_DEPS)
 	$(LILYPOND) $(LILYPOND_PROD_OPTIONS) Sheet-Music.ly
