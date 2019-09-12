@@ -90,6 +90,60 @@ sopranoOneMusic = \relative c' {
   r2. |
   r2. |
   r2. | \break
+  
+  % measure 50, page 6, system 1
+  r2. |
+  r2. |
+  r2. \bar "||"
+  \tempo "Meno mosso" 4=72
+  e8 e8 b'4. a16( gis16) | \break
+  
+  % measure 54, page 6, system 2
+  fis8 fis8 b4. b8 |
+  cis8 e8 e,4 a4 |
+  gis4 fis4 r8 e8 |
+  e8 e8 b'4. e8 | \break
+  
+  % measure 58, page 7, system 1
+  dis8 e8 b4. gis8 |
+  b8 dis,8 e4 a4 |
+  gis4 fis4 r8 e8 |
+  e2.~ | \break
+  
+  % measure 62, page 7, system 2
+  e2 r8 e8 |
+  e2.~ |
+  e4 r4 e8 fis8 |
+  dis'4 b4. gis8 | \break
+  
+  % measure 66, page 8, system 1
+  b8 cis4. e,8 fis8 |
+  dis'4 b4. gis8 |
+  b4 r4 e,8 fis8 |
+  a4 gis4 fis4 | \break
+  
+  % measure 70, page 8, system 2
+  fis8 gis4. e8 b'8 |
+  b4 a4 gis4 |
+  e4 r4 e8 fis8 |
+  dis'4 b4. gis8 | \break
+  
+  % measure 74, page 9, system 1
+  b8 cis4. e,8 fis8 |
+  a4 gis4 b4 |
+  e,2\fermata r4 |
+  \tempo "Molto meno mosso" 4=66
+  e8 e8 b'2~ |
+  b2 a8( gis8) | \break
+  
+  % measure 79, page 9, system 2
+  fis8 fis8 b2~ |
+  b2 r4 |
+  e,2.~ |
+  e4 b2 |
+  b2.~ |
+  b2. |
+  r2.\fermata \bar "|."
 }
 
 sopranoTwoMusic = \relative c' {
@@ -171,6 +225,60 @@ sopranoTwoMusic = \relative c' {
   r2. |
   r2. |
   r2. |
+  
+  % measure 50, page 6, system 1
+  r2. |
+  r2. |
+  r2. \bar "||"
+  \tempo "Meno mosso" 4=72
+  e8 e8 b'4. a16( gis16) |
+  
+  % measure 54, page 6, system 2
+  fis8 fis8 b4. b8 |
+  cis8 e8 e,4 a4 |
+  gis4 fis4 r8 e8 |
+  e8 e8 b'4. b8 |
+  
+  % measure 58, page 7, system 1
+  b8 b8 b4. gis8 |
+  b8 dis,8 e4 a4 |
+  gis4 fis4 r8 e8 |
+  e2.~ |
+  
+  % measure 62, page 7, system 2
+  e2 r8 e8 |
+  e2.~ |
+  e4 r4 e8 fis8 |
+  b4 b4. gis8 |
+  
+  % measure 66, page 8, system 1
+  b8 cis4. e,8 fis8 |
+  dis'4 b4. gis8 |
+  b4 r4 e,8 fis8 |
+  a4 gis4 fis4 |
+  
+  % measure 70, page 8, system 2
+  fis8 gis4. e8 b'8 |
+  b4 a4 gis4 |
+  e4 r4 e8 fis8 |
+  dis'4 b4. gis8 |
+  
+  % measure 74, page 9, system 1
+  b8 cis4. e,8 fis8 |
+  a4 gis4 b4 |
+  e,2\fermata r4 |
+  \tempo "Molto meno mosso" 4=66
+  e8 e8 b'2~ |
+  b2 a8( gis8) |
+  
+  % measure 79, page 9, system 2
+  fis8 fis8 b2~ |
+  b2 r4 |
+  e,2.~ |
+  e4 b2 |
+  b2.~ |
+  b2. |
+  r2.\fermata \bar "|."
 }
 
 altoOneMusic = \relative c' {
@@ -214,7 +322,55 @@ altoOneMusic = \relative c' {
   cis2.~ |
   cis2) r4 |
   e4( fis4 gis4 |
-  a4 gis4 e4) | % TBD remember to extend the slur
+  a4 gis4 e4 |
+  
+  % measure 25, page 3, system 1
+  e4 dis4 cis4~ |
+  cis2) r8 e8 |
+  cis2.( |
+  dis2) r8 e8 |
+  
+  % measure 29, page 3, system 2
+  cis2.( |
+  dis4) r4 e8 e8 |
+  fis4 fis2( |
+  gis2) e8 e8 |
+  
+  % measure 33, page 4, system 1
+  fis2( e4) |
+  e2 r4 |
+  r8 b8 fis'8 e4 dis8 |
+  dis8 e4. e8 dis8 |
+  
+  % measure 37, page 4, system 2
+  dis4 cis8( fis8) e4 |
+  dis4 r4 e8 e8 |
+  fis4 fis2( |
+  gis2) e8 fis8 |
+  
+  % measure 41, page 5, system 1
+  fis4 fis8( a8 gis8) fis8 |
+  e4 r4 e8 fis8 |
+  a4 gis4 fis4 |
+  fis8 gis4. e8 dis8 |
+  
+  % measure 45, page 5, system 2
+  dis4 cis4 e4 |
+  e2. |
+  r2. |
+  r2. |
+  r2. |
+  
+  % measure 50, page 6, system 1
+  r2. |
+  r2. |
+  r2. \bar "||"
+  e8 e8 fis4. fis8 |
+  
+  fis8 fis8 fis4. gis8 |
+  a8 a8 e4 e4 |
+  e4 e4 r8 e8 |
+  dis8 cis8 e4. gis8 |
 }
 
 altoTwoMusic = \relative c' {
@@ -258,7 +414,55 @@ altoTwoMusic = \relative c' {
   cis2.~ |
   cis2) r4 |
   e2.( |
-  fis4 e4 e4) | % TBD remember to extend the slur
+  fis4 e4 e4 |
+  
+  % measure 25, page 3, system 1
+  cis4 b4 a4~ |
+  a2) r8 e'8 |
+  cis2.( |
+  dis2) r8 e8 |
+  
+  % measure 29, page 3, system 2
+  cis2.( |
+  dis4) r4 e8 e8 |
+  e4 e2~ |
+  e2 e8 e8 |
+  
+  % measure 33, page 4, system 1
+  e2. |
+  e2 r4 |
+  r8 b8 fis'8 e4 dis8 |
+  dis8 e4. e8 dis8 |
+  
+  % measure 37, page 4, system 2
+  dis4 cis8( fis8) e4 |
+  dis4 r4 e8 e8 |
+  e4 e2~ |
+  e2 e8 fis8 |
+  
+  % measure 41, page 5, system 1
+  fis4 fis8( a8 gis8) fis8 |
+  e4 r4 e8 fis8 |
+  a4 gis4 fis4 |
+  fis8 gis4. e8 dis8 |
+  
+  % measure 45, page 5, system 2
+  dis4 cis4 e4 |
+  e2. |
+  r2. |
+  r2. |
+  r2. |
+  
+  % measure 50, page 6, system 1
+  r2. |
+  r2. |
+  r2. \bar "||"
+  e8 e8 e4. e8 |
+  
+  dis8 dis8 dis4. e8 |
+  e8 e8 e4 cis4 |
+  cis4 cis4 r8 e8 |
+  dis8 cis8 e4. gis8 |
 }
 
 tenorOneMusic = \relative c' {
