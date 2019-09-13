@@ -36,6 +36,18 @@ ONLY_IN_SLEEP_TRACKS := \
   only_in_sleep_bass_1.mp3 \
   only_in_sleep_bass_2.mp3
 
+LULLABY_TRACKS := \
+  lullaby_all.mp3 \
+  lullaby_soprano_1.mp3 \
+  lullaby_soprano_2.mp3 \
+  lullaby_alto_1.mp3 \
+  lullaby_alto_2.mp3 \
+  lullaby_tenor_1.mp3 \
+  lullaby_tenor_2.mp3 \
+  lullaby_bass_1.mp3 \
+  lullaby_bass_2.mp3 \
+  lullaby_piano.mp3
+
 # Shouldn't need to edit the following macros
 
 LIBRARY_DIR = $(ROOT_DIR)/../LilypondTemplates
@@ -48,7 +60,7 @@ include common.mk
 
 .PHONY: local prod clean prodclean
 
-local: $(VESPERS_TRACKS)
+local: $(VESPERS_TRACKS) $(ONLY_IN_SLEEP_TRACKS) $(LULLABY_TRACKS)
 
 clean:
 	-rm *.pdf
@@ -182,5 +194,69 @@ only_in_sleep_bass_2.mp3: only_in_sleep_bass_2.wav
 	lame -V2 $< $@
 
 only_in_sleep_bass_2.wav: only_in_sleep_bass_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+#
+# Lullaby rules
+#
+
+lullaby_all.mp3: lullaby_all.wav
+	lame -V2 $< $@
+
+lullaby_all.wav: lullaby_all.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+lullaby_soprano_1.mp3: lullaby_soprano_1.wav
+	lame -V2 $< $@
+
+lullaby_soprano_1.wav: lullaby_soprano_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+lullaby_soprano_2.mp3: lullaby_soprano_2.wav
+	lame -V2 $< $@
+
+lullaby_soprano_2.wav: lullaby_soprano_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+lullaby_alto_1.mp3: lullaby_alto_1.wav
+	lame -V2 $< $@
+
+lullaby_alto_1.wav: lullaby_alto_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+lullaby_alto_2.mp3: lullaby_alto_2.wav
+	lame -V2 $< $@
+
+lullaby_alto_2.wav: lullaby_alto_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+lullaby_tenor_1.mp3: lullaby_tenor_1.wav
+	lame -V2 $< $@
+
+lullaby_tenor_1.wav: lullaby_tenor_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+lullaby_tenor_2.mp3: lullaby_tenor_2.wav
+	lame -V2 $< $@
+
+lullaby_tenor_2.wav: lullaby_tenor_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+lullaby_bass_1.mp3: lullaby_bass_1.wav
+	lame -V2 $< $@
+
+lullaby_bass_1.wav: lullaby_bass_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+lullaby_bass_2.mp3: lullaby_bass_2.wav
+	lame -V2 $< $@
+
+lullaby_bass_2.wav: lullaby_bass_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+lullaby_piano.mp3: lullaby_piano.wav
+	lame -V2 $< $@
+
+lullaby_piano.wav: lullaby_piano.mid
 	fluidsynth -F $@ $(SOUNDFONT) $<
 

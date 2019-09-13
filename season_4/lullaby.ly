@@ -85,10 +85,10 @@ sopranoOneMusic = \relative c' {
   fis8 gis4. e8 b'8 | \break
   
   % measure 45, page 5, system 2
-  b4 a4. gis8 |
-  e2. |
-  r2. |
-  r2. |
+  b4 a4. gis8 | \noBreak
+  e2. | \noBreak
+  r2. | \noBreak
+  r2. | \noBreak
   r2. | \break
   
   % measure 50, page 6, system 1
@@ -908,6 +908,46 @@ bassOneMusic = \relative c' {
   e8 e8 e4 e4 |
   fis4 fis4 e4 |
   e2. |
+  
+  % measure 58, page 7, system 1
+  e2. |
+  cis2.~( |
+  cis4 dis2) |
+  r4 r4 r8 fis8 |
+  
+  % measure 62, page 7, system 2
+  gis2 r4 |
+  r4 r4 r8 fis8 |
+  fis4 r4 e8 fis8 |
+  gis4. gis8 gis4 |
+  
+  % measure 66, page 8, system 1
+  a4. a8 e8 fis8 |
+  gis4( e2) |
+  e2 r4 |
+  cis4 cis4 cis4 |
+  
+  % measure 70, page 8, system 2
+  b4. b8 b8 b8 |
+  e4 e4 e4 |
+  fis4 r4 e'8 dis8 |
+  cis4 cis2~ |
+  
+  % measure 74, page 9, system 1
+  cis2 r4 |
+  fis,4 gis4 e4 |
+  e2\fermata r4 |
+  r4 b2( |
+  cis2) r4 |
+  
+  % measure 79, page 9, system 2
+  r4 cis2~ |
+  cis2 r4 |
+  e2. |
+  e2. |
+  e2.~ |
+  e2. |
+  r2.\fermata \bar "|."
 }
 
 bassTwoMusic = \relative c' {
@@ -1002,6 +1042,46 @@ bassTwoMusic = \relative c' {
   cis8 cis8 cis4 cis4 |
   cis4 cis4 e4 |
   a,2. |
+  
+  % measure 58, page 7, system 1
+  gis2. |
+  fis2.~ |
+  fis2. |
+  r4 r4 r8 fis'8 |
+  
+  % measure 62, page 7, system 2
+  gis2 r4 |
+  r4 r4 r8 fis8 |
+  fis4 r4 e8 fis8 |
+  e4. e8 e4 |
+  
+  % measure 66, page 8, system 1
+  e4. e8 e8 fis8 |
+  gis4( e4 b4) |
+  cis2 r4 |
+  cis4 cis4 cis4 |
+  
+  % measure 70, page 8, system 2
+  b4. b8 b8 b8 |
+  a4 a4 a4 |
+  b4 r4 e'8 dis8 |
+  cis4 cis2~ |
+  
+  % measure 74, page 9, system 1
+  cis2 r4 |
+  cis,4 cis4 gis4 |
+  a2\fermata r4 |
+  r4 e2( |
+  fis2) r4 |
+  
+  % measure 79, page 9, system 2
+  r4 gis2( |
+  a2) r4 |
+  cis2. |
+  cis2. |
+  <e, b'>2.~ |
+  <e b'>2. |
+  r2.\fermata \bar "|."
 }
 
 pianoRightHandMusic = \relative c'' {
@@ -1139,6 +1219,64 @@ pianoRightHandMusic = \relative c'' {
   <a b e>2.~ |
   <a b e>2 r4 |
   r2. |
+  
+  % measure 58, page 7, system 1
+  r2. |
+  r2. |
+  r2. |
+  a'8 cis,8 gis'8 cis,8 fis8 b,8 |
+  
+  % measure 62, page 7, system 2
+  fis'8 b,8 gis'8 b,8 e8 b'8 |
+  <b e>8 cis,8 a'8 cis,8 gis'8 e8~ |
+  <dis e>4 <b'' b'>4
+  <<
+    {
+      e,4
+    }
+    \new Voice {
+      \voiceTwo
+      e,8 fis8
+    }
+  >> |
+  <fis b dis>4 <e fis b>4. gis8 |
+  
+  % measure 66, page 8, system 1
+  <dis b'>8 <e cis'>8
+  <<
+    {
+      e'4
+    }
+    \new Voice {
+      \voiceTwo
+      b8 a8
+    }
+  >> e8 fis8 |
+  <fis b dis>4 <e fis b>4 <b e gis>4 |
+  <a b e>4 a''8 gis8 <e, e'>8 <fis fis'>8 |
+  <a cis a'>4 <gis cis gis'>4 <fis cis' fis>4 |
+  
+  % measure 70, page 8, system 2
+  <fis dis'>8 <gis e'>4 b,8 e8 <dis b'>8 |
+  <dis b'>4 <cis a'>4 <cis e gis>4 |
+  <cis e>2 e'8( fis8 |
+  <e fis dis'>4 <e b'>4. gis8 |
+  
+  % measure 74, page 9, system 1
+  <dis b'>8 <e cis'>4) cis8 e8( fis8 |
+  <cis a'>4 <b gis'>4. b'8 |
+  <b, dis e>4) <b' e>4\fermata e,8( fis8) |
+  <fis dis'>8 e8 <fis b>8 e8 <fis gis>8 e8 |
+  <e b'>8 cis8 e8 cis8 <e fis>8 cis8 |
+  
+  % measure 79, page 9, system 2
+  <e a>8 cis8 <e gis>8 cis8 <e b'>8 cis8 |
+  <cis e>4( <b' b'>2) |
+  r2. |
+  r2. |
+  r2. |
+  fis,8 e8 a8 e'8 gis8 fis8 |
+  b2.\fermata \bar "|."
 }
 
 pianoLeftHandMusic = \relative c' {
@@ -1206,6 +1344,104 @@ pianoLeftHandMusic = \relative c' {
   >> |
   \grace { <e, b'>8~ } <e b' gis'>8 b'8 gis'8 b,8 gis'8 b,8 |
   <a e'>8 e'8 b'8 e,8 a4 |
+  
+  % measure 33, page 4, system 1
+  <e, b'>8 b'8 gis'8 b,8 gis'8 b,8 |
+  <a e'>8 e'8 b'8 e,8 a4 |
+  cis,8 e8 gis8 e8 fis4 |
+  b,8 e8 gis8 e8 gis8 e8 |
+  
+  % measure 47, page 4, system 2
+  a,8 e'8 a8 e8 a8 e8 |
+  b8 fis'8
+  <<
+    {
+      a4 fis4
+    }
+    \new Voice {
+      \voiceTwo
+      r8 b,4.
+    }
+  >> |
+  \grace { <e, b'>8~ } <e b' gis'>8 b'8 gis'8 b,8 gis'8 b,8 |
+  <a e'>8 e'8 cis'8 b4. |
+  
+  % measure 41, page 5, system 1
+  cis,,8 gis'8 dis'8 e8 b'4 |
+  e,,8 cis'8 e2 |
+  fis,8 cis'8 a'8 gis8 b4 |
+  gis,8 e'8 gis8 fis8 b4 |
+  
+  % measure 45, page 5, system 2
+  a,8 e'8 a8 e8 gis8 e8 |
+  b8 e8
+  <<
+    {
+      a2
+    }
+    \new Voice {
+      \voiceTwo
+      r8 fis8 b,4
+    }
+  >> |
+  \grace { e,8~ } <e b' gis'>8 b'8 gis'8 fis8 b4 |
+  <e,, b'>8 b'8 fis'8 dis8 b'4 |
+  <e,, cis'>8 cis'8 a'8 cis,8 e4 |
+  
+  % measure 50, page 6, system 1
+  \grace { e,8~ } <e b' fis'>8 b'8 fis'8 b,8 fis'4 |
+  e,8 b'8 gis'8 fis8 b4 |
+  e,,8 b'8 gis'8 fis8 b4 \bar "||"
+  <e,, b'>2. |
+  
+  % measure 54, page 6, system 2
+  <e b'>2. |
+  <e cis'>2.~ |
+  <e cis'>2 r4 |
+  r2. |
+  
+  % measure 58, page 7, system 1
+  r2. |
+  r2. |
+  r2. |
+  fis8 cis'8 a'8 gis8 b4 |
+  
+  % measure 62, page 7, system 2
+  gis,8 e'8 gis8 fis8 b4 |
+  a,8 fis'8 a8 fis8 a4 |
+  b,8 fis'8 a8 <b,, b'>8 e'8 fis8 |
+  \grace { <e, b'>8~ } <e b' gis'>8 b'8 gis'8 b,8 gis'8 b,8 |
+  
+  % measure 66, page 8, system 1
+  <a e'>8 e'8 a8 e8 a8 e8 |
+  \grace { <e, b'>8~ } <e b' gis'>8 b'8 gis'8 b,8 e8 b8 |
+  <gis cis e>8 cis8 e8 cis8 e4 |
+  \grace { <cis, gis'>8~ } <cis gis' e'>8 gis'8 e'8 gis,8 e'8 gis,8 |
+  
+  % measure 70, page 8, system 2
+  <b gis'>8 e8 gis8 e8 gis8 e8 |
+  \grace { a,8~ } <a e' cis'>8 e'8 a8 e8 gis8 e8 |
+  b8 fis'8 a2 |
+  \clef treble
+  cis8 gis'8 cis8 gis8 cis4 |
+  
+  % measure 74, page 9, sytem 1
+  e,8 a8 b8 a8 b4 |
+  e,8 a8 b8 gis8 b4 |
+  a,8 e'8 a4
+  \clef bass
+  e4~ |
+  e2.~ |
+  e2. |
+  
+  % measure 79, page 9, system 2
+  e2.~ |
+  e2. |
+  r2. |
+  r2. |
+  e,,8 b'8 fis'8 e8 gis8 b8 |
+  r2. |
+  e,,,2.\fermata \bar "|."
 }
 
 \include "../../LilypondTemplates/ssaattbb-score-piano.ly"
