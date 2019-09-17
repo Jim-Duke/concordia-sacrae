@@ -24,6 +24,17 @@ VESPERS_TRACKS := \
   vespers_number_2_bass_1.mp3 \
   vespers_number_2_bass_2.mp3
 
+O_NATA_LUX_TRACKS := \
+  o_nata_lux_all.mp3 \
+  o_nata_lux_soprano_1.mp3 \
+  o_nata_lux_soprano_2.mp3 \
+  o_nata_lux_alto_1.mp3 \
+  o_nata_lux_alto_2.mp3 \
+  o_nata_lux_tenor_1.mp3 \
+  o_nata_lux_tenor_2.mp3 \
+  o_nata_lux_bass_1.mp3 \
+  o_nata_lux_bass_2.mp3
+
 ONLY_IN_SLEEP_TRACKS := \
   only_in_sleep_all.mp3 \
   only_in_sleep_solo.mp3 \
@@ -60,7 +71,7 @@ include common.mk
 
 .PHONY: local prod clean prodclean
 
-local: $(VESPERS_TRACKS) $(ONLY_IN_SLEEP_TRACKS) $(LULLABY_TRACKS)
+local: $(VESPERS_TRACKS) $(O_NATA_LUX_TRACKS) $(ONLY_IN_SLEEP_TRACKS) $(LULLABY_TRACKS)
 
 clean:
 	-rm *.pdf
@@ -130,6 +141,64 @@ vespers_number_2_bass_2.mp3: vespers_number_2_bass_2.wav
 	lame -V2 $< $@
 
 vespers_number_2_bass_2.wav: vespers_number_2_bass_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+#
+# O Nata Lux rules
+#
+
+o_nata_lux_all.mp3: o_nata_lux_all.wav
+	lame -V2 $< $@
+
+o_nata_lux_all.wav: o_nata_lux_all.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+o_nata_lux_soprano_1.mp3: o_nata_lux_soprano_1.wav
+	lame -V2 $< $@
+
+o_nata_lux_soprano_1.wav: o_nata_lux_soprano_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+o_nata_lux_soprano_2.mp3: o_nata_lux_soprano_2.wav
+	lame -V2 $< $@
+
+o_nata_lux_soprano_2.wav: o_nata_lux_soprano_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+o_nata_lux_alto_1.mp3: o_nata_lux_alto_1.wav
+	lame -V2 $< $@
+
+o_nata_lux_alto_1.wav: o_nata_lux_alto_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+o_nata_lux_alto_2.mp3: o_nata_lux_alto_2.wav
+	lame -V2 $< $@
+
+o_nata_lux_alto_2.wav: o_nata_lux_alto_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+o_nata_lux_tenor_1.mp3: o_nata_lux_tenor_1.wav
+	lame -V2 $< $@
+
+o_nata_lux_tenor_1.wav: o_nata_lux_tenor_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+o_nata_lux_tenor_2.mp3: o_nata_lux_tenor_2.wav
+	lame -V2 $< $@
+
+o_nata_lux_tenor_2.wav: o_nata_lux_tenor_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+o_nata_lux_bass_1.mp3: o_nata_lux_bass_1.wav
+	lame -V2 $< $@
+
+o_nata_lux_bass_1.wav: o_nata_lux_bass_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+o_nata_lux_bass_2.mp3: o_nata_lux_bass_2.wav
+	lame -V2 $< $@
+
+o_nata_lux_bass_2.wav: o_nata_lux_bass_2.mid
 	fluidsynth -F $@ $(SOUNDFONT) $<
 
 #
