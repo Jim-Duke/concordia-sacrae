@@ -35,6 +35,19 @@ O_NATA_LUX_TRACKS := \
   o_nata_lux_bass_1.mp3 \
   o_nata_lux_bass_2.mp3
 
+MY_GOD_IS_A_ROCK_TRACKS := \
+  my_god_is_a_rock_all.mp3 \
+  my_god_is_a_rock_baritone_solo.mp3 \
+  my_god_is_a_rock_soprano_solo.mp3 \
+  my_god_is_a_rock_soprano_1.mp3 \
+  my_god_is_a_rock_soprano_2.mp3 \
+  my_god_is_a_rock_alto_1.mp3 \
+  my_god_is_a_rock_alto_2.mp3 \
+  my_god_is_a_rock_tenor_1.mp3 \
+  my_god_is_a_rock_tenor_2.mp3 \
+  my_god_is_a_rock_bass_1.mp3 \
+  my_god_is_a_rock_bass_2.mp3
+
 ONLY_IN_SLEEP_TRACKS := \
   only_in_sleep_all.mp3 \
   only_in_sleep_solo.mp3 \
@@ -71,7 +84,7 @@ include common.mk
 
 .PHONY: local prod clean prodclean
 
-local: $(VESPERS_TRACKS) $(O_NATA_LUX_TRACKS) $(ONLY_IN_SLEEP_TRACKS) $(LULLABY_TRACKS)
+local: $(VESPERS_TRACKS) $(O_NATA_LUX_TRACKS) $(MY_GOD_IS_A_ROCK_TRACKS) $(ONLY_IN_SLEEP_TRACKS) $(LULLABY_TRACKS)
 
 clean:
 	-rm *.pdf
@@ -199,6 +212,76 @@ o_nata_lux_bass_2.mp3: o_nata_lux_bass_2.wav
 	lame -V2 $< $@
 
 o_nata_lux_bass_2.wav: o_nata_lux_bass_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+#
+# My God is a Rock rules
+#
+
+my_god_is_a_rock_all.mp3: my_god_is_a_rock_all.wav
+	lame -V2 $< $@
+
+my_god_is_a_rock_all.wav: my_god_is_a_rock_all.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+my_god_is_a_rock_baritone_solo.mp3: my_god_is_a_rock_baritone_solo.wav
+	lame -V2 $< $@
+
+my_god_is_a_rock_baritone_solo.wav: my_god_is_a_rock_solo_one.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+my_god_is_a_rock_soprano_solo.mp3: my_god_is_a_rock_soprano_solo.wav
+	lame -V2 $< $@
+
+my_god_is_a_rock_soprano_solo.wav: my_god_is_a_rock_solo_two.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+my_god_is_a_rock_soprano_1.mp3: my_god_is_a_rock_soprano_1.wav
+	lame -V2 $< $@
+
+my_god_is_a_rock_soprano_1.wav: my_god_is_a_rock_soprano_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+my_god_is_a_rock_soprano_2.mp3: my_god_is_a_rock_soprano_2.wav
+	lame -V2 $< $@
+
+my_god_is_a_rock_soprano_2.wav: my_god_is_a_rock_soprano_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+my_god_is_a_rock_alto_1.mp3: my_god_is_a_rock_alto_1.wav
+	lame -V2 $< $@
+
+my_god_is_a_rock_alto_1.wav: my_god_is_a_rock_alto_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+my_god_is_a_rock_alto_2.mp3: my_god_is_a_rock_alto_2.wav
+	lame -V2 $< $@
+
+my_god_is_a_rock_alto_2.wav: my_god_is_a_rock_alto_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+my_god_is_a_rock_tenor_1.mp3: my_god_is_a_rock_tenor_1.wav
+	lame -V2 $< $@
+
+my_god_is_a_rock_tenor_1.wav: my_god_is_a_rock_tenor_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+my_god_is_a_rock_tenor_2.mp3: my_god_is_a_rock_tenor_2.wav
+	lame -V2 $< $@
+
+my_god_is_a_rock_tenor_2.wav: my_god_is_a_rock_tenor_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+my_god_is_a_rock_bass_1.mp3: my_god_is_a_rock_bass_1.wav
+	lame -V2 $< $@
+
+my_god_is_a_rock_bass_1.wav: my_god_is_a_rock_bass_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+my_god_is_a_rock_bass_2.mp3: my_god_is_a_rock_bass_2.wav
+	lame -V2 $< $@
+
+my_god_is_a_rock_bass_2.wav: my_god_is_a_rock_bass_2.mid
 	fluidsynth -F $@ $(SOUNDFONT) $<
 
 #
