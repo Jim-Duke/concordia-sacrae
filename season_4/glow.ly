@@ -16,7 +16,7 @@ Title = "glow"
   tagline = ##f
 }
 
-sopranoOneMusic = \relative c' {
+sopranoMusic = \relative c' {
   \key b \major
   \numericTimeSignature
   \time 3/4
@@ -108,9 +108,7 @@ sopranoOneMusic = \relative c' {
   dis1 \bar "|."
 }
 
-sopranoTwoMusic = \sopranoOneMusic
-
-altoOneMusic = \relative c' {
+altoMusic = \relative c' {
   \key b \major
   \numericTimeSignature
   \time 3/4
@@ -200,9 +198,7 @@ altoOneMusic = \relative c' {
   b1 \bar "|."
 }
 
-altoTwoMusic = \altoOneMusic
-
-tenorOneMusic = \relative c' {
+tenorMusic = \relative c' {
   \clef "treble_8"
   \key b \major
   \numericTimeSignature
@@ -294,9 +290,7 @@ tenorOneMusic = \relative c' {
   fis1 \bar "|."
 }
 
-tenorTwoMusic = \tenorOneMusic
-
-bassOneMusic = \relative c {
+bassMusic = \relative c {
   \clef bass
   \key b \major
   \numericTimeSignature
@@ -386,8 +380,6 @@ bassOneMusic = \relative c {
   b1~ |
   b1 \bar "|."
 }
-
-bassTwoMusic = \bassOneMusic
 
 pianoRightHandMusic = \relative c' {
   \key b \major
@@ -568,5 +560,5 @@ metronomeMusic = \drummode {
   cl4 cl4 cl4 cl4 \bar "|."
 }
 
-\include "../../LilypondTemplates/ssaattbb-score.ly"
-\include "../../LilypondTemplates/ssaattbb-midi.ly"
+\include "../../LilypondTemplates/satb-score.ly"
+\include "../../LilypondTemplates/satb-midi.ly"
