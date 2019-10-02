@@ -1082,6 +1082,74 @@ tenorOneMusic = \relative c {
   b4 gis4 gis4 cis4 |
   cis2( bis2) |
   r1 |
+  
+  % Measure 88, page 12, system 1
+  r1 |
+  r2 r4 e,4 |
+  e4. e8 e8 fis8 gis8 a8 |
+  
+  % Measure 91, page 12, system 2
+  b2. b8( cis8) |
+  d4. d8 cis4 a4 |
+  
+  % Measure 93, page 12, system 3
+  b2. b4 |
+  e,4. e8 e8 fis8 gis8 a8 |
+  
+  % Measure 95, page 13, system 1
+  b2. b8( cis8) |
+  d4. d8 cis4 cis4 |
+  
+  % Measure 97, page 13, system 2
+  b2. e,4 |
+  e'4 dis4 cis4 b4 |
+  b4. e,8 e4 e4 |
+  
+  % Measure 100, page 13, system 3
+  e'4 dis4 cis4 b4 |
+  b4. e,8 e4 e8( fis8) |
+  
+  % Measure 102, page 14, system 1
+  g4 fis4 e4 g4 |
+  a4 g4 fis4 a4 |
+  
+  % Measure 104, page 14, system 2
+  b4 a4 gis4 b4 |
+  d4( cis4 b4) a4 |
+  
+  % Measure 106, page 14, system 3
+  b2. e,4 |
+  e'4 dis4 cis4 b4 |
+  
+  % Measure 108, page 15, system 1
+  b4. e,8 e4 e4 |
+  e'4 dis4 cis4 b4 |
+  b4. e,8 e4 e8( fis8) |
+  
+  % Measure 111, page 15, system 2
+  g4 fis4 e4 g4 |
+  a4 g4 fis4 a4 |
+  
+  % Measure 113, page 15, system 3
+  b4 a4 gis4 b4 |
+  d4( cis4) b2 |
+  
+  % Measure 115, page 16, system 1
+  e1 |
+  r4 e4 e4 dis4 |
+  e1 |
+  
+  % Measure 118, page 16, system 2
+  r4 d4 d4 d4 |
+  b1 |
+  r4 d4 d4 d4 |
+  
+  % Measure 121, page 16, system 3
+  b1 |
+  r1 |
+  r4 e4 e4 fis4 |
+  gis1~ |
+  gis1\fermata \bar "|."
 }
 
 tenorTwoMusic = \relative c {
@@ -1243,6 +1311,74 @@ tenorTwoMusic = \relative c {
   b4 gis4 gis4 cis4 |
   cis2( bis2) |
   r1 |
+  
+  % Measure 88, page 12, system 1
+  r1 |
+  r2 r4 e,4 |
+  e4. e8 e8 fis8 gis8 a8 |
+  
+  % Measure 91, page 12, system 2
+  b2. b8( cis8) |
+  d4. d8 cis4 a4 |
+  
+  % Measure 93, page 12, system 3
+  b2. b4 |
+  e,4. e8 e8 fis8 gis8 a8 |
+  
+  % Measure 95, page 13, system 1
+  b2. b8( cis8) |
+  d4. d8 cis4 cis4 |
+  
+  % Measure 97, page 13, system 2
+  b2. e,4 |
+  e'4 dis4 cis4 b4 |
+  b4. e,8 e4 e4 |
+  
+  % Measure 100, page 13, system 3
+  e'4 dis4 cis4 b4 |
+  b4. e,8 e4 e8( fis8) |
+  
+  % Measure 102, page 14, system 1
+  g4 fis4 e4 g4 |
+  a4 g4 fis4 a4 |
+  
+  % Measure 104, page 14, system 2
+  b4 a4 gis4 b4 |
+  d4( cis4 b4) a4 |
+  
+  % Measure 106, page 14, system 3
+  b2. e,4 |
+  e'4 dis4 cis4 b4 |
+  
+  % Measure 108, page 15, system 1
+  b4. e,8 e4 e4 |
+  e'4 dis4 cis4 b4 |
+  b4. e,8 e4 e8( fis8) |
+  
+  % Measure 111, page 15, system 2
+  g4 fis4 e4 g4 |
+  a4 g4 fis4 a4 |
+  
+  % Measure 113, page 15, system 3
+  b4 a4 gis4 b4 |
+  d4( cis4) b2 |
+  
+  % Measure 115, page 16, system 1
+  e1 |
+  r4 e4 e4 dis4 |
+  e1 |
+  
+  % Measure 118, page 16, system 2
+  r4 d4 d4 d4 |
+  b1 |
+  r4 d4 d4 d4 |
+  
+  % Measure 121, page 16, system 3
+  b1 |
+  r1 |
+  r4 e4 e4 e4 |
+  e1~ |
+  e1\fermata \bar "|."
 }
 
 bassOneMusic = \relative c {
@@ -1404,6 +1540,74 @@ bassOneMusic = \relative c {
   b4 cis,4 gis'4 cis4 |
   gis1 |
   r1 |
+  
+  % Measure 88, page 12, system 1
+  r1 |
+  r2 r4 e4 |
+  e4. e8 e8 fis8 gis8 a8 |
+  
+  % Measure 91, page 12, system 2
+  b2. b8( a8) |
+  g4. b8 a4 a4 |
+  
+  % Measure 93, page 12, system 3
+  b2. b4 |
+  e,4. e8 e8 fis8 gis8 a8 |
+  
+  % Measure 95, page 13, system 1
+  b2. b8( a8) |
+  b4. b8 a4 a4 |
+  
+  % Measure 97, page 13, system 2
+  b2. e,4 |
+  cis'4 b4 a4 a4 |
+  gis4. e8 e4 e4 |
+  
+  % Measure 100, page 13, system 3
+  cis'4 b4 a4 a4 |
+  gis4. e8 e4 e8( fis8) |
+  
+  % Measure 102, page 14, system 1
+  g4 fis4 e4 g4 |
+  a4 g4 fis4 a4 |
+  
+  % Measure 104, page 14, system 2
+  b4 a4 gis4 b4 |
+  b4( a4 g4) a4 |
+  
+  % Measure 106, page 14, system 3
+  b2. e,4 |
+  cis'4 b4 a4 a4 |
+  
+  % Measure 108, page 15, system 1
+  gis4. e8 e4 e4 |
+  cis'4 b4 a4 a4 |
+  gis4. e8 e4 e8( fis8) |
+  
+  % Measure 111, page 15, system 2
+  g4 fis4 e4 g4 |
+  a4 g4 fis4 a4 |
+  
+  % Measure 113, page 15, system 3
+  b4 a4 gis4 b4 |
+  b4( a4) g2 |
+  
+  % Measure 115, page 16, system 1
+  b1 |
+  r4 cis4 cis4 b4 |
+  b1 |
+  
+  % Measure 118, page 16, system 2
+  r4 a4 cis4 a4 |
+  e1 |
+  r4 a4 a4 a4 |
+  
+  % Measure 121, page 16, system 3
+  gis1 |
+  r1 |
+  r4 c4 c4 c4 |
+  b1~ |
+  b1\fermata \bar "|."
 }
 
 bassTwoMusic = \relative c {
@@ -1565,6 +1769,74 @@ bassTwoMusic = \relative c {
   b4 cis,4 gis'4 cis4 |
   gis1 |
   r1 |
+  
+  % Measure 88, page 12, system 1
+  r1 |
+  r2 r4 e4 |
+  e4. e8 e8 fis8 gis8 a8 |
+  
+  % Measure 91, page 12, system 2
+  b2. b8( a8) |
+  g4. g8 a4 a4 |
+  
+  % Measure 93, page 12, system 3
+  b2. b4 |
+  e,4. e8 e8 fis8 gis8 a8 |
+  
+  % Measure 95, page 13, system 1
+  b2. b8( a8) |
+  g4. g8 a4 a4 |
+  
+  % Measure 97, page 13, system 2
+  b2. e,4 |
+  cis'4 b4 a4 a4 |
+  gis4. e8 e4 e4 |
+  
+  % Measure 100, page 13, system 3
+  cis'4 b4 a4 a4 |
+  gis4. e8 e4 e8( fis8) |
+  
+  % Measure 102, page 14, system 1
+  g4 fis4 e4 g4 |
+  a4 g4 fis4 a4 |
+  
+  % Measure 104, page 14, system 2
+  b4 a4 gis4 b4 |
+  b4( a4 g4) a4 |
+  
+  % Measure 106, page 14, system 3
+  b2. e,4 |
+  cis'4 b4 a4 a4 |
+  
+  % Measure 108, page 15, system 1
+  gis4. e8 e4 e4 |
+  cis'4 b4 a4 a4 |
+  gis4. e8 e4 e8( fis8) |
+  
+  % Measure 111, page 15, system 2
+  g4 fis4 e4 g4 |
+  a4 g4 fis4 a4 |
+  
+  % Measure 113, page 15, system 3
+  b4 a4 gis4 b4 |
+  b4( a4) g2 |
+  
+  % Measure 115, page 16, system 1
+  fis1 |
+  r4 fis4 fis4 b,4 |
+  e1 |
+  
+  % Measure 118, page 16, system 2
+  r4 a4 cis4 a4 |
+  e1 |
+  r4 fis4 d4 fis4 |
+  
+  % Measure 121, page 16, system 3
+  e1 |
+  r1 |
+  r4 c'4 b4 a4 |
+  e1~ |
+  e1\fermata \bar "|."
 }
 
 pianoRightHandMusic = \relative c'' {
@@ -2195,6 +2467,53 @@ pianoLeftHandMusic = \relative c, {
   a,,8 e''8 <e gis a>4 <gis,, gis'>4 <gis'' a cis>4 |
   
   % Measure 88, page 12, system 1
+  <fis,, fis'>8 fis''8 <a cis>4 <e, e'>8 <dis dis'>8 <cis cis'>4 |
+  <b b'>4 <fis'' a b>4 <b,, b'>8 fis''8 <gis a cis e>4 |
+  <e, e'>4 <a' b e>4 <e, e'>4 <gis' a cis e>4 |
+  
+  % Measure 91, page 12, system 2
+  <e, e'>4 <a' b e>4 <e, e'>4 <a' b cis e>4 |
+  <g, d' g>4 <a' b d>4 <a,, e' a>4 <a'' b cis e>4 |
+  
+  % Measure 93, page 12, system 3
+  <e, b' e>4 <a' b>4 <e, b' e>4 <a' b cis e>4 |
+  <e, e'>4 <a' b e>4 <e, e'> <gis' a cis e>4 |
+  
+  % Measure 95, page 13, system 1
+  <e, e'>4 <a' b e>4 <e, e'>4 <a' b cis e>4 |
+  <g, d' g>4 <a' b d>4 <a,, e' a>4 <a'' b cis e>4 |
+  
+  % Measure 97, page 13, system 2
+  <b,, b'>4 <fis'' a cis>4 <b,, b'>4 <fis'' a cis e>4 |
+  <a,, a'>4 <e'' a cis>8 <e a cis>8 <e a>8 <e a>8 <e a>8 <e a>8 |
+  <e, e'>4 <e' b'>8 <fis b>8 <fis b>8 <gis b>8 a4 |
+  
+  % Measure 100, page 13, system 3
+  <a,, a'>4 <e'' a cis>8 <e a cis>8 <e a>8 <e a>8 <e a>8 <e a>8 |
+  <e, e'>4
+  <<
+    {
+      b''8 fis8 fis8 gis8 gis4 |
+    }
+    \\
+    {
+      e2. |
+    }
+  >>
+  
+  % Measure 102, page 14, system 1
+  <c, g' c>4 <c'' d e>4 <c,, g' c>4 <c'' d e>4 |
+  <c,, g' c>4 <d'' e fis>4 <c,, g' c>4 <d'' e fis>4 |
+  
+  % Measure 104, page 14, system 2
+  <b,, b'>4 <b'' cis e>4 <b,, b'>4 <b'' dis e>4 |
+  <g,, g'>4 <cis'' e a>4 <b d g>4 <a cis e>4 |
+  
+  % Measure 106, page 14, system 3
+  <b,, b'>4 <e' fis b>4 <b, b'>4 <fis'' a cis e>4 |
+  <a,, a'>4 <e'' a cis>8 <e a cis>8 <e a>8 <e a>8 <e a>8 <e a>8 |
+  
+  % Measure 108, page 15, system 1
   
 }
 
