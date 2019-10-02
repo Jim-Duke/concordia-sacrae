@@ -462,7 +462,7 @@ sopranoTwoMusic = \relative c' {
   % Measure 121, page 16, system 3
   b1 |
   r1 |
-  r4 cis4 cis4 e4 |
+  r4 c4 c4 e4 |
   e1~ |
   e1\fermata \bar "|."
 }
@@ -690,7 +690,7 @@ altoOneMusic = \relative c' {
   % Measure 121, page 16, system 3
   e1 |
   r1 |
-  r4 g4 b4 cis4 |
+  r4 g4 b4 c4 |
   b1~ |
   b1\fermata \bar "|."
 }
@@ -1936,7 +1936,7 @@ pianoRightHandMusic = \relative c'' {
   % Measure 14, page 3, system 2
   <<
     {
-      f4 g8 aes8 bes8 c8
+      f,4 g8 aes8 bes8 c8
     }
     \\
     {
@@ -1953,7 +1953,7 @@ pianoRightHandMusic = \relative c'' {
   % Measure 19, page 3, system 3
   <<
     {
-      ees2
+      ees'2
     }
     \\
     {
@@ -2208,6 +2208,74 @@ pianoRightHandMusic = \relative c'' {
   <dis gis cis dis>4 r4 r4 r4 |
   <dis gis cis dis>8 <gis, gis'>8 <gis cis dis gis>8 <gis gis'>8 <gis bis dis gis>8 <gis gis'>8 <gis gis'>8 <gis gis'>8 |
   <cis, e a cis>4. <cis cis'>8 <cis e a cis>8 <dis dis'>8 <e a cis e>8 <fis fis'>8 |
+  
+  % Measure 88, page 12, system 1
+  <cis e a cis>4. <cis cis'>8 <cis e a cis>8 <dis dis'>8 <e a cis e>8 <fis fis'>8 |
+  <cis e a cis>4. <e a cis e>8 <e a cis e>8 <fis fis'>8 <gis cis e gis>8 <a a'>8 |
+  <b e>16 b'16 fis16 b16 <b,e>16 b'16 fis16 b16 <a, e' fis>16 b'16 dis,16 b'16 e,16 b'16 fis16 b16 |
+  
+  % Measure 91, page 12, system 2
+  e,16 e'16 dis16 e16 cis16 e16 b16 e16 e,16 e'16 dis16 e16 <e, gis b>8 <cis cis'>8 |
+  <d d'>16 a'16 e16 a16 d,16 a'16 e16 a16 <cis, cis'>16 a'16 e16 a16 a,16 e'16 cis16 e16 |
+  
+  % Measure 93, page 12, system 3
+  <b fis'>16 b'16 e,16 b'16 fis16 b16 e,16 b'16 fis16 b16 e,16 b'16 fis16 b16 e,16 b'16 |
+  <b, e>16 b'16 fis16 b16 <b, e>16 b'16 fis16 b16 <a,e' fis>16 b'16 dis,16 b'16 e,16 b'16 fis16 b16 |
+  
+  % Measure 95, page 13, system 1
+  e,16 e'16 dis16 e16 cis16 e16 b16 e16 e,16 e'16 dis16 e16 <e, gis b>8 <cis cis'>8 |
+  <d d'>16 a'16 e16 a16 d,16 a'16 e16 a16 <cis, cis'>16 a'16 e16 a16 cis,16 a'16 e16 a16 |
+  
+  % Measure 97, page 13, system 2
+  <b, e fis b>8 <e, e'>8 <fis a cis fis>8 <gis gis'>8 <a cis e a>8 <b b'>8 <cis e a cis>8 <dis dis'>8 |
+  <e a cis e>8 <e a cis e>8 <dis a' cis dis>8 <dis a' cis dis>8 <cis e a cis>8 <cis e a cis>8 <cis e a b>8 <cis e a b>8 |
+  <b fis' gis b>8 <e, e'>8 <e gis b e>8 <fis fis'>8 <fis b fis'>8 <gis gis'>8 <a a'>16 <b b'>16 <cis cis'>16 <dis dis'>16 |
+  
+  % Measure 100, page 13, system 3
+  <e a cis e>8 <e a cis e>8 <dis a' cis dis>8 <dis a' cis dis>8 <cis e a cis>8 <cis e a cis>8 <cis e a b>8 <cis e a b>8 |
+  <b fis' b>8 <e, e'>8 <e gis b e>8 <fis fis'>8 <fis b fis'>8 <gis gis'>8 <gis e' gis>4 |
+  
+  % Measure 102, page 14, system 1
+  g'16 e16 c16 g16 g16 c16 e16 g16 g16 e16 c16 g16 g16 c16 e16 g16 |
+  a16 fis16 d16 a16 a16 d16 fis16 a16 a16 fis16 d16 a16 a16 d16 fis16 a16 |
+  
+  % Measure 104, page 14, system 2
+  b16 gis16 e16 b16 a16 cis16 e16 a16 gis,16 b16 e16 gis16 e16 gis16 b16 e16 |
+  d16 b16 g16 d16 cis'16 a16 e16 cis16 b'16 g16 d16 b16 a'16 e16 cis16 a16 |
+  
+  % Measure 106, page 14, system 3
+  <b e fis b>8 fis'16 e16 b8 e16 fis16 <b, dis fis b>8 <b dis fis b>8 <cis e a cis>8 <dis dis'>8 |
+  <e a cis e>8 <e a cis e>8 <dis a' cis dis>8 <dis a' cis dis>8 <cis e a cis>8 <cis e a cis>8 <cis e a b>8 <cis e a b>8 |
+  
+  % Measure 108, page 15, system 1
+  <b fis' gis b>8 <e, e'>8 <e gis b e>8 <fis fis'>8 <fis b fis'>8 <gis gis'>8 <a a'>16 <b b'>16 <cis cis'>16 <dis dis'>16 |
+  <e a cis e>8 <e a cis a>8 <dis a' cis dis>8 <dis a' cis dis>8 <cis e a cis>8 <cis e a cis>8 <cis e a b>8 <cis e a b>8 |
+  <b e b'>8 <e, e'>8 <e gis b e>8 <fis fis'>8 <fis b fis'>8 <gis gis'>8 <gis e' gis>4 |
+  
+  % Measure 111, page 15, system 2
+  g'16 e16 c16 g16 g16 c16 e16 g16 g16 e16 c16 g16 g16 c16 e16 g16 |
+  a16 fis16 d16 a16 a16 d16 fis16 a16 a16 fis16 d16 a16 a16 d16 fis16 a16 |
+
+  % Measure 113, page 15, system 3
+  b16 gis16 e16 b16 a16 cis16 e16 a16 gis,16 b16 e16 gis16 e16 gis16 b16 e16 |
+  d16 b16 g16 d16 cis'16 a16 e16 cis16 b'16 g16 d16 b16 d'16 b16 g16 d16 |
+  
+  % Measure 115, page 16, system 1
+  <b e fis b>8 fis'16 e16 b8 e16 fis16 <b, e fis b>8 fis'16 e16 b16 e16 fis8 |
+  <b, dis fis b>4 <e, a cis e>4 <e a cis e>4 <dis fis b dis>4 |
+  <e gis b e>4 <e gis b e>8 <fis fis'>8 <fis b fis'>8 <gis gis'>8 <b e b'>8 <e e'>8 |
+  
+  % Measure 118, page 16, system 2
+  <d fis a d>2 <cis fis a cis>4 <a d fis a>4 |
+  <b e gis b>8 <e, e'>8 <e gis b e>8 <fis fis'>8 <fis b fis'>8 <gis gis'>8 <b e b'>8 <e e'>8 |
+  <d fis a d>2 <fis a d fis>4 <d fis a d>4 |
+  
+  % Measure 121, page 16, system 3
+  <e gis b e>8 <e, e'>8 <e gis b e>8 <fis fis'>8 <fis b fis'>8 <gis gis'>8 <b e b'>8 <e e'>8 |
+  <e g c e>4 <c, c'>4 <g' g'>4 <d' d'>4 |
+  <c c'>2 r2 |
+  r4 <e, e'>4 <b' b'>4 <e e'>4 |
+  <fis b fis'>16 <gis b e gis>16 <gis b e gis>8~ <gis b e gis>4 <e,, gis b e>2\fermata \bar "|."
 }
 
 pianoLeftHandMusic = \relative c, {
@@ -2514,7 +2582,70 @@ pianoLeftHandMusic = \relative c, {
   <a,, a'>4 <e'' a cis>8 <e a cis>8 <e a>8 <e a>8 <e a>8 <e a>8 |
   
   % Measure 108, page 15, system 1
+  <e, e'>4 <e' b'>8 <fis b>8 <fis b>8 <gis b>8 a4 |
+  <a,, a'>4 <e'' a cis>8 <e a cis>8 <e a>8 <e a>8 <e a>8 <e a>8 |
+  <e, e'>4
+  <<
+    {
+      b''8 fis8 fis8 gis8 gis4 |
+    }
+    \\
+    {
+      e2. |
+    }
+  >>
   
+  % Measure 111, page 15, system 2
+  <c, g' c>4 <c'' d e>4 <c,, g' c>4 <c'' d e>4 |
+  <c,, g' c>4 <d'' e fis>4 <c,, g' c>4 <d'' e fis>4 |
+  
+  % Measure 113, page 15, system 3
+  <b,, b'>4 <b'' cis e>4 <b,, b'>4 <b'' dis e>4 |
+  <g,, g'>4 <cis'' e a>4 <b d g>4 <g b d>4 |
+  
+  % Measure 115, page 16, system 1
+  <b,, b'>4 <e' fis b>4 <b, b'>4 <fis'' a cis e>4 |
+  <b,, b'>8 <b b'>8 <b b'>8 <b b'>8 <b b'>8 <b b'>8 <b b'>8 <b b'>8 |
+  <e, e'>4 <e'' b'>8 <fis b>8 <fis b>8 <gis b>8
+  <<
+    {
+      b8 e8 |
+    }
+    \\
+    {
+      gis,4 |
+    }
+  >>
+  
+  % Measure 118, page 16, system 2
+  <b,, b'>8 <fis'' a cis d>8 <fis a cis d>8 <fis a cis d>8 <fis a cis d>8 <fis a cis d>8 <fis a cis d>8 <fis a cis d>8 |
+  <e,, e'>4 <e'' b'>8 <fis b>8 <fis b>8 <gis b>8
+  <<
+    {
+      b8 e8 |
+    }
+    \\
+    {
+      e,4 |
+    }
+  >>
+  <b, b'>8 <fis'' a cis d>8 <fis a cis d>8 <fis a cis d>8 <fis a cis d>8 <fis a cis d>8 <fis a cis d>8 <fis a cis d>8 |
+  
+  % Measure 121, page 16, system 1
+  <e,, e'>4 <e'' b'>8 <fis b>8 <fis b>8 <gis b>8
+  <<
+    {
+      b8 e8 |
+    }
+    \\
+    {
+      gis,4 |
+    }
+  >>
+  <c,, g' c>4 <c c'>4 <g' g'>4 <d' d'>4 |
+  <c c'>2 r2 |
+  r4 <e, e'>4 <b' b'>4 <e e'>4 |
+  <b' e fis>16 <b e gis>16 <b e gis>8~ <b e gis>4 <e,,, e'>2\fermata \bar "|."
 }
 
 \include "../../LilypondTemplates/ssaattbb-piano-score.ly"
