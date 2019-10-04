@@ -240,6 +240,31 @@ TSHOTSHOLOZA_TRACKS := \
   tshotsholoza_bass_1.mp3 \
   tshotsholoza_bass_2.mp3
 
+THE_AWAKENING_LILYPOND_PRODUCTS := \
+  the_awakening.pdf \
+  the_awakening_all.mid \
+  the_awakening_soprano_1.mid \
+  the_awakening_soprano_2.mid \
+  the_awakening_alto_1.mid \
+  the_awakening_alto_2.mid \
+  the_awakening_tenor_1.mid \
+  the_awakening_tenor_2.mid \
+  the_awakening_bass_1.mid \
+  the_awakening_bass_2.mid \
+  the_awakening_piano.mid
+
+THE_AWAKENING_TRACKS := \
+  the_awakening_all.mp3 \
+  the_awakening_soprano_1.mp3 \
+  the_awakening_soprano_2.mp3 \
+  the_awakening_alto_1.mp3 \
+  the_awakening_alto_2.mp3 \
+  the_awakening_tenor_1.mp3 \
+  the_awakening_tenor_2.mp3 \
+  the_awakening_bass_1.mp3 \
+  the_awakening_bass_2.mp3 \
+  the_awakening_piano.mp3
+
 # Shouldn't need to edit the following macros
 
 LIBRARY_DIR = $(ROOT_DIR)/../LilypondTemplates
@@ -262,7 +287,8 @@ local: \
  $(DAYS_OF_BEAUTY_TRACKS) \
  $(THE_ROSE_TRACKS) \
  $(ONLY_IN_SLEEP_TRACKS) \
- $(TSHOTSHOLOZA_TRACKS)
+ $(TSHOTSHOLOZA_TRACKS) \
+ $(THE_AWAKENING_TRACKS)
 
 %.wav: %.mid
 	fluidsynth -F $@ $(SOUNDFONT) $<
@@ -705,3 +731,50 @@ tshotsholoza_bass_1.wav: tshotsholoza_bass_1.mid
 tshotsholoza_bass_2.mp3: tshotsholoza_bass_2.wav
 
 tshotsholoza_bass_2.wav: tshotsholoza_bass_2.mid
+
+#
+# The Awakening rules
+#
+
+$(THE_AWAKENING_LILYPOND_PRODUCTS): the_awakening.ly
+	$(LILYPOND) $(LILYPOND_PROD_OPTIONS) $<
+
+the_awakening_all.mp3: the_awakening_all.wav
+
+the_awakening_all.wav: the_awakening_all.mid
+
+the_awakening_soprano_1.mp3: the_awakening_soprano_1.wav
+
+the_awakening_soprano_1.wav: the_awakening_soprano_1.mid
+
+the_awakening_soprano_2.mp3: the_awakening_soprano_2.wav
+
+the_awakening_soprano_2.wav: the_awakening_soprano_2.mid
+
+the_awakening_alto_1.mp3: the_awakening_alto_1.wav
+
+the_awakening_alto_1.wav: the_awakening_alto_1.mid
+
+the_awakening_alto_2.mp3: the_awakening_alto_2.wav
+
+the_awakening_alto_2.wav: the_awakening_alto_2.mid
+
+the_awakening_tenor_1.mp3: the_awakening_tenor_1.wav
+
+the_awakening_tenor_1.wav: the_awakening_tenor_1.mid
+
+the_awakening_tenor_2.mp3: the_awakening_tenor_2.wav
+
+the_awakening_tenor_2.wav: the_awakening_tenor_2.mid
+
+the_awakening_bass_1.mp3: the_awakening_bass_1.wav
+
+the_awakening_bass_1.wav: the_awakening_bass_1.mid
+
+the_awakening_bass_2.mp3: the_awakening_bass_2.wav
+
+the_awakening_bass_2.wav: the_awakening_bass_2.mid
+
+the_awakening_piano.mp3: the_awakening_piano.wav
+
+the_awakening_piano.wav: the_awakening_piano.mid

@@ -1444,5 +1444,5 @@ pianoLeftHandMusic = \relative c' {
   e,,,2.\fermata \bar "|."
 }
 
-\include "../../LilypondTemplates/ssaattbb-score-piano.ly"
-\include "../../LilypondTemplates/ssaattbb-midi-piano.ly"
+\include "../../LilypondTemplates/ssaattbb-piano-score.ly"
+\include "../../LilypondTemplates/ssaattbb-piano-midi.ly"
