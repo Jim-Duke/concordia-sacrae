@@ -265,6 +265,90 @@ THE_AWAKENING_TRACKS := \
   the_awakening_bass_2.mp3 \
   the_awakening_piano.mp3
 
+VICTORIA_LILYPOND_PRODUCTS := \
+  o_magnum_mysterium_victoria.pdf \
+  o_magnum_mysterium_victoria_all.mid \
+  o_magnum_mysterium_victoria_soprano.mid \
+  o_magnum_mysterium_victoria_alto.mid \
+  o_magnum_mysterium_victoria_tenor.mid \
+  o_magnum_mysterium_victoria_bass.mid \
+
+VICTORIA_TRACKS := \
+  o_magnum_mysterium_victoria_all.mp3 \
+  o_magnum_mysterium_victoria_soprano.mp3 \
+  o_magnum_mysterium_victoria_alto.mp3 \
+  o_magnum_mysterium_victoria_tenor.mp3 \
+  o_magnum_mysterium_victoria_bass.mp3 \
+
+ALLELUIA_SIXTEN_LILYPOND_PRODUCTS := \
+  alleluia_sixten.pdf \
+  alleluia_sixten_all.mid \
+  alleluia_sixten_soprano_1.mid \
+  alleluia_sixten_soprano_2.mid \
+  alleluia_sixten_alto_1.mid \
+  alleluia_sixten_alto_2.mid \
+  alleluia_sixten_tenor_1.mid \
+  alleluia_sixten_tenor_2.mid \
+  alleluia_sixten_bass_1.mid \
+  alleluia_sixten_bass_2.mid
+
+ALLELUIA_SIXTEN_TRACKS := \
+  alleluia_sixten_all.mp3 \
+  alleluia_sixten_soprano_1.mp3 \
+  alleluia_sixten_soprano_2.mp3 \
+  alleluia_sixten_alto_1.mp3 \
+  alleluia_sixten_alto_2.mp3 \
+  alleluia_sixten_tenor_1.mp3 \
+  alleluia_sixten_tenor_2.mp3 \
+  alleluia_sixten_bass_1.mp3 \
+  alleluia_sixten_bass_2.mp3
+
+SOON_AH_WILL_BE_DONE_LILYPOND_PRODUCTS := \
+  soon_ah_will_be_done.pdf \
+  soon_ah_will_be_done_all.mid \
+  soon_ah_will_be_done_soprano_1.mid \
+  soon_ah_will_be_done_soprano_2.mid \
+  soon_ah_will_be_done_alto_1.mid \
+  soon_ah_will_be_done_alto_2.mid \
+  soon_ah_will_be_done_tenor_1.mid \
+  soon_ah_will_be_done_tenor_2.mid \
+  soon_ah_will_be_done_bass_1.mid \
+  soon_ah_will_be_done_bass_2.mid
+
+SOON_AH_WILL_BE_DONE_TRACKS := \
+  soon_ah_will_be_done_all.mp3 \
+  soon_ah_will_be_done_soprano_1.mp3 \
+  soon_ah_will_be_done_soprano_2.mp3 \
+  soon_ah_will_be_done_alto_1.mp3 \
+  soon_ah_will_be_done_alto_2.mp3 \
+  soon_ah_will_be_done_tenor_1.mp3 \
+  soon_ah_will_be_done_tenor_2.mp3 \
+  soon_ah_will_be_done_bass_1.mp3 \
+  soon_ah_will_be_done_bass_2.mp3
+
+SING_ME_TO_HEAVEN_LILYPOND_PRODUCTS := \
+  sing_me_to_heaven.pdf \
+  sing_me_to_heaven_all.mid \
+  sing_me_to_heaven_soprano_1.mid \
+  sing_me_to_heaven_soprano_2.mid \
+  sing_me_to_heaven_alto_1.mid \
+  sing_me_to_heaven_alto_2.mid \
+  sing_me_to_heaven_tenor_1.mid \
+  sing_me_to_heaven_tenor_2.mid \
+  sing_me_to_heaven_bass_1.mid \
+  sing_me_to_heaven_bass_2.mid
+
+SING_ME_TO_HEAVEN_TRACKS := \
+  sing_me_to_heaven_all.mp3 \
+  sing_me_to_heaven_soprano_1.mp3 \
+  sing_me_to_heaven_soprano_2.mp3 \
+  sing_me_to_heaven_alto_1.mp3 \
+  sing_me_to_heaven_alto_2.mp3 \
+  sing_me_to_heaven_tenor_1.mp3 \
+  sing_me_to_heaven_tenor_2.mp3 \
+  sing_me_to_heaven_bass_1.mp3 \
+  sing_me_to_heaven_bass_2.mp3
+
 # Shouldn't need to edit the following macros
 
 LIBRARY_DIR = $(ROOT_DIR)/../LilypondTemplates
@@ -288,7 +372,11 @@ local: \
  $(THE_ROSE_TRACKS) \
  $(ONLY_IN_SLEEP_TRACKS) \
  $(TSHOTSHOLOZA_TRACKS) \
- $(THE_AWAKENING_TRACKS)
+ $(THE_AWAKENING_TRACKS) \
+ $(VICTORIA_TRACKS) \
+ $(ALLELUIA_SIXTEN_TRACKS) \
+ $(SOON_AH_WILL_BE_DONE_TRACKS) \
+ $(SING_ME_TO_HEAVEN_TRACKS)
 
 %.wav: %.mid
 	fluidsynth -F $@ $(SOUNDFONT) $<
@@ -778,3 +866,159 @@ the_awakening_bass_2.wav: the_awakening_bass_2.mid
 the_awakening_piano.mp3: the_awakening_piano.wav
 
 the_awakening_piano.wav: the_awakening_piano.mid
+
+#
+# Victoria rules
+#
+
+$(VICTORIA_LILYPOND_PRODUCTS): o_magnum_mysterium_victoria.ly
+	$(LILYPOND) $(LILYPOND_PROD_OPTIONS) $<
+
+o_magnum_mysterium_victoria_all.mp3: o_magnum_mysterium_victoria_all.wav
+
+o_magnum_mysterium_victoria_all.wav: o_magnum_mysterium_victoria_all.mid
+
+o_magnum_mysterium_victoria_soprano.mp3: o_magnum_mysterium_victoria_soprano.wav
+
+o_magnum_mysterium_victoria_soprano.wav: o_magnum_mysterium_victoria_soprano.mid
+
+o_magnum_mysterium_victoria_alto.mp3: o_magnum_mysterium_victoria_alto.wav
+
+o_magnum_mysterium_victoria_alto.wav: o_magnum_mysterium_victoria_alto.mid
+
+o_magnum_mysterium_victoria_tenor.mp3: o_magnum_mysterium_victoria_tenor.wav
+
+o_magnum_mysterium_victoria_tenor.wav: o_magnum_mysterium_victoria_tenor.mid
+
+o_magnum_mysterium_victoria_bass.mp3: o_magnum_mysterium_victoria_bass.wav
+
+o_magnum_mysterium_victoria_bass.wav: o_magnum_mysterium_victoria_bass.mid
+
+#
+# Alleluia (Sixten)
+#
+
+$(ALLELUIA_SIXTEN_LILYPOND_PRODUCTS): alleluia_sixten.ly
+	$(LILYPOND) $(LILYPOND_PROD_OPTIONS) $<
+
+alleluia_sixten_all.mp3: alleluia_sixten_all.wav
+
+alleluia_sixten_all.wav: alleluia_sixten_all.mid
+
+alleluia_sixten_soprano_1.mp3: alleluia_sixten_soprano_1.wav
+
+alleluia_sixten_soprano_1.wav: alleluia_sixten_soprano_1.mid
+
+alleluia_sixten_soprano_2.mp3: alleluia_sixten_soprano_2.wav
+
+alleluia_sixten_soprano_2.wav: alleluia_sixten_soprano_2.mid
+
+alleluia_sixten_alto_1.mp3: alleluia_sixten_alto_1.wav
+
+alleluia_sixten_alto_1.wav: alleluia_sixten_alto_1.mid
+
+alleluia_sixten_alto_2.mp3: alleluia_sixten_alto_2.wav
+
+alleluia_sixten_alto_2.wav: alleluia_sixten_alto_2.mid
+
+alleluia_sixten_tenor_1.mp3: alleluia_sixten_tenor_1.wav
+
+alleluia_sixten_tenor_1.wav: alleluia_sixten_tenor_1.mid
+
+alleluia_sixten_tenor_2.mp3: alleluia_sixten_tenor_2.wav
+
+alleluia_sixten_tenor_2.wav: alleluia_sixten_tenor_2.mid
+
+alleluia_sixten_bass_1.mp3: alleluia_sixten_bass_1.wav
+
+alleluia_sixten_bass_1.wav: alleluia_sixten_bass_1.mid
+
+alleluia_sixten_bass_2.mp3: alleluia_sixten_bass_2.wav
+
+alleluia_sixten_bass_2.wav: alleluia_sixten_bass_2.mid
+
+#
+# Soon Ah Will Be Done
+#
+
+$(SOON_AH_WILL_BE_DONE_LILYPOND_PRODUCTS): soon_ah_will_be_done.ly
+	$(LILYPOND) $(LILYPOND_PROD_OPTIONS) $<
+
+soon_ah_will_be_done_all.mp3: soon_ah_will_be_done_all.wav
+
+soon_ah_will_be_done_all.wav: soon_ah_will_be_done_all.mid
+
+soon_ah_will_be_done_soprano_1.mp3: soon_ah_will_be_done_soprano_1.wav
+
+soon_ah_will_be_done_soprano_1.wav: soon_ah_will_be_done_soprano_1.mid
+
+soon_ah_will_be_done_soprano_2.mp3: soon_ah_will_be_done_soprano_2.wav
+
+soon_ah_will_be_done_soprano_2.wav: soon_ah_will_be_done_soprano_2.mid
+
+soon_ah_will_be_done_alto_1.mp3: soon_ah_will_be_done_alto_1.wav
+
+soon_ah_will_be_done_alto_1.wav: soon_ah_will_be_done_alto_1.mid
+
+soon_ah_will_be_done_alto_2.mp3: soon_ah_will_be_done_alto_2.wav
+
+soon_ah_will_be_done_alto_2.wav: soon_ah_will_be_done_alto_2.mid
+
+soon_ah_will_be_done_tenor_1.mp3: soon_ah_will_be_done_tenor_1.wav
+
+soon_ah_will_be_done_tenor_1.wav: soon_ah_will_be_done_tenor_1.mid
+
+soon_ah_will_be_done_tenor_2.mp3: soon_ah_will_be_done_tenor_2.wav
+
+soon_ah_will_be_done_tenor_2.wav: soon_ah_will_be_done_tenor_2.mid
+
+soon_ah_will_be_done_bass_1.mp3: soon_ah_will_be_done_bass_1.wav
+
+soon_ah_will_be_done_bass_1.wav: soon_ah_will_be_done_bass_1.mid
+
+soon_ah_will_be_done_bass_2.mp3: soon_ah_will_be_done_bass_2.wav
+
+soon_ah_will_be_done_bass_2.wav: soon_ah_will_be_done_bass_2.mid
+
+#
+# Sing Me to Heaven
+#
+
+$(SING_ME_TO_HEAVEN_LILYPOND_PRODUCTS): sing_me_to_heaven.ly
+	$(LILYPOND) $(LILYPOND_PROD_OPTIONS) $<
+
+sing_me_to_heaven_all.mp3: sing_me_to_heaven_all.wav
+
+sing_me_to_heaven_all.wav: sing_me_to_heaven_all.mid
+
+sing_me_to_heaven_soprano_1.mp3: sing_me_to_heaven_soprano_1.wav
+
+sing_me_to_heaven_soprano_1.wav: sing_me_to_heaven_soprano_1.mid
+
+sing_me_to_heaven_soprano_2.mp3: sing_me_to_heaven_soprano_2.wav
+
+sing_me_to_heaven_soprano_2.wav: sing_me_to_heaven_soprano_2.mid
+
+sing_me_to_heaven_alto_1.mp3: sing_me_to_heaven_alto_1.wav
+
+sing_me_to_heaven_alto_1.wav: sing_me_to_heaven_alto_1.mid
+
+sing_me_to_heaven_alto_2.mp3: sing_me_to_heaven_alto_2.wav
+
+sing_me_to_heaven_alto_2.wav: sing_me_to_heaven_alto_2.mid
+
+sing_me_to_heaven_tenor_1.mp3: sing_me_to_heaven_tenor_1.wav
+
+sing_me_to_heaven_tenor_1.wav: sing_me_to_heaven_tenor_1.mid
+
+sing_me_to_heaven_tenor_2.mp3: sing_me_to_heaven_tenor_2.wav
+
+sing_me_to_heaven_tenor_2.wav: sing_me_to_heaven_tenor_2.mid
+
+sing_me_to_heaven_bass_1.mp3: sing_me_to_heaven_bass_1.wav
+
+sing_me_to_heaven_bass_1.wav: sing_me_to_heaven_bass_1.mid
+
+sing_me_to_heaven_bass_2.mp3: sing_me_to_heaven_bass_2.wav
+
+sing_me_to_heaven_bass_2.wav: sing_me_to_heaven_bass_2.mid

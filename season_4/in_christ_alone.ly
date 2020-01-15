@@ -199,7 +199,7 @@ tenorOneMusic = \relative c'' {
   % measure 42, page 5, system 1
   \key cis \major
   gis8 gis4. gis4 |
-  ais2 bis8 cis16 bis16 |
+  ais2 bis8 ais16 bis16 |
   cis8 bis8 ais4. bis8 |
   bis4 gis4 ais8 bis8 |
   gis2 eis8 gis8 |
