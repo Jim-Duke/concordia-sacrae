@@ -1135,6 +1135,117 @@ pianoLeftHandMusic = \relative c' {
       des,2 des4 |
     }
   >>
+  
+  % Measure 16
+  <<
+    {
+      des'8 des8~ des4 des4 |
+      \time 4/4
+      bes8 bes8~ bes4 bes4 ees8 ees8 |
+      s1 |
+    }
+    \\
+    {
+      <aes, des,>2. |
+      \time 4/4
+      des,2. <aes' des,>4 |
+      <f' aes,>2 <aes des, ges,>2 |
+    }
+  >>
+  
+  % Measure 19
+  <<
+    {
+      des,8~ <des f,>4 <ees ges,>8 ees8 ees4 ees8 |
+      \time 3/4
+      <f aes,>4 <ges bes,>4 <aes des,>4 |
+      \time 4/4
+      f8 bes4 ges8 aes8 aes8 <bes ges>4 |
+    }
+    \\
+    {
+      s2 aes,2 |
+      \time 3/4
+      s2. |
+      bes2 c4 aes'4 |
+    }
+  >>
+  
+  % Measure 22
+  <<
+    {
+      \time 3/4
+      f8 f8 ges4 aes4 |
+      f8 bes4 ges8 aes4 \bar "||"
+      r8 <des aes>8~ <des aes>8~ <des aes>4 <des aes>8 |
+    }
+    \\
+    {
+      \time 3/4
+      aes,4 bes4 des8 c8 |
+      bes2 c4 \bar "||"
+      <des aes des,>2. |
+    }
+  >>
+  
+  % Measure 25
+  <<
+    {
+      \time 4/4
+      bes'8 bes4 bes8 f8 aes8 c8 aes8 |
+      f8 f8 c'8 aes8 ges8 ges8 bes8 ges8 |
+      \time 3/4
+      s2. |
+    }
+    \\
+    {
+      \time 4/4
+      <aes ges>2 aes,2 |
+      bes2 bes2 |
+      \time 3/4
+      <des aes des,>4. <des aes des,>8~ <des aes des,>4 |
+    }
+  >>
+  
+  % Measure 28
+  <<
+    {
+      \time 4/4
+      bes8 bes4 bes8 f'8 f8 aes8 c8 |
+      f,8 f8 c'8 aes8 ges8 ges4 ges8 |
+      \time 2/4
+      r8 aes4 aes8 |
+    }
+    \\
+    {
+      \time 4/4
+      des,,2 aes'2 |
+      bes2 bes2 |
+      \time 2/4
+      c2 |
+    }
+  >>
+  
+  % Measure 31
+  <<
+    {
+      \time 4/4
+      <bes' ges>8 bes8~ bes4 f8 f8~ f4 |
+      \time 3/4
+      r8 <des' aes>8~ <des aes>8~ <des aes>4 <des aes>8 |
+      \time 4/4
+      bes8 bes4 bes8 f8 aes8 c8 f,8 |
+    }
+    \\
+    {
+      \time 4/4
+      aes4. ges8 aes,2 |
+      \time 3/4
+      <des aes des,>2. |
+      \time 4/4
+      <aes' ges>2 aes,2 |
+    }
+  >>
 }
 
 \include "../../LilypondTemplates/ssaattbb-piano-score.ly"
