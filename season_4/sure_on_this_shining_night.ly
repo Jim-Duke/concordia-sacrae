@@ -1183,6 +1183,80 @@ pianoRightHandMusic = \relative c {
       des'2 c2 |
     }
   >>
+  
+  % Measure 34
+  <<
+    {
+      des'2~( des8 des8 ges8 ees8 |
+      \time 2/4
+      <ees aes, ees>2) |
+      \time 4/4
+      des8( c8 bes8 aes8) des( aes8 f8 ges16 aes16) |
+    }
+    \\
+    {
+      c,8 c8 aes'8 f8~ <f des>8 des8 ges8 ees8 |
+      \time 2/4
+      s2
+      \time 4/4
+      <aes ges>4. ges8 <aes ees>4 des,8 des8 |
+    }
+  >>
+  
+  % Measure 37
+  <<
+    {
+      \time 2/4
+      aes'4. aes8 |
+      \time 3/4
+      <ees' aes,>8 aes,4 <aes ges>8~ <aes ges>8 <aes ges ees>8 |
+      r8 <des aes ees>4 <des aes ees>4 <des aes ees>8 |
+    }
+    \\
+    {
+      \time 2/4
+      ees,4 ees4 |
+      \time 3/4
+      s2. |
+      s2. |
+    }
+  >>
+  
+  % Measure 40
+  <<
+    {
+      \time 4/4
+      <ges' des ges,>8( <f des aes>8 <ees c aes>8 <des bes aes>8 <ees aes, ees>8 <aes, ees des>8 <des ges, des>8 <ges, des>8) |
+      \time 3/4
+      aes4~ aes8 <des aes>4 <des aes>8 |
+      \time 4/4
+      <aes' des, ges,>8( <des, ges,>8 <ges des aes>8 <ees c aes>8 <f des aes>8 <ges des ges,>8 <des aes ees>8 <c aes ees>8 |
+    }
+    \\
+    {
+      \time 4/4
+      s1 |
+      \time 3/4
+      <ees, des>8 des8 ees8 ees4 ees8 |
+      \time 4/4
+      s1 |
+    }
+  >>
+  
+  % Measure 43
+  <<
+    {
+      <des' aes ges des>8 <ges, des>8 <ges des>8 <f des>8) ees4 ees4 |
+      des'2( c8 des8 aes8 f8) |
+      aes2~( aes8 f8 aes4) |
+    }
+    \\
+    {
+      s2 bes,2 |
+      c4 <f c>4 c4. c8 |
+      c8 f8 aes8 c,8 f8 c4 c8 |
+    }
+  >>
 }
 
 pianoLeftHandMusic = \relative c' {
@@ -1374,6 +1448,44 @@ pianoLeftHandMusic = \relative c' {
       <des aes des,>2. |
       \time 4/4
       <aes' ges>2 aes,2 |
+    }
+  >>
+  
+  % Measure 34
+  <<
+    {
+      f'8 f8 c'8 aes8 ges8 ges8 des'8 ges,8 |
+      \time 2/4
+      aes8 aes8 ees'4 |
+      \time 4/4
+      <des ges,>4. <des ges,>8 <des aes f>4~ <aes f>8 <aes f>8 |
+    }
+    \\
+    {
+      bes,2 bes2 |
+      \time 2/4
+      c2 |
+      \time 4/4
+      s1 |
+    }
+  >>
+  
+  % Measure 37
+  <<
+    {
+      \time 2/4
+      aes'8 aes4 aes8~ |
+      \time 3/4
+      aes8 aes4 <bes aes>8~ <bes aes>8 <des bes aes ges>8 |
+      r8 <des aes f>4 <des aes f>4 <des aes f>8 |
+    }
+    \\
+    {
+      \time 2/4
+      c,2~ |
+      \time 3/4
+      c8 s8 s2 |
+      <ees' des aes f des aes des,>2.
     }
   >>
 }
