@@ -554,6 +554,44 @@ tenorOneMusic = \relative c {
   bes4 aes8) aes8 aes4. aes8 |
   f8 f8 f8 f8 ges8 ges8 ges8 ges8 |
   f2.~ f8 f8 |
+  
+  % Measure 46
+  f4. f8 f4. f8 |
+  aes2.~ aes8 r8\fermata \bar "||"
+  \time 3/4
+  r2. |
+  
+  % Measure 49
+  \time 4/4
+  r1 |
+  r4 r8 aes8 aes8 aes8 bes8 aes8 |
+  aes2~ aes8 r8 aes8 aes8 |
+  
+  % Measure 52
+  \time 3/4
+  des2.~ |
+  des2~ des8 des8 |
+  bes2 bes4 |
+  f4( ges4 aes4 |
+  
+  % Measure 56
+  f4. ges8 aes4) aes4 \bar "||"
+  \time 3/4
+  r4 f2( |
+  ges2 ees4 |
+  
+  % Measure 59
+  f2. |
+  \time 4/4
+  ges2)\fermata r8 aes8 aes8 aes8 |
+  aes2 aes2\fermata \bar "||"
+  
+  % Measure 62
+  \time 3/4
+  des,2.~ |
+  \time 4/4
+  des2 r2\fermata |
+  r1\fermata \bar "|."
 }
 
 tenorTwoMusic = \relative c {
@@ -661,6 +699,44 @@ tenorTwoMusic = \relative c {
   aes4.) aes8 aes4. aes8 |
   f8 f8 f8 f8 ges8 ges8 ges8 ges8 |
   f2.~ f8 f8 |
+  
+  % Measure 46
+  f4. f8 f4. f8 |
+  aes2.~ aes8 r8\fermata \bar "||"
+  \time 3/4
+  r2. |
+  
+  % Measure 49
+  \time 4/4
+  r1 |
+  r4 r8 aes8 aes8 aes8 bes8 aes8 |
+  aes2~ aes8 r8 aes8 aes8 |
+  
+  % Measure 52
+  \time 3/4
+  des2.~ |
+  des2~ des8 des8 |
+  aes2 ges4 |
+  f4( ges4 aes4 |
+  
+  % Measure 56
+  f4. ges8 aes4) aes4 \bar "||"
+  \time 3/4
+  r4 f2( |
+  ges2 ees4 |
+  
+  % Measure 59
+  f2. |
+  \time 4/4
+  ges2)\fermata r8 ges8 ges8 ges8 |
+  aes2 aes2\fermata \bar "||"
+  
+  % Measure 62
+  \time 3/4
+  des,2.~ |
+  \time 4/4
+  des2 r2\fermata |
+  r1\fermata \bar "|."
 }
 
 bassOneMusic = \relative c {
@@ -780,6 +856,33 @@ bassOneMusic = \relative c {
   des8 ges8 ees8 des8 des8 ees8 ees4 |
   r8 aes8 des,8 des8 des8 ees8 ges8 ees8 |
   f8( ges8 ees8) des8 aes8 r8 aes'8 aes8 |
+  
+  % Measure 52
+  \time 3/4
+  f4( ges4 aes4 |
+  bes8 des8 des,8 ges8 aes8) aes8 |
+  ges2 aes4 |
+  aes,4( bes4 des8 c8 |
+  
+  % Measure 56
+  \time 4/4
+  bes2 c4) c4 \bar "||"
+  \time 3/4
+  r4 des2~ |
+  des2.~ |
+  
+  % Measure 59
+  des2.~ |
+  \time 4/4
+  des2\fermata r8 des8 des8 des8 |
+  des2 des2\fermata \bar "||"
+  
+  % Measure 62
+  \time 3/4
+  des2.~ |
+  \time 4/4
+  des2 r2\fermata |
+  r1\fermata \bar "|."
 }
 
 bassTwoMusic = \relative c {
@@ -899,6 +1002,33 @@ bassTwoMusic = \relative c {
   des8 ges8 ees8 des8 des8 ees8 ees4 |
   r8 aes8 des,8 des8 des8 ees8 ges8 ees8 |
   f8( ges8 ees8) des8 aes8 r8 aes'8 aes8 |
+  
+  % Measure 52
+  \time 3/4
+  f4( ges4 aes4 |
+  bes8 des8 des,8 ges8 aes8) aes8 |
+  ges2 aes4 |
+  aes,4( bes4 des8 c8 |
+  
+  % Measure 56
+  \time 4/4
+  bes2 c4) c4 \bar "||"
+  \time 3/4
+  r4 des2~ |
+  des2.~ |
+  
+  % Measure 59
+  des2.~ |
+  \time 4/4
+  des2\fermata r8 des8 des8 des8 |
+  des2 des2\fermata \bar "||"
+  
+  % Measure 62
+  \time 3/4
+  des2.~ |
+  \time 4/4
+  des2 r2\fermata |
+  r1\fermata \bar "|."
 }
 
 pianoRightHandMusic = \relative c {
