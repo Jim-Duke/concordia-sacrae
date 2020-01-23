@@ -1257,6 +1257,100 @@ pianoRightHandMusic = \relative c {
       c8 f8 aes8 c,8 f8 c4 c8 |
     }
   >>
+  
+  % Measure 46
+  <<
+    {
+      des'2( c8 des8 aes8 des,8) |
+      bes'1\fermata \bar "||"
+      \time 3/4
+      s2. |
+    }
+    \\
+    {
+      c,4 <f c>4 c4. c8 |
+      <des bes>4 <des bes>4( <ees c>4 <aes ees c>4)\fermata \bar "||"
+      <ges des f,>4( <f des aes>4 <aes ees c aes> |
+    }
+  >>
+  
+  % Measure 49
+  <<
+    {
+      \time 4/4
+      des,2 <ees c>2 |
+      <ges des f,>4( <f des aes>4 <c' aes ees>4 <aes ees c>4 |
+      <ges des f,>4 <f des aes>4 <ees c aes>4 aes,4) |
+    }
+    \\
+    {
+      \time 4/4
+      ges4 ges4 aes4 aes4) |
+      s1 |
+      s1 |
+    }
+  >>
+  
+  % Measure 52
+  <<
+    {
+      \time 3/4
+      <aes' des,>4 <ges des>4 <f ees>4 |
+      des4 <ges des>4 <ees des>4 |
+      <ges des>2. |
+      des'2.~ |
+    }
+    \\
+    {
+      s2. |
+      s2. |
+      s2. |
+      <aes des,>4 <ges des>4 <f des>4 |
+    }
+  >>
+  
+  % Measure 56
+  <<
+    {
+      \time 4/4
+      <des' des,> <ges, des>4 ees2 \bar "||"
+      \time 3/4
+      <ges des f,>4( <f des aes>4 <aes ees c>4 |
+      des,4. des8 <ees c aes>4) |
+    }
+    \\
+    {
+      \time 4/4
+      s1 \bar "||"
+      \time 3/4
+      s2. |
+      ges,8 f8 ges4 s4 |
+    }
+  >>
+  
+  % Measure 59
+  <<
+    {
+      <ges' des f,>4( <f des aes>4 <ees' c aes ees>4 |
+      \time 4/4
+      <ges, des>4~ <ges des>2)\fermata r4 |
+      r2 r2\fermata \bar "||"
+    }
+    \\
+    {
+      s2. |
+      \time 4/4
+      ges,8 f8 ges2\fermata s4 |
+      s1 \bar "||"
+    }
+  >>
+  
+  % Measure 62
+  \time 3/4
+  f8( aes8 f8 des'8 aes8 f8) |
+  \time 4/4
+  ges8( des'8 ges,8 ges'8) <aes, ees>4 <c aes ees>4\fermata |
+  <des aes f>1\fermata \bar "|."    
 }
 
 pianoLeftHandMusic = \relative c' {
@@ -1486,6 +1580,26 @@ pianoLeftHandMusic = \relative c' {
       \time 3/4
       c8 s8 s2 |
       <ees' des aes f des aes des,>2.
+    }
+  >>
+  
+  % Measure 40
+  <<
+    {
+      \time 4/4
+      r8 <des bes ges>4 <des bes ges>8 <c bes aes>8 <aes c,>8 <ges bes,>8 <ges bes,>8 |
+      \time 3/4
+      f8 f8~ <aes f>8 <des aes f>4 <des aes f>8 |
+      \time 4/4
+      <des bes ges>8 <des bes ges>4 <ees des aes>8 <des bes ges>8 <des aes f>4 <des aes>8 |
+    }
+    \\
+    {
+      <aes des, ges,>2 s2 |
+      \time 3/4
+      aes,4~ aes8 s4 s8 |
+      \time 4/4
+      <ges ges,>4. r8 s2 |
     }
   >>
 }
