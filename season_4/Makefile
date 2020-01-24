@@ -349,6 +349,31 @@ SING_ME_TO_HEAVEN_TRACKS := \
   sing_me_to_heaven_bass_1.mp3 \
   sing_me_to_heaven_bass_2.mp3
 
+SURE_ON_THIS_SHINING_NIGHT_LILYPOND_PRODUCTS := \
+  sure_on_this_shining_night.pdf \
+  sure_on_this_shining_night_all.mid \
+  sure_on_this_shining_night_piano.mid \
+  sure_on_this_shining_night_soprano_1.mid \
+  sure_on_this_shining_night_soprano_2.mid \
+  sure_on_this_shining_night_alto_1.mid \
+  sure_on_this_shining_night_alto_2.mid \
+  sure_on_this_shining_night_tenor_1.mid \
+  sure_on_this_shining_night_tenor_2.mid \
+  sure_on_this_shining_night_bass_1.mid \
+  sure_on_this_shining_night_bass_2.mid
+
+SURE_ON_THIS_SHINING_NIGHT_TRACKS := \
+  sure_on_this_shining_night_all.mp3 \
+  sure_on_this_shining_night_piano.mp3 \
+  sure_on_this_shining_night_soprano_1.mp3 \
+  sure_on_this_shining_night_soprano_2.mp3 \
+  sure_on_this_shining_night_alto_1.mp3 \
+  sure_on_this_shining_night_alto_2.mp3 \
+  sure_on_this_shining_night_tenor_1.mp3 \
+  sure_on_this_shining_night_tenor_2.mp3 \
+  sure_on_this_shining_night_bass_1.mp3 \
+  sure_on_this_shining_night_bass_2.mp3
+
 # Shouldn't need to edit the following macros
 
 LIBRARY_DIR = $(ROOT_DIR)/../LilypondTemplates
@@ -376,7 +401,8 @@ local: \
  $(VICTORIA_TRACKS) \
  $(ALLELUIA_SIXTEN_TRACKS) \
  $(SOON_AH_WILL_BE_DONE_TRACKS) \
- $(SING_ME_TO_HEAVEN_TRACKS)
+ $(SING_ME_TO_HEAVEN_TRACKS) \
+ $(SURE_ON_THIS_SHINING_NIGHT_TRACKS)
 
 %.wav: %.mid
 	fluidsynth -F $@ $(SOUNDFONT) $<
@@ -1022,3 +1048,50 @@ sing_me_to_heaven_bass_1.wav: sing_me_to_heaven_bass_1.mid
 sing_me_to_heaven_bass_2.mp3: sing_me_to_heaven_bass_2.wav
 
 sing_me_to_heaven_bass_2.wav: sing_me_to_heaven_bass_2.mid
+
+#
+# Sure On This Shining Night
+#
+
+$(SURE_ON_THIS_SHINING_NIGHT_LILYPOND_PRODUCTS): sure_on_this_shining_night.ly
+	$(LILYPOND) $(LILYPOND_PROD_OPTIONS) $<
+
+sure_on_this_shining_night_all.mp3: sure_on_this_shining_night_all.wav
+
+sure_on_this_shining_night_all.wav: sure_on_this_shining_night_all.mid
+
+sure_on_this_shining_night_soprano_1.mp3: sure_on_this_shining_night_soprano_1.wav
+
+sure_on_this_shining_night_soprano_1.wav: sure_on_this_shining_night_soprano_1.mid
+
+sure_on_this_shining_night_soprano_2.mp3: sure_on_this_shining_night_soprano_2.wav
+
+sure_on_this_shining_night_soprano_2.wav: sure_on_this_shining_night_soprano_2.mid
+
+sure_on_this_shining_night_alto_1.mp3: sure_on_this_shining_night_alto_1.wav
+
+sure_on_this_shining_night_alto_1.wav: sure_on_this_shining_night_alto_1.mid
+
+sure_on_this_shining_night_alto_2.mp3: sure_on_this_shining_night_alto_2.wav
+
+sure_on_this_shining_night_alto_2.wav: sure_on_this_shining_night_alto_2.mid
+
+sure_on_this_shining_night_tenor_1.mp3: sure_on_this_shining_night_tenor_1.wav
+
+sure_on_this_shining_night_tenor_1.wav: sure_on_this_shining_night_tenor_1.mid
+
+sure_on_this_shining_night_tenor_2.mp3: sure_on_this_shining_night_tenor_2.wav
+
+sure_on_this_shining_night_tenor_2.wav: sure_on_this_shining_night_tenor_2.mid
+
+sure_on_this_shining_night_bass_1.mp3: sure_on_this_shining_night_bass_1.wav
+
+sure_on_this_shining_night_bass_1.wav: sure_on_this_shining_night_bass_1.mid
+
+sure_on_this_shining_night_bass_2.mp3: sure_on_this_shining_night_bass_2.wav
+
+sure_on_this_shining_night_bass_2.wav: sure_on_this_shining_night_bass_2.mid
+
+sure_on_this_shining_night_piano.mp3: sure_on_this_shining_night_piano.wav
+
+sure_on_this_shining_night_piano.wav: sure_on_this_shining_night_piano.mid

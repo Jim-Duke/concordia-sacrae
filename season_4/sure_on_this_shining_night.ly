@@ -1602,6 +1602,109 @@ pianoLeftHandMusic = \relative c' {
       <ges ges,>4. r8 s2 |
     }
   >>
+  
+  % Measure 43
+  <<
+    {
+      s2 aes'8 aes8~ aes4 |
+      f8 f4 f8 ges8 ges4 ges8 |
+      f8 f4 f8~ f8 f4 f8 |
+    }
+    \\
+    {
+      <bes aes ges>4 <aes bes,>4 c,2 |
+      bes2 bes2 |
+      aes2~ aes8 aes8~ aes4 |
+    }
+  >>
+  
+  % Measure 46
+  <<
+    {
+      f'8 f4 f8 f8 f4 f8 |
+      <aes des,>8 <aes des,>4 <aes des,>8~ <aes des,>8 <aes des,>4.\fermata \bar "||"
+      \time 3/4
+      des,8 des4 des8~ des8 des8 |
+    }
+    \\
+    {
+      bes2 aes4. aes8 |
+      ges1\fermata |
+      \time 3/4
+      <aes des,>2. |
+    }
+  >>
+  
+  % Measure 49
+  <<
+    {
+      \time 4/4
+      des8 des4 des8 ees8 ees4 ees8 |
+      des8 des4 des8~ des8 des4 des8 |
+      des8 des4 des8 ees8 ees4 ees8 |
+    }
+    \\
+    {
+      \time 4/4
+      <bes des,>2 <aes des,>2 |
+      <aes des,>1 |
+      <aes des,>2 <aes des,>2 |
+    }
+  >>
+  
+  % Measure 52
+  \time 3/4
+  <f' aes,>4 <ges bes,>4 <aes des,>4 |
+  <f bes,>4 <ges bes,>4 <aes c,>4 |
+  <bes aes ges>2. |
+  <f aes,>4 <ges bes,>4 <aes des,>4 |
+  
+  % Measure 56
+  \time 4/4
+  <f bes,>4 <ges bes,>4 <aes c,>2 \bar "||"
+  <<
+    {
+      \time 3/4
+      des,8 des4 f8 aes8 des8 |
+    }
+    \\
+    {
+      <aes, des,>2. |
+    }
+  >>
+  <bes des,>2 <ees aes, des,>4 |
+  
+  % Measure 59
+  <<
+    {
+      des8 des4 f8 aes8 ees'8 |
+    }
+    \\
+    {
+      <aes,, des,>2. |
+    }
+  >>
+  \time 4/4
+  <bes des,>2.\fermata r4 |
+  r2 r2\fermata \bar "||"
+  
+  % Measure 62
+  <<
+    {
+      \time 3/4
+      des8 des8~ des4 des4 |
+      \time 4/4
+      bes8 bes8~ bes4
+    }
+    \\
+    {
+      \time 3/4
+      <aes des,>2. |
+      \time 4/4
+      des,2
+    }
+  >> <aes' des,>2\fermata |
+  <des aes des,>1\fermata \bar "|."
 }
 
 \include "../../LilypondTemplates/ssaattbb-piano-score.ly"
