@@ -374,6 +374,35 @@ SURE_ON_THIS_SHINING_NIGHT_TRACKS := \
   sure_on_this_shining_night_bass_1.mp3 \
   sure_on_this_shining_night_bass_2.mp3
 
+DIDNT_MY_LORD_DELIVER_DANIEL_LILYPOND_PRODUCTS := \
+  didnt_my_lord_deliver_daniel.pdf \
+  didnt_my_lord_deliver_daniel_all.mid \
+  didnt_my_lord_deliver_daniel_small_group_top.mid \
+  didnt_my_lord_deliver_daniel_small_group_middle.mid \
+  didnt_my_lord_deliver_daniel_small_group_bottom.mid \
+  didnt_my_lord_deliver_daniel_soprano_1.mid \
+  didnt_my_lord_deliver_daniel_soprano_2.mid \
+  didnt_my_lord_deliver_daniel_alto_1.mid \
+  didnt_my_lord_deliver_daniel_alto_2.mid \
+  didnt_my_lord_deliver_daniel_tenor_1.mid \
+  didnt_my_lord_deliver_daniel_tenor_2.mid \
+  didnt_my_lord_deliver_daniel_bass_1.mid \
+  didnt_my_lord_deliver_daniel_bass_2.mid
+
+DIDNT_MY_LORD_DELIVER_DANIEL_TRACKS := \
+  didnt_my_lord_deliver_daniel_all.mp3 \
+  didnt_my_lord_deliver_daniel_small_group_top.mp3 \
+  didnt_my_lord_deliver_daniel_small_group_middle.mp3 \
+  didnt_my_lord_deliver_daniel_small_group_bottom.mp3 \
+  didnt_my_lord_deliver_daniel_soprano_1.mp3 \
+  didnt_my_lord_deliver_daniel_soprano_2.mp3 \
+  didnt_my_lord_deliver_daniel_alto_1.mp3 \
+  didnt_my_lord_deliver_daniel_alto_2.mp3 \
+  didnt_my_lord_deliver_daniel_tenor_1.mp3 \
+  didnt_my_lord_deliver_daniel_tenor_2.mp3 \
+  didnt_my_lord_deliver_daniel_bass_1.mp3 \
+  didnt_my_lord_deliver_daniel_bass_2.mp3
+
 # Shouldn't need to edit the following macros
 
 LIBRARY_DIR = $(ROOT_DIR)/../LilypondTemplates
@@ -402,7 +431,8 @@ local: \
  $(ALLELUIA_SIXTEN_TRACKS) \
  $(SOON_AH_WILL_BE_DONE_TRACKS) \
  $(SING_ME_TO_HEAVEN_TRACKS) \
- $(SURE_ON_THIS_SHINING_NIGHT_TRACKS)
+ $(SURE_ON_THIS_SHINING_NIGHT_TRACKS) \
+ $(DIDNT_MY_LORD_DELIVER_DANIEL_TRACKS)
 
 %.wav: %.mid
 	fluidsynth -F $@ $(SOUNDFONT) $<
@@ -1095,3 +1125,59 @@ sure_on_this_shining_night_bass_2.wav: sure_on_this_shining_night_bass_2.mid
 sure_on_this_shining_night_piano.mp3: sure_on_this_shining_night_piano.wav
 
 sure_on_this_shining_night_piano.wav: sure_on_this_shining_night_piano.mid
+
+#
+# Didn't My Lord Deliver Daniel rules
+#
+
+$(DIDNT_MY_LORD_DELIVER_DANIEL_LILYPOND_PRODUCTS): didnt_my_lord_deliver_daniel.ly
+	$(LILYPOND) $(LILYPOND_PROD_OPTIONS) $<
+
+didnt_my_lord_deliver_daniel_all.mp3: didnt_my_lord_deliver_daniel_all.wav
+
+didnt_my_lord_deliver_daniel_all.wav: didnt_my_lord_deliver_daniel_all.mid
+
+didnt_my_lord_deliver_daniel_small_group_top.mp3: didnt_my_lord_deliver_daniel_small_group_top.wav
+
+didnt_my_lord_deliver_daniel_small_group_top.wav: didnt_my_lord_deliver_daniel_small_group_top.mid
+
+didnt_my_lord_deliver_daniel_small_group_middle.mp3: didnt_my_lord_deliver_daniel_small_group_middle.wav
+
+didnt_my_lord_deliver_daniel_small_group_middle.wav: didnt_my_lord_deliver_daniel_small_group_middle.mid
+
+didnt_my_lord_deliver_daniel_small_group_bottom.mp3: didnt_my_lord_deliver_daniel_small_group_bottom.wav
+
+didnt_my_lord_deliver_daniel_small_group_bottom.wav: didnt_my_lord_deliver_daniel_small_group_bottom.mid
+
+didnt_my_lord_deliver_daniel_soprano_1.mp3: didnt_my_lord_deliver_daniel_soprano_1.wav
+
+didnt_my_lord_deliver_daniel_soprano_1.wav: didnt_my_lord_deliver_daniel_soprano_1.mid
+
+didnt_my_lord_deliver_daniel_soprano_2.mp3: didnt_my_lord_deliver_daniel_soprano_2.wav
+
+didnt_my_lord_deliver_daniel_soprano_2.wav: didnt_my_lord_deliver_daniel_soprano_2.mid
+
+didnt_my_lord_deliver_daniel_alto_1.mp3: didnt_my_lord_deliver_daniel_alto_1.wav
+
+didnt_my_lord_deliver_daniel_alto_1.wav: didnt_my_lord_deliver_daniel_alto_1.mid
+
+didnt_my_lord_deliver_daniel_alto_2.mp3: didnt_my_lord_deliver_daniel_alto_2.wav
+
+didnt_my_lord_deliver_daniel_alto_2.wav: didnt_my_lord_deliver_daniel_alto_2.mid
+
+didnt_my_lord_deliver_daniel_tenor_1.mp3: didnt_my_lord_deliver_daniel_tenor_1.wav
+
+didnt_my_lord_deliver_daniel_tenor_1.wav: didnt_my_lord_deliver_daniel_tenor_1.mid
+
+didnt_my_lord_deliver_daniel_tenor_2.mp3: didnt_my_lord_deliver_daniel_tenor_2.wav
+
+didnt_my_lord_deliver_daniel_tenor_2.wav: didnt_my_lord_deliver_daniel_tenor_2.mid
+
+didnt_my_lord_deliver_daniel_bass_1.mp3: didnt_my_lord_deliver_daniel_bass_1.wav
+
+didnt_my_lord_deliver_daniel_bass_1.wav: didnt_my_lord_deliver_daniel_bass_1.mid
+
+didnt_my_lord_deliver_daniel_bass_2.mp3: didnt_my_lord_deliver_daniel_bass_2.wav
+
+didnt_my_lord_deliver_daniel_bass_2.wav: didnt_my_lord_deliver_daniel_bass_2.mid
+

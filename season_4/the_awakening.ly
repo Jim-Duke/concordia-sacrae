@@ -1183,12 +1183,12 @@ tenorTwoMusic = \relative c {
   
   % Measure 14, page 3, system 2
   r1 |
-  r4 aes4 aes4 f4 |
-  g2. g4 |
+  r4 f4 ees4 des4 |
+  ees2. ees4 |
   \time 2/4
-  aes4 c4 |
+  ees4 ees4 |
   \time 4/4
-  f,2. f8 f8 |
+  f2. f8 f8 |
   
   % Measure 19, page 3, system 3
   aes4 g4 f4 ees4 |
@@ -1236,7 +1236,7 @@ tenorTwoMusic = \relative c {
   r1 |
   \time 2/4
   r4 a4 |
-  b4 b4 |
+  fis4 fis4 |
   gis2~ |
   \time 4/4
   
@@ -1248,11 +1248,11 @@ tenorTwoMusic = \relative c {
   
   % Measure 50, page 6, system 3
   r4 cis4 cis4 dis4 |
-  fis2 e2~ |
-  e4 e4 e4 dis4 |
+  dis2 dis2( |
+  cis4) cis4 cis4 cis4 |
   
   % Measure 53, page 7, system 1
-  dis4.( cis8) cis2 |
+  a2 a2 |
   r4 cis4 dis4 e4 |
   a,1 |
   
@@ -1319,7 +1319,7 @@ tenorTwoMusic = \relative c {
   
   % Measure 91, page 12, system 2
   b2. b8( cis8) |
-  d4. d8 cis4 a4 |
+  d4. b8 cis4 a4 |
   
   % Measure 93, page 12, system 3
   b2. b4 |
@@ -1327,7 +1327,7 @@ tenorTwoMusic = \relative c {
   
   % Measure 95, page 13, system 1
   b2. b8( cis8) |
-  d4. d8 cis4 cis4 |
+  b4. b8 cis4 cis4 |
   
   % Measure 97, page 13, system 2
   b2. e,4 |
@@ -1364,19 +1364,19 @@ tenorTwoMusic = \relative c {
   d4( cis4) b2 |
   
   % Measure 115, page 16, system 1
-  e1 |
-  r4 e4 e4 dis4 |
-  e1 |
+  b1 |
+  r4 cis4 cis4 b4 |
+  b1 |
   
   % Measure 118, page 16, system 2
   r4 d4 d4 d4 |
   b1 |
-  r4 d4 d4 d4 |
+  r4 a4 a4 a4 |
   
   % Measure 121, page 16, system 3
-  b1 |
+  gis1 |
   r1 |
-  r4 e4 e4 e4 |
+  r4 e'4 c4 e4 |
   e1~ |
   e1\fermata \bar "|."
 }
@@ -1412,10 +1412,10 @@ bassOneMusic = \relative c {
   
   % Measure 14, page 3, system 2
   r1 |
-  r4 f4 ees4 des4 |
+  r4 des4 aes4 aes4 |
   ees2. ees4 |
   \time 2/4
-  ees4 ees4 |
+  aes4 aes4 |
   \time 4/4
   des2. des8 des8 |
   
@@ -1465,7 +1465,7 @@ bassOneMusic = \relative c {
   r1 |
   \time 2/4
   r4 fis4 |
-  fis4 fis4 |
+  b,4 b4 |
   cis2~ |
   \time 4/4
   
@@ -1477,12 +1477,12 @@ bassOneMusic = \relative c {
   
   % Measure 50, page 6, system 3
   r4 cis'4 cis4 bis4 |
-  dis2 dis2( |
-  cis4) cis4 cis4 cis4 |
+  gis2 gis2~ |
+  gis4 gis4 gis4 gis4 |
   
   % Measure 53, page 7, system 1
-  a2 a2 |
-  r4 b4 a4 gis4 |
+  e2 e2 |
+  r4 b'4 a4 gis4 |
   gis2( fis2) |
   
   % Measure 56, page 7, system 2
@@ -1548,7 +1548,7 @@ bassOneMusic = \relative c {
   
   % Measure 91, page 12, system 2
   b2. b8( a8) |
-  g4. b8 a4 a4 |
+  g4. g8 a4 a4 |
   
   % Measure 93, page 12, system 3
   b2. b4 |
@@ -1556,7 +1556,7 @@ bassOneMusic = \relative c {
   
   % Measure 95, page 13, system 1
   b2. b8( a8) |
-  b4. b8 a4 a4 |
+  g4. g8 a4 a4 |
   
   % Measure 97, page 13, system 2
   b2. e,4 |
@@ -1593,19 +1593,19 @@ bassOneMusic = \relative c {
   b4( a4) g2 |
   
   % Measure 115, page 16, system 1
-  b1 |
-  r4 cis4 cis4 b4 |
-  b1 |
+  fis1 |
+  r4 fis4 fis4 b,4 |
+  e1 |
   
   % Measure 118, page 16, system 2
   r4 a4 cis4 a4 |
   e1 |
-  r4 a4 a4 a4 |
+  r4 fis4 d4 fis4 |
   
   % Measure 121, page 16, system 3
-  gis1 |
+  e1 |
   r1 |
-  r4 c4 c4 c4 |
+  r4 c'4 b4 c4 |
   b1~ |
   b1\fermata \bar "|."
 }
