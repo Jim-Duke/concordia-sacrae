@@ -45,6 +45,18 @@ BEHOLD_HOW_GOOD_TRACKS := \
   behold_how_good_bass_1.mp3 \
   behold_how_good_bass_2.mp3
 
+HARK_TRACKS := \
+  hark_i_hear_the_harps_eternal_all.mp3 \
+  hark_i_hear_the_harps_eternal_solo.mp3 \
+  hark_i_hear_the_harps_eternal_soprano_1.mp3 \
+  hark_i_hear_the_harps_eternal_soprano_2.mp3 \
+  hark_i_hear_the_harps_eternal_alto_1.mp3 \
+  hark_i_hear_the_harps_eternal_alto_2.mp3 \
+  hark_i_hear_the_harps_eternal_tenor_1.mp3 \
+  hark_i_hear_the_harps_eternal_tenor_2.mp3 \
+  hark_i_hear_the_harps_eternal_bass_1.mp3 \
+  hark_i_hear_the_harps_eternal_bass_2.mp3
+
 # Shouldn't need to edit the following macros
 
 LIBRARY_DIR = $(ROOT_DIR)/../LilypondTemplates
@@ -57,7 +69,7 @@ include common.mk
 
 .PHONY: local prod clean prodclean
 
-local: $(ONLY_IN_SLEEP_TRACKS) $(TUNDRA_TRACKS) $(BEHOLD_HOW_GOOD_TRACKS)
+local: $(ONLY_IN_SLEEP_TRACKS) $(TUNDRA_TRACKS) $(BEHOLD_HOW_GOOD_TRACKS) $(HARK_TRACKS)
 
 clean:
 	-rm *.pdf
@@ -167,6 +179,10 @@ tundra_alto_2.mp3: tundra_alto_2.wav
 tundra_alto_2.wav: tundra_alto_2.mid
 	fluidsynth -F $@ $(SOUNDFONT) $<
 
+#
+# Behold How Good rules
+#
+
 behold_how_good_all.mp3: behold_how_good_all.wav
 	lame -V2 $< $@
 
@@ -225,6 +241,70 @@ behold_how_good_bass_2.mp3: behold_how_good_bass_2.wav
 	lame -V2 $< $@
 
 behold_how_good_bass_2.wav: behold_how_good_bass_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+#
+# Hark! I Hear the Harps Eternal rules
+#
+
+hark_i_hear_the_harps_eternal_all.mp3: hark_i_hear_the_harps_eternal_all.wav
+	lame -V2 $< $@
+
+hark_i_hear_the_harps_eternal_all.wav: hark_i_hear_the_harps_eternal_all.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+hark_i_hear_the_harps_eternal_solo.mp3: hark_i_hear_the_harps_eternal_solo.wav
+	lame -V2 $< $@
+
+hark_i_hear_the_harps_eternal_solo.wav: hark_i_hear_the_harps_eternal_solo.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+hark_i_hear_the_harps_eternal_soprano_1.mp3: hark_i_hear_the_harps_eternal_soprano_1.wav
+	lame -V2 $< $@
+
+hark_i_hear_the_harps_eternal_soprano_1.wav: hark_i_hear_the_harps_eternal_soprano_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+hark_i_hear_the_harps_eternal_soprano_2.mp3: hark_i_hear_the_harps_eternal_soprano_2.wav
+	lame -V2 $< $@
+
+hark_i_hear_the_harps_eternal_soprano_2.wav: hark_i_hear_the_harps_eternal_soprano_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+hark_i_hear_the_harps_eternal_alto_1.mp3: hark_i_hear_the_harps_eternal_alto_1.wav
+	lame -V2 $< $@
+
+hark_i_hear_the_harps_eternal_alto_1.wav: hark_i_hear_the_harps_eternal_alto_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+hark_i_hear_the_harps_eternal_alto_2.mp3: hark_i_hear_the_harps_eternal_alto_2.wav
+	lame -V2 $< $@
+
+hark_i_hear_the_harps_eternal_alto_2.wav: hark_i_hear_the_harps_eternal_alto_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+hark_i_hear_the_harps_eternal_tenor_1.mp3: hark_i_hear_the_harps_eternal_tenor_1.wav
+	lame -V2 $< $@
+
+hark_i_hear_the_harps_eternal_tenor_1.wav: hark_i_hear_the_harps_eternal_tenor_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+hark_i_hear_the_harps_eternal_tenor_2.mp3: hark_i_hear_the_harps_eternal_tenor_2.wav
+	lame -V2 $< $@
+
+hark_i_hear_the_harps_eternal_tenor_2.wav: hark_i_hear_the_harps_eternal_tenor_2.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+hark_i_hear_the_harps_eternal_bass_1.mp3: hark_i_hear_the_harps_eternal_bass_1.wav
+	lame -V2 $< $@
+
+hark_i_hear_the_harps_eternal_bass_1.wav: hark_i_hear_the_harps_eternal_bass_1.mid
+	fluidsynth -F $@ $(SOUNDFONT) $<
+
+hark_i_hear_the_harps_eternal_bass_2.mp3: hark_i_hear_the_harps_eternal_bass_2.wav
+	lame -V2 $< $@
+
+hark_i_hear_the_harps_eternal_bass_2.wav: hark_i_hear_the_harps_eternal_bass_2.mid
 	fluidsynth -F $@ $(SOUNDFONT) $<
 
 Sheet-Music.pdf: Sheet-Music.ly $(COMMON_DEPS)

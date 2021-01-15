@@ -2,7 +2,7 @@
 
 \include "../../LilypondTemplates/midi.ly"
 
-Title = "Hark I Hear the Harps Eternal"
+Title = "hark_i_hear_the_harps_eternal"
 
 \header {
   title = \Title
