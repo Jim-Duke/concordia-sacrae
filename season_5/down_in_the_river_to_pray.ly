@@ -18,6 +18,10 @@ sopranoOneMusic = \relative c''{
   \tempo 2=55
   \set Score.markFormatter = #format-mark-circle-numbers
 
+  % lead-in
+  r1
+  r1
+
   % alto/tenor duet
   r1 r1 r1 r1 r1 r1 r1 r1 r1
   r1 r1 r1 r1 r1 r1 r1 r1 r1
@@ -91,6 +95,10 @@ sopranoTwoMusic = \relative c''{
   \tempo 2=55
   \set Score.markFormatter = #format-mark-circle-numbers
 
+  % lead-in
+  r1
+  r1
+
   % alto/tenor duet
   r1 r1 r1 r1 r1 r1 r1 r1 r1
   r1 r1 r1 r1 r1 r1 r1 r1 r1
@@ -162,6 +170,10 @@ altoOneMusic = \relative c' {
   \time 2/2
   \tempo 2=55
   \set Score.markFormatter = #format-mark-circle-numbers
+
+  % lead-in
+  b1
+  r1
 
   % page 3, system 1 (solo)
   r4 b4 b4 cis
@@ -256,6 +268,10 @@ altoTwoMusic = \relative c' {
   \tempo 2=55
   \set Score.markFormatter = #format-mark-circle-numbers
 
+  % lead-in
+  r1
+  r1
+
   % alto/tenor duet
   r1 r1 r1 r1 r1 r1 r1 r1 r1
   r1 r1 r1 r1 r1 r1 r1 r1 r1
@@ -328,65 +344,81 @@ tenorOneMusic = \relative c''{
   \tempo 2=55
   \set Score.markFormatter = #format-mark-circle-numbers
 
+  % lead-in
+  r1
+  r1
+
   % alto solo
   r1 r1 r1 r1 r1 r1 r1 r1 r1
-  
+
+  % page 3, system 3
   b2 b4 b4
   a4 a4 gis2
   gis2 a2
   b4 a4 gis4( b4)
   
+  % page 3, system 4
   b2 b4 b4
   a4 a4 gis2
   gis4 gis8 a8 b8 b8 b8( cis8)
   dis8( cis8 b2 a4
   gis1)
   
+  % page 4, system 1
   r4 b4 b4 b4
   b4 e8 e8 dis8 dis8 cis4
   b1
   b8 b8 b8 b8 a4 a4
   
+  % page 4, system 2
   gis4 a4 b4 dis4
   e4 cis4 b4 b4
   a4 a4 gis4 gis8( fis8)
   e4 gis4 b4~ b8 b8
 
+  % page 5, system 1
   b1
   b1~
   b1~
   b1~
 
+  % page 5, system 2
   b1
   \slashedGrace e,16( fis2) fis4 e4
   gis4 b4 fis16( e8.~ e4)
   b'4 a8 a8 a8 a8 a4
 
+  % page 6, system 1
   gis2. r4
   \time 4/4 \tempo 4=90
   b2 c2~
   c1~
   c1~
   
+  % page 6, system 2
   c1~
   c1~
   c1
   r2 r4 b8 r8
 
+  % page 7, system 1
   r2 e8( d8) c8( b8)
   a2 b8 b8~ b8 a8
   \time 3/2
   a1~ a4 r4\fermata
 
+  % page 7, system 2
   \time 2/2 \tempo 2=60
   r4 e'4 e4 e4
   fis4 e4 e2
   b4 a4 b4 fis8 fis8
 
+  % page 8, system 1
   gis4 fis8 a8 b4( a4)
   \slashedGrace e16( fis2) fis4 e4
   gis4 b4 fis2(
 
+  % page 8, system 2
   gis4) gis8 gis8 a8 a8 a4
   r2 c2
   b1\fermata
@@ -399,55 +431,69 @@ tenorTwoMusic = \relative c''{
   \tempo 2=55
   \set Score.markFormatter = #format-mark-circle-numbers
 
-  % alto solo
+  % lead-in
+  r1
+  r1
+
+  % alto/tenor duet
   r1 r1 r1 r1 r1 r1 r1 r1 r1
   r1 r1 r1 r1 r1 r1 r1 r1 r1
-    
+
+  % page 4, system 1
   r4 b4 b4 a4
   gis4 gis8 gis8 a8 a8 cis4
   b1
   b8 a8 gis8 fis8 fis4 fis4
   
+  % page 4, system 2
   gis4 a4 b4 dis4
   b4 a4 gis4 gis4
   a4 a4 gis4 gis8( fis8)
   e4 gis4 b4~ b8 b8
 
+  % page 5, system 1
   b1
   b1~
   b1~
   b1~
 
+  % page 5, system 2
   b1
   \slashedGrace e,16( fis2) fis4 e4
   gis4 b4 fis16( e8.~ e4)
   b'4 a8 a8 a8 a8 a4
 
+  % page 6, system 1
   gis2. r4
   \time 4/4 \tempo 4=90
   b1~
   b1~
   b1~
   
+  % page 6, system 2
   b1~
   b1~
   b1
   r2 r4 b8 r8
 
+  % page 7, system 1
   r2 e8( d8) c8( b8)
   a2 b8 b8~ b8 a8
   \time 3/2
   a8 g8~ g1 r4\fermata
 
+  % page 7, system 2
   \time 2/2 \tempo 2=60
   r4 e'4 e4 e4
   dis4 cis4 cis4( b4)
   b4 a4 b4 fis8 fis8
 
+  % page 8, system 1
   gis4 fis8 a8 b4( a4)
   \slashedGrace e16( fis2) fis4 e4
   gis4 b4 fis2(
 
+  % page 8, system 2
   gis4) gis8 gis8 a8 a8 a4
   r2 c2
   b1\fermata
@@ -461,6 +507,11 @@ bassOneMusic = \relative c' {
   \tempo 2=55
   \set Score.markFormatter = #format-mark-circle-numbers
 
+  % lead-in
+  r1
+  r1
+
+  % alto/tenor duet
   r1 r1 r1 r1 r1 r1 r1 r1 r1
   r1 r1 r1 r1 r1 r1 r1 r1 r1
   
@@ -522,6 +573,11 @@ bassTwoMusic = \relative c' {
   \tempo 2=55
   \set Score.markFormatter = #format-mark-circle-numbers
 
+  % lead-in
+  r1
+  r1
+
+  % alto/tenor duet
   r1 r1 r1 r1 r1 r1 r1 r1 r1
   r1 r1 r1 r1 r1 r1 r1 r1 r1
   
@@ -577,7 +633,97 @@ bassTwoMusic = \relative c' {
 
 metronomeMusic = \drummode {
   \time 2/2
+
+  % lead-in
+  r1
+  cl2 cl2
+  
+  % page 3, system 1
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2\fermata
+  cl2 cl2
+  
+  % page 3, system 2
+  cl2 cl2\fermata
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  
+  % page 3, system 3
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  
+  % page 3, system 4
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  
+  % page 4, system 1
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  
+  % page 4, system 2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  
+  % page 5, system 1
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+
+  % page 5, system 2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+
+  % page 6, system 1
+  cl2 cl2
+  \time 4/4 \tempo 4=90
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  
+  % page 6, system 2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+
+  % page 7, system 1
+  cl2 cl2
+  cl2 cl2
+  \time 3/2
+  cl2 cl2 cl2\fermata
+  
+  % page 7, system 2
+  \time 2/2 \tempo 2=60
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+  
+  % page 8, system 1
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2
+ 
+  % page 8, system 2
+  cl2 cl2
+  cl2 cl2
+  cl2 cl2\fermata
+  
 }
 
 \include "../../LilypondTemplates/ssaattbb-score.ly"
-%\include "../../LilypondTemplates/ssaattbb-midi.ly"
+\include "../../LilypondTemplates/ssaattbb-midi.ly"
