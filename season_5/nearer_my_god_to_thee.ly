@@ -258,6 +258,114 @@ tenorOneMusic = \relative c' {
   bes4 bes4 bes8( a8) bes8 |
   bes4 bes4 bes8( a8 bes8) |
   c4 a4 a4 g8 |
+  
+  % measure 46, Page 3, system 2
+  a4 a8 a8 a4 a8 |
+  g8 r8 g4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes4 bes8 |
+  c4 c4 d4 f8 |
+  \time 2/2
+  f1( |
+  g2) f2 |
+  f2. d4 |
+  
+  % measure 54, Page 4, system 1
+  f2. r4 |
+  f1 |
+  g2 f2 |
+  f2. d4 |
+  c2( d4) r4 |
+  \time 7/8
+  g,4 g4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes8( a8) bes8 |
+  
+  % measure 62, Page 4, system 2
+  bes4 bes4 bes8( a8 bes8) |
+  c4 a4 a4 g8 |
+  a4 a8 a8 a4 a8 |
+  g4 r2 r8 |
+  bes'2.. |
+  a2 g4. |
+  g2. ees8 |
+  ees2. r8 |
+  
+  % measure 70, Page 5, system 1
+  f2.. |
+  d2 f4. |
+  g2..( |
+  a2.) r8 |
+  bes2.. |
+  a2 g4. |
+  g2. ees8 |
+  
+  % measure 77, Page 5, system 2
+  ees2. r8 |
+  ees2( g4.) |
+  g2 fis4. |
+  g8 r4 r2 |
+  r2.. |
+  r2.. |
+  r2.. |
+  \time 2/2
+  f1 |
+  
+  % measure 85, page 6, system 1
+  g2 f2 |
+  f2. d4 |
+  f2. r4 |
+  f1 |
+  g2 f2 |
+  f2. d4 |
+  c2( d4) r4 |
+  \time 7/8
+  g,4 g4 g4 g8 |
+  
+  % measure 93, Page 6, system 2
+  a4 a4 a4 a8 |
+  bes4 bes4 bes8( a8) bes8 |
+  bes4 bes4 bes8( a8 bes8) |
+  c4 c4 c4 c8 |
+  d4 d8 d8 fis4 fis8 |
+  g8 r8 r2 r8 |
+  r4 g4 g4 g8 |
+  g4 r2 r8 |
+  
+  % measure 101, Page 7, system 1
+  r4 g4 g4 g8 |
+  g4 r2 r8 |
+  r4 g4 g4 g8 |
+  a2..~ |
+  a2.. |
+  \key ees \major
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 108, Page 7, system 2
+  aes4 aes4 aes8( g8) aes8 |
+  aes4 aes4 aes8( g8 aes8) |
+  bes4 g4 g4 f8 |
+  g4 g4 g4 f8 |
+  g4 g4 g4 f8 |
+  g4 g4 g8( f8 g8) |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 116, Page 8, system 1
+  aes4 aes4 aes4 aes8 |
+  bes4 bes4 aes8( g8 aes8) |
+  g4 g4 g8( aes8) g8 |
+  g4 g8 g8 g4 g8 |
+  c,4 c4 c4 c8 |
+  d4 d4 d4 d8 |
+  
+  % measure 122, Page 8, system 2
+  aes'4 aes4 aes4 aes8 |
+  aes4 aes4 aes8( g8 aes8) |
+  aes4 aes4 aes8( bes8) aes8 |
+  g4 g8 g8 g4 g8 |
+  g8 r4 r2 \bar "|."
 }
 
 tenorTwoMusic = \relative c' {
@@ -326,6 +434,114 @@ tenorTwoMusic = \relative c' {
   bes4 bes4 bes8( a8) bes8 |
   bes4 bes4 bes8( a8 bes8) |
   c4 a4 a4 g8 |
+  
+  % measure 46, Page 3, system 2
+  a4 a8 a8 a4 a8 |
+  g8 r8 g4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes4 bes8 |
+  c4 c4 d4 f8 |
+  \time 2/2
+  ees1~ |
+  ees2 ees2 |
+  f2. d4 |
+  
+  % measure 54, Page 4, system 1
+  f2. r4 |
+  f1 |
+  g2 f2 |
+  f2. d4 |
+  c2( d4) r4 |
+  \time 7/8
+  g,4 g4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes8( a8) bes8 |
+  
+  % measure 62, Page 4, system 2
+  bes4 bes4 bes8( a8 bes8) |
+  c4 a4 a4 g8 |
+  a4 a8 a8 a4 a8 |
+  g4 r2 r8 |
+  g'2.. |
+  f2 d4. |
+  f2. ees8 |
+  ees2. r8 |
+  
+  % measure 70, Page 5, system 1
+  d2.. |
+  d2 d4. |
+  d2..~ |
+  d2. r8 |
+  g2.. |
+  f2 d4. |
+  f2. ees8 |
+  
+  % measure 77, Page 5, system 2
+  ees2. r8 |
+  c2( ees4.) |
+  d2 d4. |
+  d8 r4 r2 |
+  r2.. |
+  r2.. |
+  r2.. |
+  \time 2/2
+  ees1 |
+  
+  % measure 85, page 6, system 1
+  ees2 ees2 |
+  f2. d4 |
+  f2. r4 |
+  f1 |
+  g2 f2 |
+  f2. d4 |
+  c2( d4) r4 |
+  \time 7/8
+  g,4 g4 g4 g8 |
+  
+  % measure 93, Page 6, system 2
+  a4 a4 a4 a8 |
+  bes4 bes4 bes8( a8) bes8 |
+  bes4 bes4 bes8( a8 bes8) |
+  c4 c4 c4 c8 |
+  d4 d8 d8 fis4 fis8 |
+  g8 r8 r2 r8 |
+  r4 g4 g4 g8 |
+  g4 r2 r8 |
+  
+  % measure 101, Page 7, system 1
+  r4 g4 g4 g8 |
+  g4 r2 r8 |
+  r4 g4 g4 g8 |
+  g2..( |
+  a2..) |
+  \key ees \major
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 108, Page 7, system 2
+  aes4 aes4 aes8( g8) aes8 |
+  aes4 aes4 aes8( g8 aes8) |
+  bes4 g4 g4 f8 |
+  g4 g4 g4 f8 |
+  g4 g4 g4 f8 |
+  g4 g4 g8( f8 g8) |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 116, Page 8, system 1
+  aes4 aes4 aes4 aes8 |
+  g4 g4 aes8( g8 aes8) |
+  g4 g4 g8( aes8) g8 |
+  g4 g8 g8 g4 g8 |
+  c,4 c4 c4 c8 |
+  d4 d4 d4 d8 |
+  
+  % measure 122, Page 8, system 2
+  aes'4 aes4 aes4 aes8 |
+  aes4 aes4 aes8( g8 aes8) |
+  aes4 aes4 aes8( bes8) aes8 |
+  g4 g8 g8 g4 g8 |
+  g8 r4 r2 \bar "|."
 }
 
 tenorThreeMusic = \relative c' {
@@ -395,6 +611,114 @@ tenorThreeMusic = \relative c' {
   bes4 bes4 bes8( a8) bes8 |
   bes4 bes4 bes8( a8 bes8) |
   g4 g4 g4 g8 |
+  
+  % measure 46, page 3, system 2
+  a4 a8 a8 fis4 fis8 |
+  g8 r8 g4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes4 bes8 |
+  c4 c4 d4 d8 |
+  \time 2/2
+  bes1~ |
+  bes2 bes2 |
+  c2~ c4 c4 |
+  
+  % measure 54, page 4, system 1
+  d2~ d4 r4 |
+  ees1 |
+  ees2 ees2 |
+  ees2~ ees4 d4 |
+  c2( d4) r4 |
+  \time 7/8
+  g,4 g4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes8( a8) bes8 |
+  
+  % measure 62, page 4, system 2
+  bes4 bes4 bes8( a8 bes8) |
+  g4 g4 g4 g8 |
+  g4 g8 g8 fis4 fis8 |
+  g4 r2 r8 |
+  d'4 d4 d4 d8 |
+  d4 d4 d4 d8 |
+  ees4 ees4 ees8( d8) ees8 |
+  ees4 ees4 ees8( d8 ees8) |
+  
+  % measure 70, page 5, system 1
+  f4 d4 d4 c8 |
+  d4 d4 d4 c8 |
+  d4 d4 d4 c8 |
+  d4 d4 d8( c8 d8) |
+  d4 d4 d4 d8 |
+  d4 d4 d4 d8 |
+  ees4 ees4 ees8( d8) ees8 |
+  
+  % measure 77, page 5, system 2
+  ees4 ees4 ees8( d8 ees8) |
+  ees4 ees4 ees4 ees8 |
+  d4 d8 d8 d4 c8 |
+  d8 r8 g,4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes4 bes8 |
+  c4 c4 d4 f8 |
+  \time 2/2
+  bes,1 |
+  
+  % measure 85, page 6, system 1
+  bes2 bes2 |
+  c2~ c4 c4 |
+  d2~ d4 r4 |
+  ees1 |
+  ees2 ees2 |
+  ees2~ ees4 d4 |
+  c2( d4) r4 |
+  \time 7/8
+  g,4 g4 g4 g8 |
+  
+  % measure 93, page 6, system 2
+  a4 a4 a4 a8 |
+  bes4 bes4 bes8( a8) bes8 |
+  bes4 bes4 bes8( a8 bes8) |
+  bes4 a4 a4 g8 |
+  a4 a8 a8 d4 c8 |
+  d8 r8 r2 r8 |
+  r4 d4 d4 d8 |
+  d4 r2 r8 |
+  
+  % measure 101, page 7, system 1
+  r4 d4 d4 d8 |
+  ees4 r2 r8 |
+  r4 ees4 ees4 ees8 |
+  ees4 ees4 ees4 ees8 |
+  fis4 fis4 fis4 fis8 |
+  \key ees \major
+  ees4 ees4 ees4 ees8 |
+  ees4 ees4 ees4 ees8 |
+  
+  % measure 108, page 7, system 2
+  ees4 ees4 ees8( d8) ees8 |
+  ees4 ees4 ees8( d8 ees8) |
+  g4 ees4 ees4 ees8 |
+  ees4 ees4 ees4 f8 |
+  d4 d4 d4 c8 |
+  d4 d4 d8( c8 d8) |
+  ees4 ees4 ees4 ees8 |
+  f4 f4 g4 g8 |
+  
+  % measure 116, page 8, system 1
+  f4 f4 f4 f8 |
+  e4 e4 f4. |
+  ees4 ees4 ees8( f8) ees8 |
+  f4 f8 f8 g4 g8 |
+  c,4 c4 c4 c8 |
+  d4 d4 d4 d8 |
+  
+  % measure 122, page 8, system 2
+  ees4 ees4 ees4 ees8 |
+  ees4 ees4 ees8( d8 ees8) |
+  ees4 ees4 ees8( f8) ees8 |
+  d4 d8 d8 d4 d8 |
+  c8 r4 r2 \bar "|."
 }
 
 tenorFourMusic = \relative c' {
@@ -464,6 +788,114 @@ tenorFourMusic = \relative c' {
   bes4 bes4 bes8( a8) bes8 |
   bes4 bes4 bes8( a8 bes8) |
   g4 g4 g4 g8 |
+  
+  % measure 46, page 3, system 2
+  a4 a8 a8 fis4 fis8 |
+  g8 r8 g4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes4 bes8 |
+  c4 c4 d4 d8 |
+  \time 2/2
+  bes1~ |
+  bes2 bes2 |
+  bes2( a4) a4 |
+  
+  % measure 54, page 4, system 1
+  c2( bes4) r4 |
+  bes1 |
+  bes2 bes2 |
+  c2( g4) g4 |
+  a2~ a4 r4 |
+  \time 7/8
+  g4 g4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes8( a8) bes8 |
+  
+  % measure 62, page 4, system 2
+  bes4 bes4 bes8( a8 bes8) |
+  g4 g4 g4 g8 |
+  g4 g8 g8 fis4 fis8 |
+  g4 r2 r8 |
+  g4 g4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes8( a8) bes8 |
+  bes4 bes4 bes8( a8 bes8) |
+  
+  % measure 70, page 5, system 1
+  d4 bes4 bes4 bes8 |
+  bes4 bes4 bes4 c8 |
+  a4 a4 a4 g8 |
+  a4 a4 a8( g8 a8) |
+  g4 g4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes8( a8) bes8 |
+  
+  % measure 77, page 5, system 2
+  bes4 bes4 bes8( a8 bes8) |
+  c4 a4 a4 g8 |
+  a4 a8 a8 a4 a8 |
+  g8 r8 g4 g4 g8 |
+  a4 a4 a4 a8 |
+  bes4 bes4 bes4 bes8 |
+  c4 c4 d4 d8 |
+  \time 2/2
+  bes1 |
+  
+  % measure 85, page 6, system 1
+  bes2 bes2 |
+  bes2( a4) a4 |
+  c2( bes4) r4 |
+  bes1 |
+  bes2 bes2 |
+  c2( g4) g4 |
+  a2~ a4 r4 |
+  \time 7/8
+  g4 g4 g4 g8 |
+  
+  % measure 93, page 6, system 2
+  a4 a4 a4 a8 |
+  bes4 bes4 bes8( a8) bes8 |
+  bes4 bes4 bes8( a8 bes8) |
+  bes4 a4 a4 g8 |
+  a4 a8 a8 a4 a8 |
+  g8 r8 r2 r8 |
+  r4 d'4 d4 d8 |
+  d4 r2 r8 |
+  
+  % measure 101, page 7, system 1
+  r4 d4 d4 d8 |
+  ees4 r2 r8 |
+  r4 ees4 ees4 ees8 |
+  ees4 ees4 ees4 ees8 |
+  fis4 fis4 fis4 fis8 |
+  \key ees \major
+  ees4 ees4 ees4 ees8 |
+  ees4 ees4 ees4 ees8 |
+  
+  % measure 108, page 7, system 2
+  ees4 ees4 ees8( d8) ees8 |
+  ees4 ees4 ees8( d8 ees8) |
+  ees4 ees4 ees4 ees8 |
+  ees4 ees4 ees4 ees8 |
+  d4 d4 d4 c8 |
+  d4 d4 d8( c8 d8) |
+  ees4 ees4 ees4 ees8 |
+  f4 f4 g4 g8 |
+  
+  % measure 116, page 8, system 1
+  f4 f4 f4 f8 |
+  e4 e4 f4. |
+  ees4 ees4 ees8( f8) ees8 |
+  f4 f8 f8 g4 g8 |
+  c,4 c4 c4 c8 |
+  d4 d4 d4 d8 |
+  
+  % measure 122, page 8, system 2
+  ees4 ees4 ees4 ees8 |
+  ees4 ees4 ees8( d8 ees8) |
+  ees4 ees4 ees8( f8) ees8 |
+  d4 d8 d8 d4 d8 |
+  c8 r4 r2 \bar "|."
 }
 
 bassOneMusic = \relative c' {
@@ -533,6 +965,113 @@ bassOneMusic = \relative c' {
   g4 g4 g4 g8 |
   g4 g4 g8( f8 g8) |
   ees4 ees4 ees4 ees8 |
+  
+  % measure 46, page 3, system 2
+  g4 g8 g8 fis4 fis8 |
+  g8 r8 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 bes8 |
+  \time 2/2
+  g1~ |
+  g2 g2 |
+  f2. f4 |
+  
+  % measure 54, page 4, system 1
+  g2. r4 |
+  g1 |
+  g2 g2 |
+  g2. g4 |
+  g2( fis4) r4 |
+  \time 7/8
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 62, page 4, system 2
+  g4 g4 g8( f8 g8) |
+  ees4 ees4 ees4 ees8 |
+  g4 g8 g8 fis4 fis8 |
+  g4 r2 r8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g8( f8 g8) |
+  
+  % measure 70, page 5, system 1
+  f4 f4 f4 f8 |
+  f4 f4 f4 f8 |
+  g4 g4 g4 g8 |
+  fis4 fis4 fis8( e8 fis8) |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 77, page 5, system 2
+  g4 g4 g8( f8 g8) |
+  g4 g4 g4 g8 |
+  g4 g8 g8 fis4 fis8 |
+  g8 r8 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 bes8 |
+  \time 2/2
+  g1 |
+  
+  % measure 85, page 6, system 1
+  g2 g2 |
+  f2. f4 |
+  g2. r4 |
+  g1 |
+  g2 g2 |
+  g2. g4 |
+  g2( fis4) r4 |
+  \time 7/8
+  g4 g4 g4 g8 |
+  
+  % measure 93, page 6, system 2
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4. |
+  g4 g4 g4 g8 |
+  g4 g8 g8 fis4 fis8 |
+  g8 r8 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  b4 g4 g4 g8 |
+  
+  % measure 101, page 7, system 1
+  g4 b4 b4 b8 |
+  c4 g4 g4 g8 |
+  g4 c4 c4 c8 |
+  c2..( d2..) |
+  \key ees \major
+  bes4 bes4 bes4 bes8 |
+  bes4 bes4 bes4 bes8 |
+  
+  % measure 108, page 7, system 2
+  c4 c4 c8( bes8) c8 |
+  c4 c4 c8( bes8 c8) |
+  bes4 bes4 bes4 bes8 |
+  bes4 bes4 bes4 bes8 |
+  c4 c4 c4 c8 |
+  b4 b4 b8( a8 b8) |
+  c4 c4 c4 c8 |
+  d4 d4 ees4 ees8 |
+  
+  % measure 116, page 8, system 1
+  ees4 ees4 ees4 ees8 |
+  c4 c4 c4. |
+  c4 c4 c8( d8) c8 |
+  d4 d8 d8 d4 d8 |
+  c4 c4 c4 c8 |
+  c4 c4 c4 c8 |
+  
+  % measure 122, page 8, system 2
+  c4 c4 c4 c8 |
+  c4 c4 c4. |
+  c4 c4 c4 c8 |
+  c4 c8 c8 b4 b8 |
+  c8 r4 r2 \bar "|."
 }
 
 bassTwoMusic = \relative c' {
@@ -602,6 +1141,113 @@ bassTwoMusic = \relative c' {
   g4 g4 g4 g8 |
   g4 g4 g8( f8 g8) |
   ees4 ees4 ees4 ees8 |
+  
+  % measure 46, page 3, system 2
+  g4 g8 g8 fis4 fis8 |
+  g8 r8 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 bes8 |
+  \time 2/2
+  ees,1~ |
+  ees2 ees2 |
+  c2. c4 |
+  
+  % measure 54, page 4, system 1
+  d2. r4 |
+  ees1 |
+  ees2 ees2 |
+  ees2. ees4 |
+  d2. r4 |
+  \time 7/8
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 62, page 4, system 2
+  g4 g4 g8( f8 g8) |
+  ees4 ees4 ees4 ees8 |
+  g4 g8 g8 fis4 fis8 |
+  g4 r2 r8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g8( f8 g8) |
+  
+  % measure 70, page 5, system 1
+  d4 d4 d4 d8 |
+  d4 d4 d4 d8 |
+  d4 d4 d4 d8 |
+  d4 d4 d4. |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 77, page 5, system 2
+  g4 g4 g8( f8 g8) |
+  ees4 ees4 ees4 ees8 |
+  d4 d8 d8 d4 d8 |
+  g8 r8 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  \time 2/2
+  ees1 |
+  
+  % measure 85, page 6, system 1
+  ees2 ees2 |
+  c2. c4 |
+  d2. r4 |
+  ees1 |
+  ees2 ees2 |
+  ees2. ees4 |
+  d2. r4 |
+  \time 7/8
+  g4 g4 g4 g8 |
+  
+  % measure 93, page 6, system 2
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4. |
+  ees4 ees4 ees4 ees8 |
+  d4 d8 d8 d4 d8 |
+  g8 r8 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  b4 g4 g4 g8 |
+  
+  % measure 101, page 7, system 1
+  g4 b4 b4 b8 |
+  c4 g4 g4 g8 |
+  g4 c4 c4 c8 |
+  g2..( a2..) |
+  \key ees \major
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 108, page 7, system 2
+  aes4 aes4 aes8( g8) aes8 |
+  aes4 aes4 aes8( g8 aes8) |
+  bes4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 f8 |
+  g4 g4 g8( f8 g8) |
+  c,4 c4 c4 c8 |
+  b'4 b4 c4 c8 |
+  
+  % measure 116, page 8, system 1
+  c4 c4 c4 c8 |
+  g4 g4 aes4. |
+  c4 c4 c8( d8) c8 |
+  c4 c8 c8 b4 b8 |
+  c4 c4 c4 c8 |
+  c4 c4 c4 c8 |
+  
+  % measure 122, page 8, system 2
+  aes4 aes4 aes4 aes8 |
+  aes4 aes4 aes4. |
+  aes4 aes4 aes4 aes8 |
+  g4 g8 g8 g4 g8 |
+  g8 r4 r2 \bar "|."
 }
 
 bassThreeMusic = \relative c' {
@@ -671,6 +1317,113 @@ bassThreeMusic = \relative c' {
   g4 g4 g4 g8 |
   g4 g4 g8( f8 g8) |
   ees4 ees4 ees4 ees8 |
+  
+  % measure 46, page 3, system 2
+  g4 g8 g8 fis4 fis8 |
+  g8 r8 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 bes8 |
+  \time 2/2
+  bes,1~ |
+  bes2 bes2 |
+  c2. c4 |
+  
+  % measure 54, page 4, system 1
+  d2. r4 |
+  bes1 |
+  bes2 bes2 |
+  c2. c4 |
+  d2. r4 |
+  \time 7/8
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 62, page 4, system 2
+  g4 g4 g8( f8 g8) |
+  ees4 ees4 ees4 ees8 |
+  g4 g8 g8 fis4 fis8 |
+  g4 r2 r8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g8( f8 g8) |
+  
+  % measure 70, page 5, system 1
+  d4 d4 d4 d8 |
+  d4 d4 d4 d8 |
+  d4 d4 d4 d8 |
+  d4 d4 d4. |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 77, page 5, system 2
+  g4 g4 g8( f8 g8) |
+  c,4 c4 c4 c8 |
+  d4 d8 d8 d4 d8 |
+  g8 r8 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  \time 2/2
+  bes,1 |
+  
+  % measure 85, page 6, system 1
+  bes2 bes2 |
+  c2. c4 |
+  d2. r4 |
+  bes1 |
+  bes2 bes2 |
+  c2. c4 |
+  d2. r4 |
+  \time 7/8
+  g4 g4 g4 g8 |
+  
+  % measure 93, page 6, system 2
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4. |
+  c,4 c4 c4 c8 |
+  d4 d8 d8 d4 d8 |
+  g8 r8 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  b4 g4 g4 g8 |
+  
+  % measure 101, page 7, system 1
+  g4 b4 b4 b8 |
+  c4 g4 g4 g8 |
+  g4 c4 c4 c8 |
+  g2..( a2..) |
+  \key ees \major
+  g4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  
+  % measure 108, page 7, system 2
+  aes4 aes4 aes8( g8) aes8 |
+  aes4 aes4 aes8( g8 aes8) |
+  bes4 g4 g4 g8 |
+  g4 g4 g4 g8 |
+  g4 g4 g4 f8 |
+  g4 g4 g8( f8 g8) |
+  c,4 c4 c4 c8 |
+  d4 d4 ees4 ees8 |
+  
+  % measure 116, page 8, system 1
+  f4 f4 f4 f8 |
+  g4 g4 aes4. |
+  c4 c4 c8( d8) c8 |
+  c4 c8 c8 b4 b8 |
+  c4 c4 c4 c8 |
+  c4 c4 c4 c8 |
+  
+  % measure 122, page 8, system 2
+  ees,4 ees4 ees4 ees8 |
+  ees4 ees4 ees4. |
+  ees4 ees4 ees4 ees8 |
+  d4 d8 d8 d4 d8 |
+  g8 r4 r2 \bar "|."
 }
 
 bassFourMusic = \relative c' {
