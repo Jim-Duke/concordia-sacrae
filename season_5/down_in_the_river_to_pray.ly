@@ -6,7 +6,8 @@ Title = "down_in_the_river_to_pray"
 
 \header {
   title = "Down in the River to Pray"
-  composer = "George H. Allan, Brock Williard"
+  composer = "George H. Allan"
+  arranger = "Brock Willard"
   poet = "Slave Songs of the US"
   tagline = ##f
 }
@@ -172,92 +173,92 @@ altoOneMusic = \relative c' {
   \set Score.markFormatter = #format-mark-circle-numbers
 
   % lead-in
-  b1
-  r1
+  b1 | \noBreak
+  r1 | \noBreak
 
   % page 3, system 1 (solo)
-  r4 b4 b4 cis
-  e4 e8 e8 e8 e8 e4
-  e1\fermata
-  fis8 fis8 fis8 gis fis4 e4
+  r4 b4 b4 cis | \noBreak
+  e4 e8 e8 e8 e8 e4  | \noBreak
+  e1\fermata  | \noBreak
+  fis8 fis8 fis8 gis fis4 e4 | \break
   
   % page 3, system 2 (solo)
-  gis4 fis4 e4\fermata cis4
-  b4 gis4 b4~ b8 cis8
-  e4 cis4 e4 gis4
-  fis2 e8 e8~ e8 cis8
-  b1
+  gis4 fis4 e4\fermata cis4 | \noBreak
+  b4 gis4 b4~ b8 cis8 | \noBreak
+  e4 cis4 e4 gis4 | \noBreak
+  fis2 e8 e8~ e8 cis8 | \noBreak
+  b1 | \break
   
   % page 3, system 3 (duet)
-  \slashedGrace e16( fis2) fis4 e4
-  gis4 b4 fis8 e8~ e4
-  gis4 fis4 e4( cis8) dis8
-  e8 e8 cis4 b2
+  \slashedGrace e16( fis2) fis4 e4 | \noBreak
+  gis4 b4 fis8 e8~ e4 | \noBreak
+  gis4 fis4 e4( cis8) dis8 | \noBreak
+  e8 e8 cis4 b2 | \break
   
   % page 3, system 4 (duet)
-  \slashedGrace e16( fis2) fis4 e4 gis4 b4 fis8 e8~ e4
-  gis4 fis8 e8 e8 e8 cis4
-  e1~
-  e1
+  \slashedGrace e16( fis2) fis4 e4 gis4 b4 fis8 e8~ e4 | \noBreak
+  gis4 fis8 e8 e8 e8 cis4 | \noBreak
+  e1~ | \noBreak
+  e1 | \break
 
   % page 4, system 1
-  r4 b4 b4 cis4
-  e4 gis8 a8 gis8 fis8 e4
-  fis4( e4 dis4 cis4)
-  dis8 e8 fis8 gis8 fis4 gis4
+  r4 b4 b4 cis4 | \noBreak
+  e4 gis8 a8 gis8 fis8 e4 | \noBreak
+  fis4( e4 dis4 cis4) | \noBreak
+  dis8 e8 fis8 gis8 fis4 gis4 | \break
 
   % page 4, system 2
-  a4 a4 gis4 gis4
-  gis4 e4 gis4~ gis8 a8
-  gis4 e4 gis8( a8) b8( cis8)
-  b2 a4 a8 a8
+  a4 a4 gis4 gis4  | \noBreak
+  gis4 e4 gis4~ gis8 a8 | \noBreak
+  gis4 e4 gis8( a8) b8( cis8) | \noBreak
+  b2 a4 a8 a8 | \break
 
   % page 5, system 1
-  gis1
-  gis2 gis4a4
-  b4 b4 a8( gis8~ gis4)
-  gis4 a4 b4 a8 a8
+  gis1 | \noBreak
+  gis2 gis4 a4 | \noBreak
+  b4 b4 a8( gis8~ gis4) | \noBreak
+  gis4 a4 b4 a8 a8 | \break
 
   % page 5, system 2
-  gis8 a8 b4 a4( gis4)
-  \slashedGrace e16( fis2) fis4 e4
-  gis4 b4 fis16( e8.~ e4)
-  gis4 fis8 e8 e8 e8 cis4
+  gis8 a8 b4 a4( gis4) | \noBreak
+  \slashedGrace e16( fis2) fis4 e4 | \noBreak
+  gis4 b4 fis16( e8.~ e4) | \noBreak
+  gis4 fis8 e8 e8 e8 cis4 | \break
 
   % page 6, system 1
-  b2. r4
+  b2. r4 | \noBreak
   \time 4/4 \tempo 4=90
-  r1
-  r4 b4 b4 c4
-  e4 d8 d8 c8 c8 c4
+  r1 | \noBreak
+  r4 b4 b4 c4 | \noBreak
+  e4 d8 d8 c8 c8 c4 | \break
   
   % page 6, system 2
-  b4( c4 b4 c4)
-  c8 d8 e8 e8 d4 c4
-  e4 e4 e4~ e8 c8
-  b4 g4 b4~ b8 c8
+  b4( c4 b4 c4) | \noBreak
+  c8 d8 e8 e8 d4 c4 | \noBreak
+  e4 e4 e4~ e8 c8 | \noBreak
+  b4 g4 b4~ b8 c8 | \break
 
   % page 7, system 1
-  e4 c4 e2(
-  fis4) e4 d4 c4
+  e4 c4 e2( | \noBreak
+  fis4) e4 d4 c4 | \noBreak
   \time 3/2
-  b1~ b4 r4\fermata
+  b1~ b4 r4\fermata | \break
 
   % page 7, system 2
   \time 2/2 \tempo 2=60
-  r4 b'4 b4 b4
-  b4 a4 a4( gis4)
-  gis4 fis4 gis4~ gis8 gis8
+  r4 b'4 b4 b4 | \noBreak
+  b4 a4 a4( gis4) | \noBreak
+  gis4 fis4 gis4~ gis8 gis8 | \break
 
   % page 8, system 1
-  a8 a8 gis4 a4( gis4)
-  \slashedGrace e16( fis2) fis4 e4
-  gis4 b4 fis16 gis8.~ gis4(
+  a8 a8 gis4 a4( gis4) | \noBreak
+  \slashedGrace e16( fis2) fis4 e4 | \noBreak
+  gis4 b4 fis16 gis8.~ gis4( | \break
   
   % page 8, system 2
-  b4) b8 b8 b8 b8 b4
-  r2 a2
-  b1\fermata
+  b4) b8 b8 b8 b8 b4 | \noBreak
+  r2 a2 | \noBreak
+  b1\fermata | \break
   
 }
 
