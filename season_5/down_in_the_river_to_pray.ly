@@ -175,7 +175,8 @@ altoOneMusic = \relative c' {
   % lead-in
   b1 | \noBreak
   r1 | \noBreak
-
+  \set Score.currentBarNumber = #1
+  
   % page 3, system 1 (solo)
   r4 b4 b4 cis | \noBreak
   e4 e8 e8 e8 e8 e4  | \noBreak
