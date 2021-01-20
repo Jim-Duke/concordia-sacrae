@@ -549,8 +549,8 @@ bassOneMusic = \relative c' {
 
   % page 7, system 1
   r1
-  a4 g4 fis4( fis8) b8
-  \time 3/2 fis4~ fis1 r4\fermata
+  a4 g4 fis4( fis8) b,8
+  \time 3/2 fis'4~ fis1 r4\fermata
 
   % page 7, system 2
   \time 2/2 r4 b4 b4 b4
@@ -615,8 +615,8 @@ bassTwoMusic = \relative c' {
 
   % page 7, system 1
   r1
-  a4 g4 fis4( fis8) b8
-  \time 3/2 fis16( e8.~ e1) r4\fermata
+  a4 g4 fis4( fis8) b,8
+  \time 3/2 fis'16( e8.~ e1) r4\fermata
 
   % page 7, system 2
   \time 2/2 r4 b'4 b4 b4
