@@ -337,7 +337,8 @@ altoTwoMusic = \relative c' {
   
 }
 
-tenorOneMusic = \relative c''{
+tenorOneMusic = \relative c'{
+  \clef "treble_8"
   \key c \major
   \numericTimeSignature
   \time 2/2
@@ -424,7 +425,8 @@ tenorOneMusic = \relative c''{
   b1\fermata
 }
 
-tenorTwoMusic = \relative c''{
+tenorTwoMusic = \relative c'{
+  \clef "treble_8"
   \key c \major
   \numericTimeSignature
   \time 2/2
