@@ -11,32 +11,31 @@ ROOT_DIR = ..
 #
 # The following are the products for each piece
 #
-# Currently empty.  The following is an example
-#
-#VESPERS_LILYPOND_PRODUCTS := \
-#  vespers_number_2.pdf \
-#  vespers_number_2_all.mid \
-#  vespers_number_2_solo.mid \
-#  vespers_number_2_soprano_1.mid \
-#  vespers_number_2_soprano_2.mid \
-#  vespers_number_2_alto_1.mid \
-#  vespers_number_2_alto_2.mid \
-#  vespers_number_2_tenor_1.mid \
-#  vespers_number_2_tenor_2.mid \
-#  vespers_number_2_bass_1.mid \
-#  vespers_number_2_bass_2.mid
-#
-#VESPERS_TRACKS := \
-#  vespers_number_2_all.mp3 \
-#  vespers_number_2_solo.mp3 \
-#  vespers_number_2_soprano_1.mp3 \
-#  vespers_number_2_soprano_2.mp3 \
-#  vespers_number_2_alto_1.mp3 \
-#  vespers_number_2_alto_2.mp3 \
-#  vespers_number_2_tenor_1.mp3 \
-#  vespers_number_2_tenor_2.mp3 \
-#  vespers_number_2_bass_1.mp3 \
-#  vespers_number_2_bass_2.mp3
+
+NEARER_MY_GOD_TO_THEE_LILYPOND_PRODUCTS := \
+  nearer_my_god_to_thee.pdf \
+  nearer_my_god_to_thee_all.mid \
+  nearer_my_god_to_thee_solo.mid \
+  nearer_my_god_to_thee_tenor_1.mid \
+  nearer_my_god_to_thee_tenor_2.mid \
+  nearer_my_god_to_thee_tenor_3.mid \
+  nearer_my_god_to_thee_tenor_4.mid \
+  nearer_my_god_to_thee_bass_1.mid \
+  nearer_my_god_to_thee_bass_2.mid \
+  nearer_my_god_to_thee_bass_3.mid \
+  nearer_my_god_to_thee_bass_4.mid
+
+NEARER_MY_GOD_TO_THEE_TRACKS := \
+  nearer_my_god_to_thee_all.mp3 \
+  nearer_my_god_to_thee_solo.mp3 \
+  nearer_my_god_to_thee_tenor_1.mp3 \
+  nearer_my_god_to_thee_tenor_2.mp3 \
+  nearer_my_god_to_thee_tenor_3.mp3 \
+  nearer_my_god_to_thee_tenor_4.mp3 \
+  nearer_my_god_to_thee_bass_1.mp3 \
+  nearer_my_god_to_thee_bass_2.mp3 \
+  nearer_my_god_to_thee_bass_3.mp3 \
+  nearer_my_god_to_thee_bass_4.mp3
 
 # Shouldn't need to edit the following macros
 
@@ -44,12 +43,10 @@ LIBRARY_DIR = $(ROOT_DIR)/../LilypondTemplates
 LILYPOND = lilypond.exe
 SOUNDFONT = /usr/share/sounds/sf2/FluidR3_GM.sf2
 
-#
-# Once we have something to make, add local
-.PHONY: clean
+.PHONY: local clean
 
-#local: \
-# $(VESPERS_TRACKS)
+local: \
+ $(NEARER_MY_GOD_TO_THEE_TRACKS)
 
 %.wav: %.mid
 	fluidsynth -F $@ $(SOUNDFONT) $<
@@ -64,49 +61,49 @@ clean:
 	-rm *.wav
 
 #
-# Vespers 2 rules
+# Nearer My God To Thee rules
 #
-#
-#$(VESPERS_LILYPOND_PRODUCTS): vespers_number_2.ly
-#	$(LILYPOND) $<
-#
-#vespers_number_2_all.mp3: vespers_number_2_all.wav
-#
-#vespers_number_2_all.wav: vespers_number_2_all.mid
-#
-#vespers_number_2_solo.mp3: vespers_number_2_solo.wav
-#
-#vespers_number_2_solo.wav: vespers_number_2_solo.mid
-#
-#vespers_number_2_soprano_1.mp3: vespers_number_2_soprano_1.wav
-#
-#vespers_number_2_soprano_1.wav: vespers_number_2_soprano_1.mid
-#
-#vespers_number_2_soprano_2.mp3: vespers_number_2_soprano_2.wav
-#
-#vespers_number_2_soprano_2.wav: vespers_number_2_soprano_2.mid
-#
-#vespers_number_2_alto_1.mp3: vespers_number_2_alto_1.wav
-#
-#vespers_number_2_alto_1.wav: vespers_number_2_alto_1.mid
-#
-#vespers_number_2_alto_2.mp3: vespers_number_2_alto_2.wav
-#
-#vespers_number_2_alto_2.wav: vespers_number_2_alto_2.mid
-#
-#vespers_number_2_tenor_1.mp3: vespers_number_2_tenor_1.wav
-#
-#vespers_number_2_tenor_1.wav: vespers_number_2_tenor_1.mid
-#
-#vespers_number_2_tenor_2.mp3: vespers_number_2_tenor_2.wav
-#
-#vespers_number_2_tenor_2.wav: vespers_number_2_tenor_2.mid
-#
-#vespers_number_2_bass_1.mp3: vespers_number_2_bass_1.wav
-#
-#vespers_number_2_bass_1.wav: vespers_number_2_bass_1.mid
-#
-#vespers_number_2_bass_2.mp3: vespers_number_2_bass_2.wav
-#
-#vespers_number_2_bass_2.wav: vespers_number_2_bass_2.mid
+
+$(NEARER_MY_GOD_TO_THEE_LILYPOND_PRODUCTS): nearer_my_god_to_thee.ly
+	$(LILYPOND) $<
+
+nearer_my_god_to_thee_all.mp3: nearer_my_god_to_thee_all.wav
+
+nearer_my_god_to_thee_all.wav: nearer_my_god_to_thee_all.mid
+
+nearer_my_god_to_thee_solo.mp3: nearer_my_god_to_thee_solo.wav
+
+nearer_my_god_to_thee_solo.wav: nearer_my_god_to_thee_solo.mid
+
+nearer_my_god_to_thee_tenor_1.mp3: nearer_my_god_to_thee_tenor_1.wav
+
+nearer_my_god_to_thee_tenor_1.wav: nearer_my_god_to_thee_tenor_1.mid
+
+nearer_my_god_to_thee_tenor_2.mp3: nearer_my_god_to_thee_tenor_2.wav
+
+nearer_my_god_to_thee_tenor_2.wav: nearer_my_god_to_thee_tenor_2.mid
+
+nearer_my_god_to_thee_tenor_3.mp3: nearer_my_god_to_thee_tenor_3.wav
+
+nearer_my_god_to_thee_tenor_3.wav: nearer_my_god_to_thee_tenor_3.mid
+
+nearer_my_god_to_thee_tenor_4.mp3: nearer_my_god_to_thee_tenor_4.wav
+
+nearer_my_god_to_thee_tenor_4.wav: nearer_my_god_to_thee_tenor_4.mid
+
+nearer_my_god_to_thee_bass_1.mp3: nearer_my_god_to_thee_bass_1.wav
+
+nearer_my_god_to_thee_bass_1.wav: nearer_my_god_to_thee_bass_1.mid
+
+nearer_my_god_to_thee_bass_2.mp3: nearer_my_god_to_thee_bass_2.wav
+
+nearer_my_god_to_thee_bass_2.wav: nearer_my_god_to_thee_bass_2.mid
+
+nearer_my_god_to_thee_bass_3.mp3: nearer_my_god_to_thee_bass_3.wav
+
+nearer_my_god_to_thee_bass_3.wav: nearer_my_god_to_thee_bass_3.mid
+
+nearer_my_god_to_thee_bass_4.mp3: nearer_my_god_to_thee_bass_4.wav
+
+nearer_my_god_to_thee_bass_4.wav: nearer_my_god_to_thee_bass_4.mid
 
