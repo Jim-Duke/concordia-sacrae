@@ -29,6 +29,7 @@ sopranoOneMusic = \relative c' {
   r2 | \noBreak
   r2 | \noBreak
 
+  \set Score.currentBarNumber = #1
   % page 2, system 1
   r2 | \noBreak
   r2 | \noBreak
@@ -239,46 +240,382 @@ sopranoOneMusic = \relative c' {
   bes8 \bar "|." \break
 }
 
-sopranoTwoMusic = \relative c''{
+sopranoTwoMusic = \relative c' {
   \numericTimeSignature
   \common
   \set Score.markFormatter = #format-mark-circle-numbers
+  
+  % lead-in
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 2
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 3, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 3, system 2
+  r2 |
+  r4 r8 f8 |
+  bes16 bes8. bes8. bes16 |
+  d2 |
+  d4 d8 bes16 bes16 |
+  
+  % page 4, system 1
+  d8 c16 c16 bes8 f8 |
+  bes16 bes8. bes8. bes16 |
+  d2 |
+  d8 d16 d16 c8 c16 c16 |
+  bes4. r8 |
+  
+  % page 4, system 2
+  r4 r8 f8 |
+  bes8 bes8 bes8 bes16 bes16 |
+  a4( c4 |
+  ees8 fis,8 g8) f8 |
+  % Original music has an error in the following measure: there isn't enough
+  % duration across the notes to fill the measure.  Looking across the other
+  % parts my assumption is that the last 8th note should be dotted.
+  bes4 bes16 bes8. |
 }
 
 altoOneMusic = \relative c' {
   \numericTimeSignature
   \common
   \set Score.markFormatter = #format-mark-circle-numbers
+  
+  % lead-in
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 2
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 3, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 3, system 2
+  r2 |
+  r4 r8 d8 |
+  d16 d8. d8. d16 |
+  f2 |
+  f4( g8) d16 d16 |
+  
+  % page 4, system 1
+  f8 ees16 ees16 d8 c8 |
+  f16 f8. g8 r16 g16 |
+  bes16 bes16 bes16 bes16 bes4 |
+  bes8 bes16 bes16 bes8 a16 a16 |
+  f4. r8 |
+  
+  % page 4, system 2
+  r4 r8 f8 |
+  f8 f8 f8 f16 f16 |
+  fis4( a4 |
+  c8 d,8 d8) d8 |
+  g8 g8 f16 f8. |
 }
 
 altoTwoMusic = \relative c' {
   \numericTimeSignature
   \common
   \set Score.markFormatter = #format-mark-circle-numbers
+  
+  % lead-in
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 2
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 3, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 3, system 2
+  r2 |
+  r4 r8 d8 |
+  d16 d8. d8. d16 |
+  f2 |
+  f4( g8) d16 d16 |
+  
+  % page 4, system 1
+  f8 ees16 ees16 d8 c8 |
+  f16 f8. g8 r16 g16 |
+  bes16 bes16 bes16 bes16 bes4 |
+  bes8 bes16 bes16 bes8 a16 a16 |
+  f4. r8 |
+  
+  % page 4, system 2
+  r4 r8 f8 |
+  f8 f8 f8 f16 f16 |
+  fis4( a4 |
+  c8 d,8 d8) d8 |
+  g8 g8 f16 f8. |
 }
 
 groupAltoOneMusic = \relative c' {
   \numericTimeSignature
   \common
   \set Score.markFormatter = #format-mark-circle-numbers
+  
+  % lead-in
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 2
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 3, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 3, system 2
+  r2 |
+  r4 r8 d8 |
+  d16 d8. d8. d16 |
+  f2 |
+  f4( g8) d16 d16 |
+  
+  % page 4, system 1
+  f8 ees16 ees16 d8 c8 |
+  f16 f8. g8 r16 g16 |
+  bes16 bes16 bes16 bes16 bes4 |
+  bes8 bes16 bes16 bes8 a16 a16 |
+  f4. r8 |
+  
+  % page 4, system 2
+  r4 r8 f8 |
+  f8 f8 f8 f16 f16 |
+  fis4( a4 |
+  c8 d,8 d8) d8 |
+  g8 g8 f16 f8. |
 }
 
 groupAltoTwoMusic = \relative c' {
   \numericTimeSignature
   \common
   \set Score.markFormatter = #format-mark-circle-numbers
+  
+  % lead-in
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 2
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 3, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 3, system 2
+  r2 |
+  r4 r8 d8 |
+  d16 d8. d8. d16 |
+  f2 |
+  f4( g8) d16 d16 |
+  
+  % page 4, system 1
+  f8 ees16 ees16 d8 c8 |
+  f16 f8. g8 r16 g16 |
+  bes16 bes16 bes16 bes16 bes4 |
+  bes8 bes16 bes16 bes8 a16 a16 |
+  f4. r8 |
+  
+  % page 4, system 2
+  r4 r8 f8 |
+  f8 f8 f8 f16 f16 |
+  fis4( a4 |
+  c8 d,8 d8) d8 |
+  g8 g8 f16 f8. |
 }
 
-groupTenorMusic = \relative c' {
+groupTenorMusic = \relative c {
   \numericTimeSignature
   \common
   \set Score.markFormatter = #format-mark-circle-numbers
+  \clef "GG"
+
+  % lead-in
+  f2~ |
+  f2 |
+  r2 |
+  r4. f8 |
+
+  % page 2, system 1
+  bes16 bes8. bes8. bes16 |
+  d2 |
+  d4 d8 bes16 bes16 |
+  d8 c16 c16 bes8 f8 |
+  
+  % page 2, system 2
+  bes16 bes8. bes8. bes16 |
+  d2 |
+  d8 d16 d16 c8 c16 c16 |
+  bes4. d8 |
+  d16 d8. d8. d16 |
+  
+  % page 3, system 1
+  f2 |
+  f4 f8 d16 d16 |
+  f8 ees16 ees16 d8 d8 |
+  d16 d8. d8. d16 |
+  f2 |
+  
+  % page 3, system 2
+  f8 f16 f16 ees8 ees16 ees16 |
+  % Original music had a dotted 8th followed by an 8th rest.  Clearly incorrect
+  % Changed to a dotted quarter followed by an eighth rest.
+  d4. r8 |
+  f,2 |
+  bes16 bes8. bes8. bes16 | |
+  a4( bes8) bes16 bes16 |
+  
+  % page 4, system 1
+  bes8 a16 a16 bes8 a8 |
+  bes16 bes8. bes8 r16 bes16 | |
+  f'16 f16 f16 f16 f4 |
+  e8 e16 e16 ees8 ees16 ees16 |
+  d4. f,8 |
+  
+  % page 4, system 2
+  bes8 bes8 bes8 bes8 |
+  d4. bes16 bes16 |
+  d8 d8 d8 bes16 bes16 |
+  d8 c8 bes8 aes8 |
+  g8 g8 bes16 bes8. |
 }
 
-groupBaritoneMusic = \relative c' {
+groupBaritoneMusic = \relative c {
   \numericTimeSignature
   \common
   \set Score.markFormatter = #format-mark-circle-numbers
+  \clef "GG"
+  
+  % lead-in
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 2
+  r2 |
+  r2 |
+  r2 |
+  r4 r8 f8 |
+  f16 f8. f8. f16 |
+  
+  % page 3, system 1
+  bes2 |
+  bes4 bes8 f16 f16 |
+  bes8 a16 a16 f8 f8 |
+  f16 f8. f8. f16 |
+  bes2 |
+  
+  % page 3, system 2
+  bes8 bes16 bes16 a8 a16 a16 |
+  bes4. r8 |
+  f2 |
+  bes,16 bes8. bes8. bes16 |
+  d4( g8) g16 g16 |
+  
+  % page 4, system 1
+  f8 f16 f16 f8 ees8 |
+  d16 d8. ees8 r16 ees16 |
+  bes'16 bes16 bes16 bes16 aes4 |
+  g8 g16 g16 ges8 f16 f16 |
+  bes,4. r8 |
+  
+  % page 4, system 2
+  r2 |
+  r2 |
+  r2 |
+  r4 r8 bes8 |
+  ees8 ees8 d16 d8. |
 }
 
 tenorOneMusic = \relative c {
@@ -327,7 +664,7 @@ tenorOneMusic = \relative c {
   bes16 bes8. bes8 r16 bes16 | |
   f'16 f16 f16 f16 f4 |
   e8 e16 e16 ees8 ees16 ees16 |
-  f,4. r8 |
+  d4. f,8 |
   
   % page 4, system 2
   bes8 bes8 bes8 bes8 |
@@ -502,22 +839,180 @@ tenorOneMusic = \relative c {
 %   bes8 \bar "|." \break
 }
 
-tenorTwoMusic = \relative c'{
+tenorTwoMusic = \relative c {
   \numericTimeSignature
   \common
   \set Score.markFormatter = #format-mark-circle-numbers
+  \clef "GG"
+
+  % lead-in
+  f2~ |
+  f2 |
+  r2 |
+  r4. f8 |
+
+  % page 2, system 1
+  bes16 bes8. bes8. bes16 |
+  d2 |
+  d4 d8 bes16 bes16 |
+  d8 c16 c16 bes8 f8 |
+  
+  % page 2, system 2
+  bes16 bes8. bes8. bes16 |
+  d2 |
+  d8 d16 d16 c8 c16 c16 |
+  bes4. bes8 |
+  bes16 bes8. bes8. bes16 |
+  
+  % page 3, system 1
+  d2 |
+  d4 d8 bes16 bes16 |
+  d8 c16 c16 bes8 f8 |
+  bes16 bes8. bes8. bes16 |
+  d2 |
+  
+  % page 3, system 2
+  d8 d16 d16 c8 c16 c16 |
+  bes4. r8 |
+  f2 |
+  bes16 bes8.bes8. bes16 |
+  c4( bes8) bes16 bes16 |
+  
+  % page 4, system 1
+  bes8 a16 a16 bes8 a8 |
+  bes16 bes8. bes8 r16 bes16 | |
+  f'16 f16 f16 f16 f4 |
+  e8 e16 e16 ees8 ees16 ees16 |
+  d4. f,8 |
+  
+  % page 4, system 2
+  bes8 bes8 bes8 bes8 |
+  d4. bes16 bes16 |
+  d8 d8 d8 bes16 bes16 |
+  d8 c8 bes8 aes8 |
+  g8 g8 bes16 bes8. |
 }
 
-bassOneMusic = \relative c' {
+bassOneMusic = \relative c {
   \numericTimeSignature
   \common
   \set Score.markFormatter = #format-mark-circle-numbers
+  \clef bass
+  
+  % lead-in
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 2
+  r2 |
+  r2 |
+  r2 |
+  r4 r8 f8 |
+  f16 f8. f8. f16 |
+  
+  % page 3, system 1
+  bes2 |
+  bes4 bes8 f16 f16 |
+  bes8 a16 a16 f8 f8 |
+  f16 f8. f8. f16 |
+  bes2 |
+  
+  % page 3, system 2
+  bes8 bes16 bes16 a8 a16 a16 |
+  bes4. r8 |
+  f2 |
+  bes,16 bes8. bes8. bes16 |
+  d4( g8) g16 g16 |
+  
+  % page 4, system 1
+  f8 f16 f16 f8 ees8 |
+  d16 d8. ees8 r16 ees16 |
+  bes'16 bes16 bes16 bes16 aes4 |
+  g8 g16 g16 ges8 f16 f16 |
+  bes,4. r8 |
+  
+  % page 4, system 2
+  r2 |
+  r2 |
+  r2 |
+  r4 r8 bes8 |
+  ees8 ees8 d16 d8. |
 }
 
-bassTwoMusic = \relative c' {
+bassTwoMusic = \relative c {
   \numericTimeSignature
   \common
   \set Score.markFormatter = #format-mark-circle-numbers
+  \clef bass
+  
+  % lead-in
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 1
+  r2 |
+  r2 |
+  r2 |
+  r2 |
+  
+  % page 2, system 2
+  r2 |
+  r2 |
+  r2 |
+  r4 r8 bes8 |
+  bes16 bes8. bes8. bes16 |
+  
+  % page 3, system 1
+  bes2 |
+  bes4 bes8 bes16 bes16 |
+  f'8 f16 f16 bes,8 bes8 |
+  bes16 bes8. bes8. bes16 |
+  bes'4( g4) |
+  
+  % page 3, system 2
+  f8 f16 f16 f8 f16 f16 |
+  g8( f4) r8 |
+  f2 |
+  bes,16 bes8. bes8. bes16 |
+  d4( g8) g16 g16 |
+  
+  % page 4, system 1
+  f8 f16 f16 f8 ees8 |
+  d16 d8. ees8 r16 ees16 |
+  bes'16 bes16 bes16 bes16 aes4 |
+  g8 g16 g16 ges8 f16 f16 |
+  bes,4. r8 |
+  
+  % page 4, system 2
+  r2 |
+  r2 |
+  r2 |
+  r4 r8 bes8 |
+  ees8 ees8 d16 d8. |
+  
+  % page 4, system 1
+  f8 f16 f16 f8 ees8 |
+  d16 d8. ees8 r16 ees16 |
+  bes'16 bes16 bes16 bes16 aes4 |
+  g8 g16 g16 ges8 f16 f16 |
+  bes,4. r8 |
+  
+  % page 4, system 2
+  r2 |
+  r2 |
+  r2 |
+  r4 r8 bes8 |
+  ees8 ees8 d16 d8. |
 }
 
 metronomeMusic = \drummode {
