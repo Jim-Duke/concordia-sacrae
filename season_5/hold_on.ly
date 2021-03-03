@@ -351,7 +351,7 @@ altoOneMusic = \relative c' {
       des2~ des4 des8 c8~ | \break
 
       % measure 11, page 4
-      c8 r8 r4 f4 des8 c8~ | \noBreak }
+      c8 r8 r4 des4 des8 c8~ | \noBreak }
     \alternative {
       { c1 | \noBreak }
       { c4 r4 r2 | \break }
@@ -487,6 +487,157 @@ altoTwoMusic = \relative c' {
   \key aes \major
   \time 4/4
   \set Score.markFormatter = #format-mark-circle-numbers
+  
+  % measure 1, page 2
+  r4 r8 ces8~ ces2 | \noBreak
+  r4 r8 ces8~ ces2 | \noBreak
+  r4 r8 f8~ f8 aes4 g8 | \noBreak
+  aes4 f4 r2 | \break
+
+  % measure 5, page 3
+  \unfoldRepeats {
+    \repeat volta 2 {
+      \set Score.currentBarNumber = #5
+      f4 f4 r4 r8 e8~ | \noBreak
+      e4 e8 r8 r2 | \noBreak
+      ees4 ees4 r4 r8 d8~ | \break
+
+      % measure 8, page 3
+      d8 g4. f4 f4 | \noBreak
+      f4 r4 r4 c8 des8~ | \noBreak
+      des2~ des4 des8 c8~ | \break
+
+      % measure 11, page 4
+      c8 r8 r4 des4 des8 c8~ | \noBreak }
+    \alternative {
+      { c1 | \noBreak }
+      { c4 r4 r2 | \break }
+    }
+  }
+  
+  % measure 14, page 4
+  \set Score.currentBarNumber = #14
+  c4 c4 r8 c4 r8 | \noBreak
+  e4 e4 r4 e4 | \noBreak
+  f4 f4 r4 g4~ | \noBreak
+  g8 g4. f4 f4 | \break
+
+  % measure 18, page 5
+  f4 r4 r4 c8 des8~ | \noBreak
+  des2~ des4 des8 c8~ | \noBreak
+  c8 r8 r4 des4 des8 c8~ | \break
+
+  % measure 21, page 5
+  c4 r4 r2 | \noBreak
+  aes'2.( f8 aes8~ | \noBreak
+  aes2.) r4 | \break
+
+  % measure 24, page 6
+  f2( e4. c8~ | \noBreak
+  c8) g'4. f4 f4 | \noBreak
+  f4 r4 r4 c8 des8~ | \break
+
+  % measure 27, page 6
+  des2~ des4 des8 c8~ | \noBreak
+  c8 r8 r4 des4 des8 c8~ | \noBreak
+  c4 r4 r2 | \break
+  
+  % measure 30, page 7
+  aes'1 | \noBreak
+  r1 | \noBreak
+  aes2( e4. c8~ | \noBreak
+  c8) g'4. f4 f4 | \break
+  
+  % measure 34, page 7
+  f4 r4 r4 c8 des8~ | \noBreak
+  des2~ des4 des8 c8~ | \noBreak
+  c8 r8 r4 des4 des8 c8~ | \break
+
+  % measure 37, page 8
+  c4 r4 r2 | \noBreak
+  c4 c4 r8 c4 r8 | \noBreak
+  e4 e4 r4 e4 | \break
+
+  % measure 40, page 8
+  f4 f4 r4 g4~ | \noBreak
+  g8 g4. f4 f4 | \noBreak
+  f4 r4 r4 c8 des8~ | \break
+
+  % measure 43, page 9
+  des2~ des4 des8 c8~ | \noBreak
+  c8 r8 r4 des4 des8  c8~ | \noBreak
+  c4 r4 f4. g8 | \break
+
+  % measure 46, page 9
+  aes4. aes8 g4 f8 aes8~ | \noBreak
+  aes4. aes8 f8 f8 g8 aes8 | \noBreak
+  r4 r8 f8 f4 f4 | \break
+
+  % measure 49, page 10
+  f8( c8) g'4 f4 f4 | \noBreak
+  f4 r4 r4 c8 des8~ | \noBreak
+  des2~ des4 des8 c8~ | \break
+  
+  % mesaure 52, page 10
+  c8 r8 r4 des4 des8 c8~ | \noBreak
+  c4 r4 f4 f4 | \noBreak
+  aes8 aes8 aes4 g4 f8 aes8~ | \break
+  
+  % measure 55, page 11
+  aes4. f8 f4 g4 | \noBreak
+  aes4 aes4 r2 | \noBreak
+  r8 g4. f4 f4 | \break
+  
+  % measure 58, page 11
+  f4 r4 r4 c8 des8~ | \noBreak
+  des2~ des4 des8 c8~ | \noBreak
+  c8 r8 r4 des4 des8 c8~ | \break
+  
+  % measure 61, page 12
+  c4 r4 r2 | \noBreak
+  c4 c4 r8 c4 r8 | \noBreak
+  e4 e4 r4 e4 | \break
+
+  % measure 64, page 12
+  f4 f4 r4 g4~ | \noBreak
+  g8 g4. f4 f4 | \noBreak
+  f4 r4 r4 c8 des8~ | \break
+  
+  % measure 67, page 13
+  des2~ des4 des8 c8~ | \noBreak
+  c8 r8 r4 des4 des8 c8~ | \noBreak
+  c4 r4 r2 | \break
+
+  % measure 70, page 13
+  c4 c4 r8 c4 r8 | \noBreak
+  e4 e4 r4 e4 | \noBreak
+  f4 f4 r4 g4~ | \noBreak
+  g8 g4. f4 f4 | \break
+
+  % measure 74, page 14
+  f4. r8 r4 c8 des8~ | \noBreak
+  des8 r8 r4 des2 | \noBreak
+  aes4. aes8 r2 | \noBreak
+  aes4. aes8 r2 | \break
+
+  % measure 78, page 14
+  aes4. aes8 r2 | \noBreak
+  aes4. aes8 r2 | \noBreak
+  f'4. g8 r2 | \noBreak
+  f4. g8 r2 | \break
+
+  % measure 82, page 15
+  aes4. aes8 r2 | \noBreak
+  aes4. aes8 r2 | \noBreak
+  r4 g4 f4 f4 | \noBreak
+  f2 f4 f4 | \break
+
+  % measure 86, page 15
+  c'4 c4 bes2 | \noBreak
+  r1 | \noBreak
+  r1 | \noBreak
+  g2 g2 | \noBreak
+  f1 | \break  
 }
 
 tenorOneMusic = \relative c {
