@@ -640,11 +640,162 @@ altoTwoMusic = \relative c' {
   f1 | \break  
 }
 
-tenorOneMusic = \relative c {
+tenorOneMusic = \relative c' {
   \clef "treble_8"
   \key aes \major
   \time 4/4
   \set Score.markFormatter = #format-mark-circle-numbers
+  
+  % measure 1, page 2
+  aes4. r8 r2 | \noBreak
+  aes4. r8 r2 | \noBreak
+  aes4. f'8 r2 | \noBreak
+  r1 | \break
+
+  % measure 5, page 3
+  \unfoldRepeats {
+    \repeat volta 2 {
+      \set Score.currentBarNumber = #5
+      c4 c4 r4 r8 c8~ | \noBreak
+      c4 c8 r8 r2 | \noBreak
+      c4 c4 r4 r8 c8~ | \break
+
+      % measure 8, page 3
+      c8 c4. c4 des4 | \noBreak
+      c4 r4 r4 aes8 g8~ | \noBreak
+      g2~ g4 g8 aes8~ | \break
+
+      % measure 11, page 4
+      aes8 r8 r4 aes4 aes8 aes8~ | \noBreak }
+    \alternative {
+      { aes1 | \noBreak }
+      { aes4 r4 r2 | \break }
+    }
+  }
+  
+  % measure 14, page 4
+  \set Score.currentBarNumber = #14
+  bes4 bes4 r8 bes4 r8 | \noBreak
+  des4 des4 r4 des4 | \noBreak
+  ees4 ees4 r4 f4~ | \noBreak
+  f8 c4. c4 des4 | \break
+
+  % measure 18, page 5
+  c4 r4 r4 aes8 g8~ | \noBreak
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8 aes8~ | \break
+
+  % measure 21, page 5
+  aes4 r4 r2 | \noBreak
+  ees'2.( c8 f8~ | \noBreak
+  f2.) r4 | \break
+
+  % measure 24, page 6
+  c2( c4. aes8~ | \noBreak
+  aes8) c4. c4 des4 | \noBreak
+  c4 r4 r4 aes8 g8~ | \break
+
+  % measure 27, page 6
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8 aes8~ | \noBreak
+  aes4 r4 r2 | \break
+  
+  % measure 30, page 7
+  ees'1 | \noBreak
+  r1 | \noBreak
+  f2( c4. aes8~ | \noBreak
+  aes8) c4. c4 des4 | \break
+  
+  % measure 34, page 7
+  c4 r4 r4 aes8 g8~ | \noBreak
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8 aes8~ | \break
+
+  % measure 37, page 8
+  aes4 r4 r2 | \noBreak
+  bes4 bes4 r8 bes4 r8 | \noBreak
+  des4 des4 r4 des4 | \break
+
+  % measure 40, page 8
+  ees4 ees4 r4 f4~ | \noBreak
+  f8 c4. c4 des4 | \noBreak
+  c4 r4 r4 aes8 g8~ | \break
+
+  % measure 43, page 9
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8  aes8~ | \noBreak
+  aes4 r4 c4. d8 | \break
+
+  % measure 46, page 9
+  ees4. ees8 r8 d4. | \noBreak
+  ees4. ees8 d8 d8 d8 ees8 | \noBreak
+  r4 r8 e8 d4 des4 | \break
+
+  % measure 49, page 10
+  c8( aes8) c4 c4 des4 | \noBreak
+  c4 r4 r4 aes8 g8~ | \noBreak
+  g2~ g4 g8 aes8~ | \break
+  
+  % mesaure 52, page 10
+  aes8 r8 r4 aes4 aes8 aes8~ | \noBreak
+  aes4 r4 c4 d4 | \noBreak
+  ees8 ees8 ees4 d4 c8 ees8~ | \break
+  
+  % measure 55, page 11
+  ees4. c8 c4 d4 | \noBreak
+  ees4 ees4 r2 | \noBreak
+  r8 c4. c4 des4 | \break
+  
+  % measure 58, page 11
+  c4 r4 r4 aes8 g8~ | \noBreak
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8 aes8~ | \break
+  
+  % measure 61, page 12
+  aes4 r4 r2 | \noBreak
+  bes4 bes4 r8 bes4 r8 | \noBreak
+  des4 des4 r4 des4 | \break
+
+  % measure 64, page 12
+  ees4 ees4 r4 f4~ | \noBreak
+  f8 c4. c4 des4 | \noBreak
+  c4 r4 r4 aes8 g8~ | \break
+  
+  % measure 67, page 13
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8 aes8~ | \noBreak
+  aes4 r4 r2 | \break
+
+  % measure 70, page 13
+  bes4 bes4 r8 bes4 r8 | \noBreak
+  des4 des4 r4 des4 | \noBreak
+  ees4 ees4 r4 f4~ | \noBreak
+  f8 c4. c4 des4 | \break
+
+  % measure 74, page 14
+  c4. r8 r4 aes8 g8~ | \noBreak
+  g8 r8 r4 g2 | \noBreak
+  f4. f8 r2 | \noBreak
+  f4. f8 r2 | \break
+
+  % measure 78, page 14
+  f4. f8 r2 | \noBreak
+  f4. f8 r2 | \noBreak
+  c'4. d8 r2 | \noBreak
+  c4. d8 r2 | \break
+
+  % measure 82, page 15
+  f4. f8 r2 | \noBreak
+  f4. f8 r2 | \noBreak
+  r4 c4 c4 des4 | \noBreak
+  c2 c4 c4 | \break
+
+  % measure 86, page 15
+  c4 c4 aes'2 | \noBreak
+  r1 | \noBreak
+  r1 | \noBreak
+  f2 f2 | \noBreak
+  d1 | \break  
 }
 
 tenorTwoMusic = \relative c {
@@ -652,6 +803,157 @@ tenorTwoMusic = \relative c {
   \key aes \major
   \time 4/4
   \set Score.markFormatter = #format-mark-circle-numbers
+
+  % measure 1, page 2
+  f4. r8 r2 | \noBreak
+  f4. r8 r2 | \noBreak
+  f4. c'8 r2 | \noBreak
+  r1 | \break
+
+  % measure 5, page 3
+  \unfoldRepeats {
+    \repeat volta 2 {
+      \set Score.currentBarNumber = #5
+      aes4 aes4 r4 r8 aes8~ | \noBreak
+      aes4 aes8 r8 r2 | \noBreak
+      aes4 aes4 r4 r8 aes8~ | \break
+
+      % measure 8, page 3
+      aes8 aes4. aes4 aes4 | \noBreak
+      aes4 r4 r4 aes8 g8~ | \noBreak
+      g2~ g4 g8 aes8~ | \break
+
+      % measure 11, page 4
+      aes8 r8 r4 aes4 aes8 aes8~ | \noBreak }
+    \alternative {
+      { aes1 | \noBreak }
+      { aes4 r4 r2 | \break }
+    }
+  }
+  
+  % measure 14, page 4
+  \set Score.currentBarNumber = #14
+  bes4 bes4 r8 bes4 r8 | \noBreak
+  bes4 bes4 r4 bes4 | \noBreak
+  c4 c4 r4 des4~ | \noBreak
+  des8 aes4. aes4 aes4 | \break
+
+  % measure 18, page 5
+  aes4 r4 r4 aes8 g8~ | \noBreak
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8 aes8~ | \break
+
+  % measure 21, page 5
+  aes4 r4 r2 | \noBreak
+  ees'2.( c8 f8~ | \noBreak
+  f2.) r4 | \break
+
+  % measure 24, page 6
+  c2( c4. aes8~ | \noBreak
+  aes8) aes4. aes4 aes4 | \noBreak
+  aes4 r4 r4 aes8 g8~ | \break
+
+  % measure 27, page 6
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8 aes8~ | \noBreak
+  aes4 r4 r2 | \break
+  
+  % measure 30, page 7
+  ees'1 | \noBreak
+  r1 | \noBreak
+  f2( c4. aes8~ | \noBreak
+  aes8) aes4. aes4 aes4 | \break
+  
+  % measure 34, page 7
+  aes4 r4 r4 aes8 g8~ | \noBreak
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8 aes8~ | \break
+
+  % measure 37, page 8
+  aes4 r4 r2 | \noBreak
+  bes4 bes4 r8 bes4 r8 | \noBreak
+  bes4 bes4 r4 bes4 | \break
+
+  % measure 40, page 8
+  c4 c4 r4 des4~ | \noBreak
+  des8 aes4. aes4 aes4 | \noBreak
+  aes4 r4 r4 aes8 g8~ | \break
+
+  % measure 43, page 9
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8  aes8~ | \noBreak
+  aes4 r4 c4. d8 | \break
+
+  % measure 46, page 9
+  ees4. ees8 r8 c4. | \noBreak
+  c4. c8 c8 c8 c8 c8 | \noBreak
+  r4 r8 e8 d4 des4 | \break
+
+  % measure 49, page 10
+  c8( aes8) aes4 aes4 aes4 | \noBreak
+  aes4 r4 r4 aes8 g8~ | \noBreak
+  g2~ g4 g8 aes8~ | \break
+  
+  % mesaure 52, page 10
+  aes8 r8 r4 aes4 aes8 aes8~ | \noBreak
+  aes4 r4 c4 d4 | \noBreak
+  ees8 ees8 ees4 d4 c8 ees8~ | \break
+  
+  % measure 55, page 11
+  ees4. c8 c4 d4 | \noBreak
+  ees4 ees4 r2 | \noBreak
+  r8 aes,4. aes4 aes4 | \break
+  
+  % measure 58, page 11
+  aes4 r4 r4 aes8 g8~ | \noBreak
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8 aes8~ | \break
+  
+  % measure 61, page 12
+  aes4 r4 r2 | \noBreak
+  bes4 bes4 r8 bes4 r8 | \noBreak
+  bes4 bes4 r4 bes4 | \break
+
+  % measure 64, page 12
+  c4 c4 r4 des4~ | \noBreak
+  des8 aes4. aes4 aes4 | \noBreak
+  aes4 r4 r4 aes8 g8~ | \break
+  
+  % measure 67, page 13
+  g2~ g4 g8 aes8~ | \noBreak
+  aes8 r8 r4 aes4 aes8 aes8~ | \noBreak
+  aes4 r4 r2 | \break
+
+  % measure 70, page 13
+  bes4 bes4 r8 bes4 r8 | \noBreak
+  bes4 bes4 r4 bes4 | \noBreak
+  c4 c4 r4 des4~ | \noBreak
+  des8 aes4. aes4 aes4 | \break
+
+  % measure 74, page 14
+  aes4. r8 r4 aes8 g8~ | \noBreak
+  g8 r8 r4 g2 | \noBreak
+  c,4. c8 r2 | \noBreak
+  c4. c8 r2 | \break
+
+  % measure 78, page 14
+  c4. c8 r2 | \noBreak
+  c4. c8 r2 | \noBreak
+  c'4. d8 r2 | \noBreak
+  c4. d8 r2 | \break
+
+  % measure 82, page 15
+  c4. des8 r2 | \noBreak
+  c4. des8 r2 | \noBreak
+  r4 aes4 aes4 aes4 | \noBreak
+  aes2 aes4 aes4 | \break
+
+  % measure 86, page 15
+  c4 c4 e2 | \noBreak
+  r1 | \noBreak
+  r1 | \noBreak
+  des2 des2 | \noBreak
+  c1 | \break  
 }
 
 
