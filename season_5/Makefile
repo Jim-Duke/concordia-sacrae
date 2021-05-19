@@ -60,6 +60,29 @@ DOWN_IN_THE_RIVER_TO_PRAY_TRACKS := \
   down_in_the_river_to_pray_bass_1.mp3 \
   down_in_the_river_to_pray_bass_2.mp3
 
+EZEKIEL_SAW_DE_WHEEL_LILYPOND_PRODUCTS := \
+  ezekiel_saw_de_wheel.pdf \
+  ezekiel_saw_de_wheel_all.mid \
+  ezekiel_saw_de_wheel_soprano_1.mid \
+  ezekiel_saw_de_wheel_soprano_2.mid \
+  ezekiel_saw_de_wheel_alto_1.mid \
+  ezekiel_saw_de_wheel_alto_2.mid \
+  ezekiel_saw_de_wheel_tenor_1.mid \
+  ezekiel_saw_de_wheel_tenor_2.mid \
+  ezekiel_saw_de_wheel_bass_1.mid \
+  ezekiel_saw_de_wheel_bass_2.mid
+
+EZEKIEL_SAW_DE_WHEEL_TRACKS := \
+  ezekiel_saw_de_wheel_all.mp3 \
+  ezekiel_saw_de_wheel_soprano_1.mp3 \
+  ezekiel_saw_de_wheel_soprano_2.mp3 \
+  ezekiel_saw_de_wheel_alto_1.mp3 \
+  ezekiel_saw_de_wheel_alto_2.mp3 \
+  ezekiel_saw_de_wheel_tenor_1.mp3 \
+  ezekiel_saw_de_wheel_tenor_2.mp3 \
+  ezekiel_saw_de_wheel_bass_1.mp3 \
+  ezekiel_saw_de_wheel_bass_2.mp3
+
 # Shouldn't need to edit the following macros
 
 LIBRARY_DIR = $(ROOT_DIR)/../LilypondTemplates
